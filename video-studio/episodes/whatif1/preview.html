@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}canvas{display:block}
+#lab{position:absolute;inset:0;pointer-events:none;font-family:Inter,sans-serif}</style></head><body>
+<div id="lab"></div>
+<script type="importmap">{ "imports": { "three": "/node_modules/three/build/three.module.js" } }</script>
+<script type="module">
+import * as THREE from 'three';
+import { makeAvatar, setFace, setTears, setBlush, pose, idle, place, v3, mat } from './avatars_round.js';
+const W=1080,H=1920;
+const renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});renderer.setSize(W,H);renderer.setPixelRatio(1);
+renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;renderer.outputColorSpace=THREE.SRGBColorSpace;
+document.body.prepend(renderer.domElement);
+const scene=new THREE.Scene();scene.background=new THREE.Color(0xf0e6d8);
+const cam=new THREE.PerspectiveCamera(46,W/H,0.05,100);
+scene.add(new THREE.HemisphereLight(0xffffff,0x8a8276,1.2));
+const key=new THREE.DirectionalLight(0xfff2e0,2.2);key.position.set(5,9,6);key.castShadow=true;key.shadow.mapSize.set(2048,2048);Object.assign(key.shadow.camera,{left:-10,right:10,top:10,bottom:-10});scene.add(key);
+const rim=new THREE.DirectionalLight(0xffd0a0,1.0);rim.position.set(-6,4,-6);scene.add(rim);
+const floor=new THREE.Mesh(new THREE.PlaneGeometry(40,40),mat(0xe8dcc8));floor.rotation.x=-Math.PI/2;floor.receiveShadow=true;scene.add(floor);
+const back=new THREE.Mesh(new THREE.PlaneGeometry(40,20),mat(0xd8c8b0));back.position.set(0,10,-6);scene.add(back);
+// six distinct characters
+const outfits=[
+ {hair:0x2a1a10,top:0xd94a4a,legs:0x2a3a5a,skin:0xffe0bd,hairStyle:'swoop',acc:'cap'},
+ {hair:0x5a3a1e,top:0x3aa05a,legs:0x3a3a42,skin:0xf1c27d,hairStyle:'bun',acc:'bow'},
+ {hair:0x111111,top:0x3a7ad0,legs:0x5a3a2a,skin:0x8d5524,hairStyle:'spiky',acc:'glasses'},
+ {hair:0xe8731c,top:0xf0b030,legs:0x2a2a2a,skin:0xffcd94,hairStyle:'long',acc:'none'},
+ {hair:0x7a3a8a,top:0x2aa0a0,legs:0x4a4a52,skin:0xe0ac69,hairStyle:'curly',acc:'headphones'},
+ {hair:0xb0b0b0,top:0xe06aa0,legs:0x3a2a4a,skin:0xc68642,hairStyle:'short',acc:'beanie'}];
+const chars=outfits.map((o,i)=>{const a=makeAvatar(o);place(a,-6.4+i*2.55,0,0.1);scene.add(a);return a;});
+const EXPR=['smile','happy','laugh','sad','cry','surprise','angry','warm'];
+window.renderAt=function(t){
+ chars.forEach((a,i)=>{ idle(a,t+i); const e=EXPR[(Math.floor(t)+i)%EXPR.length]; setFace(a,e); setTears(a,e==='cry',t); if(e==='warm'||e==='happy')setBlush(a,true);else setBlush(a,false); });
+ cam.position.set(0,2.6,13.5);cam.lookAt(0,1.4,0);
+ renderer.render(scene,cam);return true;
+};
+window.DURATION=8;window.READY=true;
+</script></body></html>
