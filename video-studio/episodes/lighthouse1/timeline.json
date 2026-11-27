@@ -1,0 +1,651 @@
+{
+ "scenes": [
+  {
+   "id": 1,
+   "start": 0.0,
+   "end": 5.259
+  },
+  {
+   "id": 2,
+   "start": 5.259,
+   "end": 13.464
+  },
+  {
+   "id": 3,
+   "start": 13.464,
+   "end": 19.964
+  },
+  {
+   "id": 4,
+   "start": 19.964,
+   "end": 26.964
+  },
+  {
+   "id": 5,
+   "start": 26.964,
+   "end": 33.948
+  },
+  {
+   "id": 6,
+   "start": 33.948,
+   "end": 41.448
+  },
+  {
+   "id": 7,
+   "start": 41.448,
+   "end": 49.405
+  },
+  {
+   "id": 8,
+   "start": 49.405,
+   "end": 56.196
+  },
+  {
+   "id": 9,
+   "start": 56.196,
+   "end": 64.503
+  },
+  {
+   "id": 10,
+   "start": 64.503,
+   "end": 70.503
+  },
+  {
+   "id": 11,
+   "start": 70.503,
+   "end": 77.621
+  },
+  {
+   "id": 12,
+   "start": 77.621,
+   "end": 85.473
+  },
+  {
+   "id": 13,
+   "start": 85.473,
+   "end": 92.756
+  },
+  {
+   "id": 14,
+   "start": 92.756,
+   "end": 102.057
+  },
+  {
+   "id": 15,
+   "start": 102.057,
+   "end": 109.408
+  }
+ ],
+ "captions": [
+  {
+   "text": "Every night, a girl",
+   "start": 0.3,
+   "end": 1.46,
+   "spk": "N"
+  },
+  {
+   "text": "climbed a lighthouse to",
+   "start": 1.46,
+   "end": 2.865,
+   "spk": "N"
+  },
+  {
+   "text": "wait for a boat",
+   "start": 2.865,
+   "end": 3.781,
+   "spk": "N"
+  },
+  {
+   "text": "that never came.",
+   "start": 3.781,
+   "end": 4.759,
+   "spk": "N"
+  },
+  {
+   "text": "Nora's father was a",
+   "start": 5.559,
+   "end": 6.775,
+   "spk": "N"
+  },
+  {
+   "text": "fisherman. The best in",
+   "start": 6.775,
+   "end": 8.183,
+   "spk": "N"
+  },
+  {
+   "text": "the village.",
+   "start": 8.183,
+   "end": 8.951,
+   "spk": "N"
+  },
+  {
+   "text": "One more catch, and",
+   "start": 9.351,
+   "end": 10.674,
+   "spk": "D"
+  },
+  {
+   "text": "I'll be back before",
+   "start": 10.674,
+   "end": 11.998,
+   "spk": "D"
+  },
+  {
+   "text": "dark, Nora.",
+   "start": 11.998,
+   "end": 12.764,
+   "spk": "D"
+  },
+  {
+   "text": "But that night, the",
+   "start": 13.764,
+   "end": 15.115,
+   "spk": "N"
+  },
+  {
+   "text": "sky turned black.",
+   "start": 15.115,
+   "end": 16.324,
+   "spk": "N"
+  },
+  {
+   "text": "And his boat never",
+   "start": 16.724,
+   "end": 18.095,
+   "spk": "N"
+  },
+  {
+   "text": "came back.",
+   "start": 18.095,
+   "end": 18.857,
+   "spk": "N"
+  },
+  {
+   "text": "So every night since,",
+   "start": 20.264,
+   "end": 21.584,
+   "spk": "N"
+  },
+  {
+   "text": "Nora climbed the lighthouse",
+   "start": 21.584,
+   "end": 23.28,
+   "spk": "N"
+  },
+  {
+   "text": "stairs.",
+   "start": 23.28,
+   "end": 23.72,
+   "spk": "N"
+  },
+  {
+   "text": "And lit the lamp",
+   "start": 24.12,
+   "end": 25.414,
+   "spk": "N"
+  },
+  {
+   "text": "herself.",
+   "start": 25.414,
+   "end": 26.061,
+   "spk": "N"
+  },
+  {
+   "text": "It's been three years,",
+   "start": 27.364,
+   "end": 28.542,
+   "spk": "M"
+  },
+  {
+   "text": "Nora. You have to",
+   "start": 28.542,
+   "end": 29.452,
+   "spk": "M"
+  },
+  {
+   "text": "let it rest.",
+   "start": 29.452,
+   "end": 30.095,
+   "spk": "M"
+  },
+  {
+   "text": "But Nora shook her",
+   "start": 30.495,
+   "end": 31.875,
+   "spk": "N"
+  },
+  {
+   "text": "head. Not yet.",
+   "start": 31.875,
+   "end": 32.948,
+   "spk": "N"
+  },
+  {
+   "text": "Because every beam of",
+   "start": 34.248,
+   "end": 35.644,
+   "spk": "N"
+  },
+  {
+   "text": "light swept the water.",
+   "start": 35.644,
+   "end": 37.107,
+   "spk": "N"
+  },
+  {
+   "text": "Still searching. Still hoping.",
+   "start": 37.507,
+   "end": 39.747,
+   "spk": "N"
+  },
+  {
+   "text": "Then, one stormy night,",
+   "start": 41.748,
+   "end": 43.351,
+   "spk": "N"
+  },
+  {
+   "text": "exactly like that one\u2026",
+   "start": 43.351,
+   "end": 44.884,
+   "spk": "N"
+  },
+  {
+   "text": "she saw it. A",
+   "start": 45.284,
+   "end": 46.194,
+   "spk": "N"
+  },
+  {
+   "text": "small light, far out",
+   "start": 46.194,
+   "end": 47.595,
+   "spk": "N"
+  },
+  {
+   "text": "on the water.",
+   "start": 47.595,
+   "end": 48.505,
+   "spk": "N"
+  },
+  {
+   "text": "Nora ran down every",
+   "start": 49.705,
+   "end": 51.405,
+   "spk": "N"
+  },
+  {
+   "text": "single step.",
+   "start": 51.405,
+   "end": 52.479,
+   "spk": "N"
+  },
+  {
+   "text": "Out into the storm,",
+   "start": 52.879,
+   "end": 54.328,
+   "spk": "N"
+  },
+  {
+   "text": "onto the pier.",
+   "start": 54.328,
+   "end": 55.396,
+   "spk": "N"
+  },
+  {
+   "text": "A tiny boat, battered",
+   "start": 56.496,
+   "end": 58.006,
+   "spk": "N"
+  },
+  {
+   "text": "by the waves, drifting",
+   "start": 58.006,
+   "end": 59.587,
+   "spk": "N"
+  },
+  {
+   "text": "in.",
+   "start": 59.587,
+   "end": 59.803,
+   "spk": "N"
+  },
+  {
+   "text": "And inside it\u2026 an",
+   "start": 60.303,
+   "end": 61.539,
+   "spk": "N"
+  },
+  {
+   "text": "old fisherman, half frozen.",
+   "start": 61.539,
+   "end": 63.503,
+   "spk": "N"
+  },
+  {
+   "text": "\u2026Nora? Is that really",
+   "start": 65.003,
+   "end": 66.741,
+   "spk": "D"
+  },
+  {
+   "text": "you?",
+   "start": 66.741,
+   "end": 67.072,
+   "spk": "D"
+  },
+  {
+   "text": "It wasn't her father.",
+   "start": 70.803,
+   "end": 72.488,
+   "spk": "N"
+  },
+  {
+   "text": "A stranger. Lost at",
+   "start": 72.888,
+   "end": 74.111,
+   "spk": "N"
+  },
+  {
+   "text": "sea for weeks, following",
+   "start": 74.111,
+   "end": 75.656,
+   "spk": "N"
+  },
+  {
+   "text": "her light home.",
+   "start": 75.656,
+   "end": 76.621,
+   "spk": "N"
+  },
+  {
+   "text": "She hugged him anyway.",
+   "start": 77.921,
+   "end": 79.202,
+   "spk": "N"
+  },
+  {
+   "text": "Because that's what the",
+   "start": 79.202,
+   "end": 80.541,
+   "spk": "N"
+  },
+  {
+   "text": "light was for.",
+   "start": 80.541,
+   "end": 81.356,
+   "spk": "N"
+  },
+  {
+   "text": "Bringing somebody's father home.",
+   "start": 81.756,
+   "end": 84.273,
+   "spk": "N"
+  },
+  {
+   "text": "The next night, Nora",
+   "start": 85.773,
+   "end": 87.063,
+   "spk": "N"
+  },
+  {
+   "text": "climbed the stairs again.",
+   "start": 87.063,
+   "end": 88.675,
+   "spk": "N"
+  },
+  {
+   "text": "Still lighting the lamp.",
+   "start": 89.175,
+   "end": 90.723,
+   "spk": "N"
+  },
+  {
+   "text": "Still searching.",
+   "start": 90.723,
+   "end": 91.756,
+   "spk": "N"
+  },
+  {
+   "text": "Because somewhere out there,",
+   "start": 93.056,
+   "end": 94.665,
+   "spk": "N"
+  },
+  {
+   "text": "someone's family was still",
+   "start": 94.665,
+   "end": 96.159,
+   "spk": "N"
+  },
+  {
+   "text": "waiting.",
+   "start": 96.159,
+   "end": 96.619,
+   "spk": "N"
+  },
+  {
+   "text": "And that light would",
+   "start": 97.119,
+   "end": 98.455,
+   "spk": "N"
+  },
+  {
+   "text": "always be burning.",
+   "start": 98.455,
+   "end": 99.657,
+   "spk": "N"
+  },
+  {
+   "text": "Would you keep the",
+   "start": 102.357,
+   "end": 103.551,
+   "spk": "N"
+  },
+  {
+   "text": "light burning for a",
+   "start": 103.551,
+   "end": 104.811,
+   "spk": "N"
+  },
+  {
+   "text": "stranger?",
+   "start": 104.811,
+   "end": 105.408,
+   "spk": "N"
+  }
+ ],
+ "vo": {
+  "hook": {
+   "file": "audio/hook.wav",
+   "start": 0.3,
+   "dur": 4.459,
+   "spk": "N",
+   "scene": 1
+  },
+  "dad": {
+   "file": "audio/dad.wav",
+   "start": 5.559,
+   "dur": 3.392,
+   "spk": "N",
+   "scene": 2
+  },
+  "back": {
+   "file": "audio/back.wav",
+   "start": 9.351,
+   "dur": 3.413,
+   "spk": "D",
+   "scene": 2
+  },
+  "storm": {
+   "file": "audio/storm.wav",
+   "start": 13.764,
+   "dur": 2.56,
+   "spk": "N",
+   "scene": 3
+  },
+  "didnt": {
+   "file": "audio/didnt.wav",
+   "start": 16.724,
+   "dur": 2.133,
+   "spk": "N",
+   "scene": 3
+  },
+  "everynight": {
+   "file": "audio/everynight.wav",
+   "start": 20.264,
+   "dur": 3.456,
+   "spk": "N",
+   "scene": 4
+  },
+  "lit": {
+   "file": "audio/lit.wav",
+   "start": 24.12,
+   "dur": 1.941,
+   "spk": "N",
+   "scene": 4
+  },
+  "years": {
+   "file": "audio/years.wav",
+   "start": 27.364,
+   "dur": 2.731,
+   "spk": "M",
+   "scene": 5
+  },
+  "notyet": {
+   "file": "audio/notyet.wav",
+   "start": 30.495,
+   "dur": 2.453,
+   "spk": "N",
+   "scene": 5
+  },
+  "everybeam": {
+   "file": "audio/everybeam.wav",
+   "start": 34.248,
+   "dur": 2.859,
+   "spk": "N",
+   "scene": 6
+  },
+  "searching": {
+   "file": "audio/searching.wav",
+   "start": 37.507,
+   "dur": 2.24,
+   "spk": "N",
+   "scene": 6
+  },
+  "onenight": {
+   "file": "audio/onenight.wav",
+   "start": 41.748,
+   "dur": 3.136,
+   "spk": "N",
+   "scene": 7
+  },
+  "sawit": {
+   "file": "audio/sawit.wav",
+   "start": 45.284,
+   "dur": 3.221,
+   "spk": "N",
+   "scene": 7
+  },
+  "ran": {
+   "file": "audio/ran.wav",
+   "start": 49.705,
+   "dur": 2.773,
+   "spk": "N",
+   "scene": 8
+  },
+  "intostorm": {
+   "file": "audio/intostorm.wav",
+   "start": 52.879,
+   "dur": 2.517,
+   "spk": "N",
+   "scene": 8
+  },
+  "boat": {
+   "file": "audio/boat.wav",
+   "start": 56.496,
+   "dur": 3.307,
+   "spk": "N",
+   "scene": 9
+  },
+  "inside": {
+   "file": "audio/inside.wav",
+   "start": 60.303,
+   "dur": 3.2,
+   "spk": "N",
+   "scene": 9
+  },
+  "nora": {
+   "file": "audio/nora.wav",
+   "start": 65.003,
+   "dur": 2.069,
+   "spk": "D",
+   "scene": 10
+  },
+  "notdad": {
+   "file": "audio/notdad.wav",
+   "start": 70.803,
+   "dur": 1.685,
+   "spk": "N",
+   "scene": 11
+  },
+  "stranger": {
+   "file": "audio/stranger.wav",
+   "start": 72.888,
+   "dur": 3.733,
+   "spk": "N",
+   "scene": 11
+  },
+  "hugged": {
+   "file": "audio/hugged.wav",
+   "start": 77.921,
+   "dur": 3.435,
+   "spk": "N",
+   "scene": 12
+  },
+  "bringing": {
+   "file": "audio/bringing.wav",
+   "start": 81.756,
+   "dur": 2.517,
+   "spk": "N",
+   "scene": 12
+  },
+  "nextnight": {
+   "file": "audio/nextnight.wav",
+   "start": 85.773,
+   "dur": 2.901,
+   "spk": "N",
+   "scene": 13
+  },
+  "still": {
+   "file": "audio/still.wav",
+   "start": 89.175,
+   "dur": 2.581,
+   "spk": "N",
+   "scene": 13
+  },
+  "because": {
+   "file": "audio/because.wav",
+   "start": 93.056,
+   "dur": 3.563,
+   "spk": "N",
+   "scene": 14
+  },
+  "alwaysbe": {
+   "file": "audio/alwaysbe.wav",
+   "start": 97.119,
+   "dur": 2.539,
+   "spk": "N",
+   "scene": 14
+  },
+  "out": {
+   "file": "audio/out.wav",
+   "start": 102.357,
+   "dur": 3.051,
+   "spk": "N",
+   "scene": 15
+  }
+ },
+ "duration": 109.408
+}
