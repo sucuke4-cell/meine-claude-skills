@@ -1,0 +1,589 @@
+{
+ "scenes": [
+  {
+   "id": 1,
+   "start": 0.0,
+   "end": 5.845
+  },
+  {
+   "id": 2,
+   "start": 5.845,
+   "end": 17.845
+  },
+  {
+   "id": 3,
+   "start": 17.845,
+   "end": 25.845
+  },
+  {
+   "id": 4,
+   "start": 25.845,
+   "end": 39.845
+  },
+  {
+   "id": 5,
+   "start": 39.845,
+   "end": 48.845
+  },
+  {
+   "id": 6,
+   "start": 48.845,
+   "end": 58.845
+  },
+  {
+   "id": 7,
+   "start": 58.845,
+   "end": 67.845
+  },
+  {
+   "id": 8,
+   "start": 67.845,
+   "end": 75.845
+  },
+  {
+   "id": 9,
+   "start": 75.845,
+   "end": 81.845
+  },
+  {
+   "id": 10,
+   "start": 81.845,
+   "end": 92.845
+  },
+  {
+   "id": 11,
+   "start": 92.845,
+   "end": 109.128
+  }
+ ],
+ "captions": [
+  {
+   "text": "Theo had a shadow",
+   "start": 0.3,
+   "end": 2.129,
+   "spk": "N"
+  },
+  {
+   "text": "again.",
+   "start": 2.129,
+   "end": 2.775,
+   "spk": "N"
+  },
+  {
+   "text": "But it wasn't his.",
+   "start": 3.275,
+   "end": 5.045,
+   "spk": "N"
+  },
+  {
+   "text": "It followed him everywhere.",
+   "start": 6.145,
+   "end": 8.204,
+   "spk": "N"
+  },
+  {
+   "text": "Always\u2026 one second too",
+   "start": 8.204,
+   "end": 9.881,
+   "spk": "N"
+  },
+  {
+   "text": "late.",
+   "start": 9.881,
+   "end": 10.263,
+   "spk": "N"
+  },
+  {
+   "text": "And at night\u2026 it",
+   "start": 10.763,
+   "end": 12.115,
+   "spk": "N"
+  },
+  {
+   "text": "whispered.",
+   "start": 12.115,
+   "end": 12.96,
+   "spk": "N"
+  },
+  {
+   "text": "Your shadow works for",
+   "start": 13.46,
+   "end": 15.02,
+   "spk": "F"
+  },
+  {
+   "text": "me now. Forever.",
+   "start": 15.02,
+   "end": 16.208,
+   "spk": "F"
+  },
+  {
+   "text": "And tonight at nine,",
+   "start": 18.145,
+   "end": 19.663,
+   "spk": "F"
+  },
+  {
+   "text": "I clock out\u2026",
+   "start": 19.663,
+   "end": 20.574,
+   "spk": "F"
+  },
+  {
+   "text": "and this time, I'm",
+   "start": 20.874,
+   "end": 22.08,
+   "spk": "F"
+  },
+  {
+   "text": "taking you with me.",
+   "start": 22.08,
+   "end": 23.352,
+   "spk": "F"
+  },
+  {
+   "text": "Mom, please. You saw",
+   "start": 26.145,
+   "end": 27.363,
+   "spk": "T"
+  },
+  {
+   "text": "the black sun.",
+   "start": 27.363,
+   "end": 28.215,
+   "spk": "T"
+  },
+  {
+   "text": "I believe you. What",
+   "start": 28.815,
+   "end": 30.06,
+   "spk": "MO"
+  },
+  {
+   "text": "do we do?",
+   "start": 30.06,
+   "end": 30.649,
+   "spk": "MO"
+  },
+  {
+   "text": "The factory has a",
+   "start": 31.049,
+   "end": 32.095,
+   "spk": "T"
+  },
+  {
+   "text": "time clock. Every shadow",
+   "start": 32.095,
+   "end": 33.572,
+   "spk": "T"
+  },
+  {
+   "text": "has a card.",
+   "start": 33.572,
+   "end": 34.249,
+   "spk": "T"
+  },
+  {
+   "text": "If I punch my",
+   "start": 34.549,
+   "end": 35.404,
+   "spk": "T"
+  },
+  {
+   "text": "card\u2026 my shadow has",
+   "start": 35.404,
+   "end": 36.652,
+   "spk": "T"
+  },
+  {
+   "text": "to come back to",
+   "start": 36.652,
+   "end": 37.638,
+   "spk": "T"
+  },
+  {
+   "text": "me.",
+   "start": 37.638,
+   "end": 37.835,
+   "spk": "T"
+  },
+  {
+   "text": "At nine o'clock, they",
+   "start": 40.145,
+   "end": 41.674,
+   "spk": "N"
+  },
+  {
+   "text": "slipped into the factory.",
+   "start": 41.674,
+   "end": 43.495,
+   "spk": "N"
+  },
+  {
+   "text": "And behind the time",
+   "start": 43.995,
+   "end": 45.539,
+   "spk": "N"
+  },
+  {
+   "text": "clock\u2026 was a door.",
+   "start": 45.539,
+   "end": 47.003,
+   "spk": "N"
+  },
+  {
+   "text": "Inside, hundreds of shadows",
+   "start": 49.145,
+   "end": 51.289,
+   "spk": "N"
+  },
+  {
+   "text": "hung from hooks. Like",
+   "start": 51.289,
+   "end": 52.957,
+   "spk": "N"
+  },
+  {
+   "text": "coats.",
+   "start": 52.957,
+   "end": 53.433,
+   "spk": "N"
+  },
+  {
+   "text": "There! That's mine!",
+   "start": 54.033,
+   "end": 55.399,
+   "spk": "T"
+  },
+  {
+   "text": "But the shadow under",
+   "start": 59.145,
+   "end": 60.7,
+   "spk": "N"
+  },
+  {
+   "text": "Theo's feet\u2026 stood up.",
+   "start": 60.7,
+   "end": 62.409,
+   "spk": "N"
+  },
+  {
+   "text": "Nobody leaves the night",
+   "start": 62.809,
+   "end": 64.405,
+   "spk": "F"
+  },
+  {
+   "text": "shift.",
+   "start": 64.405,
+   "end": 64.821,
+   "spk": "F"
+  },
+  {
+   "text": "Let go of my",
+   "start": 68.145,
+   "end": 69.057,
+   "spk": "MO"
+  },
+  {
+   "text": "son!",
+   "start": 69.057,
+   "end": 69.361,
+   "spk": "MO"
+  },
+  {
+   "text": "Shadows hate one thing.",
+   "start": 69.761,
+   "end": 71.506,
+   "spk": "N"
+  },
+  {
+   "text": "Light\u2026 from the front.",
+   "start": 71.506,
+   "end": 73.175,
+   "spk": "N"
+  },
+  {
+   "text": "Theo grabbed his card\u2026",
+   "start": 76.145,
+   "end": 77.934,
+   "spk": "N"
+  },
+  {
+   "text": "and punched it.",
+   "start": 77.934,
+   "end": 79.153,
+   "spk": "N"
+  },
+  {
+   "text": "His shadow woke up.",
+   "start": 82.145,
+   "end": 83.868,
+   "spk": "N"
+  },
+  {
+   "text": "And ran home.",
+   "start": 83.868,
+   "end": 85.047,
+   "spk": "N"
+  },
+  {
+   "text": "You're back. For real",
+   "start": 85.647,
+   "end": 86.947,
+   "spk": "T"
+  },
+  {
+   "text": "this time.",
+   "start": 86.947,
+   "end": 87.567,
+   "spk": "T"
+  },
+  {
+   "text": "And his shadow waved.",
+   "start": 87.967,
+   "end": 89.695,
+   "spk": "N"
+  },
+  {
+   "text": "But on the last",
+   "start": 93.145,
+   "end": 94.316,
+   "spk": "N"
+  },
+  {
+   "text": "hook\u2026 hung one more",
+   "start": 94.316,
+   "end": 95.799,
+   "spk": "N"
+  },
+  {
+   "text": "shadow.",
+   "start": 95.799,
+   "end": 96.345,
+   "spk": "N"
+  },
+  {
+   "text": "Its name tag said\u2026",
+   "start": 96.645,
+   "end": 98.749,
+   "spk": "N"
+  },
+  {
+   "text": "Mara.",
+   "start": 98.749,
+   "end": 99.333,
+   "spk": "N"
+  },
+  {
+   "text": "Mom\u2026 that's your name.",
+   "start": 99.733,
+   "end": 101.184,
+   "spk": "T"
+  },
+  {
+   "text": "Then whose shadow\u2026 is",
+   "start": 101.784,
+   "end": 103.55,
+   "spk": "N"
+  },
+  {
+   "text": "following you?",
+   "start": 103.55,
+   "end": 104.728,
+   "spk": "N"
+  }
+ ],
+ "vo": {
+  "again": {
+   "file": "audio/again.wav",
+   "start": 0.3,
+   "dur": 2.475,
+   "spk": "N",
+   "scene": 1
+  },
+  "nothis": {
+   "file": "audio/nothis.wav",
+   "start": 3.275,
+   "dur": 1.771,
+   "spk": "N",
+   "scene": 1
+  },
+  "followed": {
+   "file": "audio/followed.wav",
+   "start": 6.145,
+   "dur": 4.117,
+   "spk": "N",
+   "scene": 2
+  },
+  "whispered": {
+   "file": "audio/whispered.wav",
+   "start": 10.763,
+   "dur": 2.197,
+   "spk": "N",
+   "scene": 2
+  },
+  "works": {
+   "file": "audio/works.wav",
+   "start": 13.46,
+   "dur": 2.748,
+   "spk": "F",
+   "scene": 2
+  },
+  "clockout": {
+   "file": "audio/clockout.wav",
+   "start": 18.145,
+   "dur": 2.429,
+   "spk": "F",
+   "scene": 3
+  },
+  "takingyou": {
+   "file": "audio/takingyou.wav",
+   "start": 20.874,
+   "dur": 2.478,
+   "spk": "F",
+   "scene": 3
+  },
+  "please": {
+   "file": "audio/please.wav",
+   "start": 26.145,
+   "dur": 2.069,
+   "spk": "T",
+   "scene": 4
+  },
+  "believe": {
+   "file": "audio/believe.wav",
+   "start": 28.815,
+   "dur": 1.835,
+   "spk": "MO",
+   "scene": 4
+  },
+  "timeclock": {
+   "file": "audio/timeclock.wav",
+   "start": 31.049,
+   "dur": 3.2,
+   "spk": "T",
+   "scene": 4
+  },
+  "punch": {
+   "file": "audio/punch.wav",
+   "start": 34.549,
+   "dur": 3.285,
+   "spk": "T",
+   "scene": 4
+  },
+  "slipped": {
+   "file": "audio/slipped.wav",
+   "start": 40.145,
+   "dur": 3.349,
+   "spk": "N",
+   "scene": 5
+  },
+  "door": {
+   "file": "audio/door.wav",
+   "start": 43.995,
+   "dur": 3.008,
+   "spk": "N",
+   "scene": 5
+  },
+  "hooks": {
+   "file": "audio/hooks.wav",
+   "start": 49.145,
+   "dur": 4.288,
+   "spk": "N",
+   "scene": 6
+  },
+  "there": {
+   "file": "audio/there.wav",
+   "start": 54.033,
+   "dur": 1.365,
+   "spk": "T",
+   "scene": 6
+  },
+  "stoodup": {
+   "file": "audio/stoodup.wav",
+   "start": 59.145,
+   "dur": 3.264,
+   "spk": "N",
+   "scene": 7
+  },
+  "nobody": {
+   "file": "audio/nobody.wav",
+   "start": 62.809,
+   "dur": 2.012,
+   "spk": "F",
+   "scene": 7
+  },
+  "letgo": {
+   "file": "audio/letgo.wav",
+   "start": 68.145,
+   "dur": 1.216,
+   "spk": "MO",
+   "scene": 8
+  },
+  "hate": {
+   "file": "audio/hate.wav",
+   "start": 69.761,
+   "dur": 3.413,
+   "spk": "N",
+   "scene": 8
+  },
+  "punched": {
+   "file": "audio/punched.wav",
+   "start": 76.145,
+   "dur": 3.008,
+   "spk": "N",
+   "scene": 9
+  },
+  "woke": {
+   "file": "audio/woke.wav",
+   "start": 82.145,
+   "dur": 2.901,
+   "spk": "N",
+   "scene": 10
+  },
+  "back": {
+   "file": "audio/back.wav",
+   "start": 85.647,
+   "dur": 1.92,
+   "spk": "T",
+   "scene": 10
+  },
+  "waved": {
+   "file": "audio/waved.wav",
+   "start": 87.967,
+   "dur": 1.728,
+   "spk": "N",
+   "scene": 10
+  },
+  "lasthook": {
+   "file": "audio/lasthook.wav",
+   "start": 93.145,
+   "dur": 3.2,
+   "spk": "N",
+   "scene": 11
+  },
+  "tag": {
+   "file": "audio/tag.wav",
+   "start": 96.645,
+   "dur": 2.688,
+   "spk": "N",
+   "scene": 11
+  },
+  "mom": {
+   "file": "audio/mom.wav",
+   "start": 99.733,
+   "dur": 1.451,
+   "spk": "T",
+   "scene": 11
+  },
+  "whose": {
+   "file": "audio/whose.wav",
+   "start": 101.784,
+   "dur": 2.944,
+   "spk": "N",
+   "scene": 11
+  }
+ },
+ "duration": 109.128
+}
