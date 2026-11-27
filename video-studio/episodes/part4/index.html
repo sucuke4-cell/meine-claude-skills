@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+  canvas { display: block; }
+  #vignette { position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 45%, rgba(0,0,0,.55) 85%, rgba(0,0,0,.8) 100%); }
+  #tint { position: absolute; inset: 0; pointer-events: none; background: #000; opacity: 0; }
+  .txt { position: absolute; left: 70px; right: 70px; text-align: center; color: #fff;
+    font-family: 'Inter', sans-serif; font-weight: 900; letter-spacing: -1px;
+    -webkit-text-stroke: 14px #000; paint-order: stroke fill; line-height: 1.08; }
+  #hook { top: 300px; font-size: 96px; }
+  #hook .part { font-size: 150px; color: #ff2a2a; }
+  #sys { position: absolute; top: 230px; left: 80px; right: 80px; padding: 26px 20px; background: rgba(0,0,0,.75); border: 5px solid #ffd23f; border-radius: 20px; color: #ffd23f; font: 900 60px Inter, sans-serif; text-align: center; opacity: 0; }
+  #glitch { position: absolute; inset: 0; pointer-events: none; opacity: 0; mix-blend-mode: screen; }
+  #flash { position: absolute; inset: 0; pointer-events: none; opacity: 0; }
+  #hook em { font-style: normal; color: #ff2a2a; }
+  #cap { top: 1180px; font-size: 84px; text-transform: uppercase; }
+  #cap.juno { color: #ffd23f; }
+  #big { top: 760px; font-size: 190px; color: #ff2a2a; }
+  #sub { top: 1010px; font-size: 92px; }
+</style>
+</head>
+<body>
+<div id="vignette"></div>
+<div id="tint"></div>
+<div id="flash"></div>
+<div id="sys"></div>
+<div id="glitch"></div>
+<div id="hook" class="txt"></div>
+<div id="cap" class="txt"></div>
+<div id="big" class="txt"></div>
+<div id="sub" class="txt"></div>
+<script type="importmap">{ "imports": { "three": "/node_modules/three/build/three.module.js" } }</script>
+<script type="module" src="./scene.js"></script>
+</body>
+</html>
