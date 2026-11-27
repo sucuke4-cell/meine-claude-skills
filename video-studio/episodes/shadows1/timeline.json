@@ -1,0 +1,621 @@
+{
+ "scenes": [
+  {
+   "id": 1,
+   "start": 0.0,
+   "end": 4.868
+  },
+  {
+   "id": 2,
+   "start": 4.868,
+   "end": 16.268
+  },
+  {
+   "id": 3,
+   "start": 16.268,
+   "end": 23.591
+  },
+  {
+   "id": 4,
+   "start": 23.591,
+   "end": 33.668
+  },
+  {
+   "id": 5,
+   "start": 33.668,
+   "end": 39.779
+  },
+  {
+   "id": 6,
+   "start": 39.779,
+   "end": 50.647
+  },
+  {
+   "id": 7,
+   "start": 50.647,
+   "end": 60.711
+  },
+  {
+   "id": 8,
+   "start": 60.711,
+   "end": 75.601
+  },
+  {
+   "id": 9,
+   "start": 75.601,
+   "end": 81.601
+  },
+  {
+   "id": 10,
+   "start": 81.601,
+   "end": 97.258
+  },
+  {
+   "id": 11,
+   "start": 97.258,
+   "end": 107.673
+  }
+ ],
+ "captions": [
+  {
+   "text": "In this town\u2026 your",
+   "start": 0.3,
+   "end": 1.82,
+   "spk": "N"
+  },
+  {
+   "text": "shadow clocks out at",
+   "start": 1.82,
+   "end": 3.508,
+   "spk": "N"
+  },
+  {
+   "text": "nine P.M.",
+   "start": 3.508,
+   "end": 4.268,
+   "spk": "N"
+  },
+  {
+   "text": "Every night, when the",
+   "start": 5.068,
+   "end": 6.597,
+   "spk": "N"
+  },
+  {
+   "text": "clock tower strikes nine\u2026",
+   "start": 6.597,
+   "end": 8.417,
+   "spk": "N"
+  },
+  {
+   "text": "every shadow peels off",
+   "start": 8.717,
+   "end": 10.566,
+   "spk": "N"
+  },
+  {
+   "text": "the ground\u2026",
+   "start": 10.566,
+   "end": 11.491,
+   "spk": "N"
+  },
+  {
+   "text": "and walks to the",
+   "start": 11.791,
+   "end": 12.95,
+   "spk": "N"
+  },
+  {
+   "text": "old factory. For the",
+   "start": 12.95,
+   "end": 14.399,
+   "spk": "N"
+  },
+  {
+   "text": "night shift.",
+   "start": 14.399,
+   "end": 15.268,
+   "spk": "N"
+  },
+  {
+   "text": "At sunrise, they come",
+   "start": 16.568,
+   "end": 18.532,
+   "spk": "N"
+  },
+  {
+   "text": "back.",
+   "start": 18.532,
+   "end": 19.0,
+   "spk": "N"
+  },
+  {
+   "text": "Nobody knows what they",
+   "start": 19.3,
+   "end": 21.145,
+   "spk": "N"
+  },
+  {
+   "text": "do there. Nobody asks.",
+   "start": 21.145,
+   "end": 22.991,
+   "spk": "N"
+  },
+  {
+   "text": "Theo was twelve. He",
+   "start": 23.791,
+   "end": 25.128,
+   "spk": "N"
+  },
+  {
+   "text": "had watched it every",
+   "start": 25.128,
+   "end": 26.535,
+   "spk": "N"
+  },
+  {
+   "text": "night of his life.",
+   "start": 26.535,
+   "end": 27.801,
+   "spk": "N"
+  },
+  {
+   "text": "Goodnight, shadow.",
+   "start": 28.301,
+   "end": 29.56,
+   "spk": "T"
+  },
+  {
+   "text": "And every night\u2026 his",
+   "start": 29.86,
+   "end": 31.443,
+   "spk": "N"
+  },
+  {
+   "text": "shadow waved back.",
+   "start": 31.443,
+   "end": 32.868,
+   "spk": "N"
+  },
+  {
+   "text": "But one morning\u2026",
+   "start": 34.168,
+   "end": 35.555,
+   "spk": "N"
+  },
+  {
+   "text": "Theo's shadow didn't come",
+   "start": 35.955,
+   "end": 38.141,
+   "spk": "N"
+  },
+  {
+   "text": "back.",
+   "start": 38.141,
+   "end": 38.579,
+   "spk": "N"
+  },
+  {
+   "text": "Theo\u2026 where is your",
+   "start": 39.979,
+   "end": 41.163,
+   "spk": "MO"
+  },
+  {
+   "text": "shadow?",
+   "start": 41.163,
+   "end": 41.6,
+   "spk": "MO"
+  },
+  {
+   "text": "Nobody can know. Do",
+   "start": 41.9,
+   "end": 43.161,
+   "spk": "MO"
+  },
+  {
+   "text": "you understand me? Nobody.",
+   "start": 43.161,
+   "end": 44.887,
+   "spk": "MO"
+  },
+  {
+   "text": "Because in this town\u2026",
+   "start": 45.287,
+   "end": 46.767,
+   "spk": "N"
+  },
+  {
+   "text": "people without a shadow\u2026",
+   "start": 46.767,
+   "end": 48.46,
+   "spk": "N"
+  },
+  {
+   "text": "start to fade.",
+   "start": 48.46,
+   "end": 49.447,
+   "spk": "N"
+  },
+  {
+   "text": "Then I'm going to",
+   "start": 50.947,
+   "end": 52.136,
+   "spk": "T"
+  },
+  {
+   "text": "find it.",
+   "start": 52.136,
+   "end": 52.696,
+   "spk": "T"
+  },
+  {
+   "text": "That night, at nine\u2026",
+   "start": 53.096,
+   "end": 54.535,
+   "spk": "N"
+  },
+  {
+   "text": "Theo did the one",
+   "start": 54.535,
+   "end": 55.686,
+   "spk": "N"
+  },
+  {
+   "text": "thing nobody ever does.",
+   "start": 55.686,
+   "end": 57.341,
+   "spk": "N"
+  },
+  {
+   "text": "He followed the shadows.",
+   "start": 57.641,
+   "end": 59.711,
+   "spk": "N"
+  },
+  {
+   "text": "Inside the old factory\u2026",
+   "start": 61.011,
+   "end": 62.626,
+   "spk": "N"
+  },
+  {
+   "text": "the shadows were building",
+   "start": 62.626,
+   "end": 64.383,
+   "spk": "N"
+  },
+  {
+   "text": "something.",
+   "start": 64.383,
+   "end": 65.085,
+   "spk": "N"
+  },
+  {
+   "text": "We're one short tonight.",
+   "start": 65.585,
+   "end": 67.205,
+   "spk": "F"
+  },
+  {
+   "text": "Without him\u2026 it won't",
+   "start": 67.505,
+   "end": 68.851,
+   "spk": "F"
+  },
+  {
+   "text": "be finished by morning.",
+   "start": 68.851,
+   "end": 70.326,
+   "spk": "F"
+  },
+  {
+   "text": "It was a sunrise.",
+   "start": 70.726,
+   "end": 71.985,
+   "spk": "N"
+  },
+  {
+   "text": "The shadows were building\u2026",
+   "start": 71.985,
+   "end": 73.912,
+   "spk": "N"
+  },
+  {
+   "text": "the sunrise.",
+   "start": 73.912,
+   "end": 74.801,
+   "spk": "N"
+  },
+  {
+   "text": "Wait. Someone's watching.",
+   "start": 75.901,
+   "end": 77.569,
+   "spk": "F"
+  },
+  {
+   "text": "Theo ran.",
+   "start": 77.769,
+   "end": 79.006,
+   "spk": "N"
+  },
+  {
+   "text": "Back home, his closet",
+   "start": 81.901,
+   "end": 83.769,
+   "spk": "N"
+  },
+  {
+   "text": "door was open.",
+   "start": 83.769,
+   "end": 85.015,
+   "spk": "N"
+  },
+  {
+   "text": "And inside\u2026 shaking\u2026 was",
+   "start": 85.415,
+   "end": 87.542,
+   "spk": "N"
+  },
+  {
+   "text": "his own shadow.",
+   "start": 87.542,
+   "end": 88.871,
+   "spk": "N"
+  },
+  {
+   "text": "\u2026You?",
+   "start": 89.271,
+   "end": 90.103,
+   "spk": "T"
+  },
+  {
+   "text": "It pressed a finger",
+   "start": 90.703,
+   "end": 92.049,
+   "spk": "N"
+  },
+  {
+   "text": "to its lips. And",
+   "start": 92.049,
+   "end": 93.183,
+   "spk": "N"
+  },
+  {
+   "text": "wrote on the wall\u2026",
+   "start": 93.183,
+   "end": 94.458,
+   "spk": "N"
+  },
+  {
+   "text": "Outside, the clock tower",
+   "start": 97.558,
+   "end": 99.509,
+   "spk": "N"
+  },
+  {
+   "text": "started striking nine. Again.",
+   "start": 99.509,
+   "end": 101.867,
+   "spk": "N"
+  },
+  {
+   "text": "But it was only",
+   "start": 102.267,
+   "end": 103.521,
+   "spk": "N"
+  },
+  {
+   "text": "midnight.",
+   "start": 103.521,
+   "end": 104.273,
+   "spk": "N"
+  }
+ ],
+ "vo": {
+  "hook": {
+   "file": "audio/hook.wav",
+   "start": 0.3,
+   "dur": 3.968,
+   "spk": "N",
+   "scene": 1
+  },
+  "strikes": {
+   "file": "audio/strikes.wav",
+   "start": 5.068,
+   "dur": 3.349,
+   "spk": "N",
+   "scene": 2
+  },
+  "peels": {
+   "file": "audio/peels.wav",
+   "start": 8.717,
+   "dur": 2.773,
+   "spk": "N",
+   "scene": 2
+  },
+  "factory": {
+   "file": "audio/factory.wav",
+   "start": 11.791,
+   "dur": 3.477,
+   "spk": "N",
+   "scene": 2
+  },
+  "sunrise": {
+   "file": "audio/sunrise.wav",
+   "start": 16.568,
+   "dur": 2.432,
+   "spk": "N",
+   "scene": 3
+  },
+  "nobody": {
+   "file": "audio/nobody.wav",
+   "start": 19.3,
+   "dur": 3.691,
+   "spk": "N",
+   "scene": 3
+  },
+  "theo": {
+   "file": "audio/theo.wav",
+   "start": 23.791,
+   "dur": 4.011,
+   "spk": "N",
+   "scene": 4
+  },
+  "goodnight": {
+   "file": "audio/goodnight.wav",
+   "start": 28.301,
+   "dur": 1.259,
+   "spk": "T",
+   "scene": 4
+  },
+  "waved": {
+   "file": "audio/waved.wav",
+   "start": 29.86,
+   "dur": 3.008,
+   "spk": "N",
+   "scene": 4
+  },
+  "onemorning": {
+   "file": "audio/onemorning.wav",
+   "start": 34.168,
+   "dur": 1.387,
+   "spk": "N",
+   "scene": 5
+  },
+  "didnt": {
+   "file": "audio/didnt.wav",
+   "start": 35.955,
+   "dur": 2.624,
+   "spk": "N",
+   "scene": 5
+  },
+  "where": {
+   "file": "audio/where.wav",
+   "start": 39.979,
+   "dur": 1.621,
+   "spk": "MO",
+   "scene": 6
+  },
+  "noone": {
+   "file": "audio/noone.wav",
+   "start": 41.9,
+   "dur": 2.987,
+   "spk": "MO",
+   "scene": 6
+  },
+  "fade": {
+   "file": "audio/fade.wav",
+   "start": 45.287,
+   "dur": 4.16,
+   "spk": "N",
+   "scene": 6
+  },
+  "find": {
+   "file": "audio/find.wav",
+   "start": 50.947,
+   "dur": 1.749,
+   "spk": "T",
+   "scene": 7
+  },
+  "thatnight": {
+   "file": "audio/thatnight.wav",
+   "start": 53.096,
+   "dur": 4.245,
+   "spk": "N",
+   "scene": 7
+  },
+  "followed": {
+   "file": "audio/followed.wav",
+   "start": 57.641,
+   "dur": 2.069,
+   "spk": "N",
+   "scene": 7
+  },
+  "building": {
+   "file": "audio/building.wav",
+   "start": 61.011,
+   "dur": 4.075,
+   "spk": "N",
+   "scene": 8
+  },
+  "short": {
+   "file": "audio/short.wav",
+   "start": 65.585,
+   "dur": 1.619,
+   "spk": "F",
+   "scene": 8
+  },
+  "finished": {
+   "file": "audio/finished.wav",
+   "start": 67.505,
+   "dur": 2.821,
+   "spk": "F",
+   "scene": 8
+  },
+  "sunrise2": {
+   "file": "audio/sunrise2.wav",
+   "start": 70.726,
+   "dur": 4.075,
+   "spk": "N",
+   "scene": 8
+  },
+  "watching": {
+   "file": "audio/watching.wav",
+   "start": 75.901,
+   "dur": 1.668,
+   "spk": "F",
+   "scene": 9
+  },
+  "ran": {
+   "file": "audio/ran.wav",
+   "start": 77.769,
+   "dur": 1.237,
+   "spk": "N",
+   "scene": 9
+  },
+  "closet": {
+   "file": "audio/closet.wav",
+   "start": 81.901,
+   "dur": 3.115,
+   "spk": "N",
+   "scene": 10
+  },
+  "inside": {
+   "file": "audio/inside.wav",
+   "start": 85.415,
+   "dur": 3.456,
+   "spk": "N",
+   "scene": 10
+  },
+  "you": {
+   "file": "audio/you.wav",
+   "start": 89.271,
+   "dur": 0.832,
+   "spk": "T",
+   "scene": 10
+  },
+  "wrote": {
+   "file": "audio/wrote.wav",
+   "start": 90.703,
+   "dur": 3.755,
+   "spk": "N",
+   "scene": 10
+  },
+  "again": {
+   "file": "audio/again.wav",
+   "start": 97.558,
+   "dur": 4.309,
+   "spk": "N",
+   "scene": 11
+  },
+  "midnight": {
+   "file": "audio/midnight.wav",
+   "start": 102.267,
+   "dur": 2.005,
+   "spk": "N",
+   "scene": 11
+  }
+ },
+ "duration": 107.673
+}
