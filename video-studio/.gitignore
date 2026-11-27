@@ -1,5 +1,5 @@
 node_modules/
-voices/
+voices
 out/
 episodes/*/frames/
 episodes/*/stills/
