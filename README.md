@@ -1,6 +1,6 @@
 # Meine Claude-Skills
 
-Dein persönliches Skill-Paket: **26 Skills** in einem Ordner.
+Dein persönliches Skill-Paket: **58 Skills** in einem Ordner.
 
 ## Was drin ist
 
@@ -12,6 +12,7 @@ Dein persönliches Skill-Paket: **26 Skills** in einem Ordner.
 | **Webseiten & Design** | `ui-ux-pro-max`, `ui-styling`, `design-system`, `design`, `brand`, `banner-design`, `slides` | UI/UX Pro Max |
 | | `webseite-online`: kostenlos online stellen, Impressum, Link-in-Bio | neu, für dich |
 | **Code** | `ponytail`, `ponytail-review`, `ponytail-audit`, `ponytail-debt`, `ponytail-gain`, `ponytail-help`: Claude schreibt den einfachsten Code, der funktioniert | Ponytail |
+| **Planen & Ideen** | 32 BMAD-Method-Skills (`bmad`, `bmad-brainstorming`, `bmad-founder-agent-advisor`, `bmad-agent-*` …): Brainstorming, Geschäftsberater, Projektplanung mit Rollen. Start: „bmad, hilf mir“ | BMAD Method |
 | **Investieren** | `depot-check`, `sparplan-optimierer`, `aktien-check`, `insider-radar`, `politiker-tracker`, `earnings-analyst`, `klumpen-finder`, `copy-trader-check`, `wochen-ritual` | Depot-Skills von Lenny Investiert |
 
 Du musst die Namen nicht kennen. Sag einfach, was du willst, z. B. „Mach mir 5 Story-Ideen“.
@@ -50,3 +51,4 @@ Alle übernommenen Skills stehen unter der MIT-Lizenz, siehe [`licenses/`](licen
 - claude-video (`watch`) von Bradley Bonanno: https://github.com/bradautomates/claude-video (v0.3.2)
 - Depot-Skills von Lenny Investiert: https://github.com/finanzlenny-ui/claude-depot-skills
 - Ponytail von Dietrich Gebert: https://github.com/DietrichGebert/ponytail (v5.3.3, nur die Skills, ohne Hooks)
+- BMAD Method von BMad Code, LLC: https://github.com/bmad-code-org/BMAD-METHOD (6.13.0-next; Module core-tools, method, founder, toolsmith). „BMad“ ist eine Marke von BMad Code, LLC, siehe `licenses/bmad-method-TRADEMARK.md`; dieses Paket ist kein offizielles BMad-Produkt.

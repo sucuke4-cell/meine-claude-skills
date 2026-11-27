@@ -28,6 +28,9 @@ Der Nutzer ist **Anfänger** (Ausbildung zur MFA), arbeitet **meist am Handy**, 
 | Video-Idee, Story, Hook, Skript, Untertitel, Posting-Plan | `social-video` |
 | Ein (virales) Video ansehen/analysieren | `watch` → Ergebnis an `social-video` geben |
 | Präsentation | `slides` |
+| Ideen sammeln, Brainstorming (Story-Ideen, Geschäftsideen) | `bmad-brainstorming`, `bmad-forge-idea` |
+| Geschäftsseite: Geschäftsidee prüfen, Preise, Zielgruppe, Wachstum | `bmad-founder-agent-advisor` |
+| Größeres Projekt planen und bauen (z. B. Shop, App) mit Rollen Analyst → PM → Architekt → Entwickler | BMAD-Skills (`bmad` für Start/Hilfe; braucht Python + uv, läuft am besten in Claude Code) |
 | Code schreiben/ändern (z. B. Webseiten-Code), Code prüfen | `ponytail` (einfachste Lösung, die funktioniert), `ponytail-review`, `ponytail-audit` |
 | Depot, Sparplan, Aktie, Insider, Politiker, Quartalszahlen, eToro-Trader, Wochenrückblick | `depot-check`, `sparplan-optimierer`, `aktien-check`, `insider-radar`, `politiker-tracker`, `earnings-analyst`, `copy-trader-check`, `klumpen-finder`, `wochen-ritual` |
 
