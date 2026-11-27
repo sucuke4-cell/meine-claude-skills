@@ -1,0 +1,701 @@
+{
+ "scenes": [
+  {
+   "id": 1,
+   "start": 0.0,
+   "end": 4.932
+  },
+  {
+   "id": 2,
+   "start": 4.932,
+   "end": 14.751
+  },
+  {
+   "id": 3,
+   "start": 14.751,
+   "end": 23.123
+  },
+  {
+   "id": 4,
+   "start": 23.123,
+   "end": 31.96
+  },
+  {
+   "id": 5,
+   "start": 31.96,
+   "end": 40.268
+  },
+  {
+   "id": 6,
+   "start": 40.268,
+   "end": 48.268
+  },
+  {
+   "id": 7,
+   "start": 48.268,
+   "end": 55.808
+  },
+  {
+   "id": 8,
+   "start": 55.808,
+   "end": 64.325
+  },
+  {
+   "id": 9,
+   "start": 64.325,
+   "end": 73.7
+  },
+  {
+   "id": 10,
+   "start": 73.7,
+   "end": 82.047
+  },
+  {
+   "id": 11,
+   "start": 82.047,
+   "end": 93.151
+  },
+  {
+   "id": 12,
+   "start": 93.151,
+   "end": 101.651
+  },
+  {
+   "id": 13,
+   "start": 101.651,
+   "end": 113.312
+  },
+  {
+   "id": 14,
+   "start": 113.312,
+   "end": 121.233
+  }
+ ],
+ "captions": [
+  {
+   "text": "Six rules. One town.",
+   "start": 0.3,
+   "end": 1.793,
+   "spk": "N"
+  },
+  {
+   "text": "Break one, and the",
+   "start": 1.793,
+   "end": 3.137,
+   "spk": "N"
+  },
+  {
+   "text": "town breaks you.",
+   "start": 3.137,
+   "end": 4.332,
+   "spk": "N"
+  },
+  {
+   "text": "In this town, you",
+   "start": 5.132,
+   "end": 6.349,
+   "spk": "N"
+  },
+  {
+   "text": "carry an umbrella. Even",
+   "start": 6.349,
+   "end": 7.996,
+   "spk": "N"
+  },
+  {
+   "text": "when the sun is",
+   "start": 7.996,
+   "end": 9.07,
+   "spk": "N"
+  },
+  {
+   "text": "out.",
+   "start": 9.07,
+   "end": 9.356,
+   "spk": "N"
+  },
+  {
+   "text": "Because the rain here\u2026",
+   "start": 9.756,
+   "end": 11.482,
+   "spk": "N"
+  },
+  {
+   "text": "only falls on one",
+   "start": 11.482,
+   "end": 12.817,
+   "spk": "N"
+  },
+  {
+   "text": "person at a time.",
+   "start": 12.817,
+   "end": 14.151,
+   "spk": "N"
+  },
+  {
+   "text": "Lena forgot hers once.",
+   "start": 15.051,
+   "end": 17.44,
+   "spk": "N"
+  },
+  {
+   "text": "By the time she",
+   "start": 17.94,
+   "end": 19.019,
+   "spk": "N"
+  },
+  {
+   "text": "got home\u2026 there was",
+   "start": 19.019,
+   "end": 20.385,
+   "spk": "N"
+  },
+  {
+   "text": "nothing left to dry.",
+   "start": 20.385,
+   "end": 21.823,
+   "spk": "N"
+  },
+  {
+   "text": "In this town, the",
+   "start": 23.323,
+   "end": 24.588,
+   "spk": "N"
+  },
+  {
+   "text": "market will trade you",
+   "start": 24.588,
+   "end": 26.151,
+   "spk": "N"
+  },
+  {
+   "text": "anything.",
+   "start": 26.151,
+   "end": 26.821,
+   "spk": "N"
+  },
+  {
+   "text": "A toy. A memory.",
+   "start": 27.221,
+   "end": 28.546,
+   "spk": "N"
+  },
+  {
+   "text": "A name. The shopkeeper",
+   "start": 28.546,
+   "end": 30.367,
+   "spk": "N"
+  },
+  {
+   "text": "only smiles.",
+   "start": 30.367,
+   "end": 31.36,
+   "spk": "N"
+  },
+  {
+   "text": "I'll trade my name",
+   "start": 32.26,
+   "end": 33.496,
+   "spk": "G"
+  },
+  {
+   "text": "for that doll.",
+   "start": 33.496,
+   "end": 34.457,
+   "spk": "G"
+  },
+  {
+   "text": "She got the doll.",
+   "start": 34.957,
+   "end": 36.197,
+   "spk": "N"
+  },
+  {
+   "text": "Now no one remembers",
+   "start": 36.197,
+   "end": 37.655,
+   "spk": "N"
+  },
+  {
+   "text": "she was ever here.",
+   "start": 37.655,
+   "end": 38.968,
+   "spk": "N"
+  },
+  {
+   "text": "In this town, your",
+   "start": 40.468,
+   "end": 41.633,
+   "spk": "N"
+  },
+  {
+   "text": "cake doesn't count the",
+   "start": 41.633,
+   "end": 43.057,
+   "spk": "N"
+  },
+  {
+   "text": "years you've lived.",
+   "start": 43.057,
+   "end": 44.287,
+   "spk": "N"
+  },
+  {
+   "text": "It counts the years",
+   "start": 44.687,
+   "end": 46.21,
+   "spk": "N"
+  },
+  {
+   "text": "you have left.",
+   "start": 46.21,
+   "end": 47.332,
+   "spk": "N"
+  },
+  {
+   "text": "Noah turned ten. His",
+   "start": 48.568,
+   "end": 50.339,
+   "spk": "N"
+  },
+  {
+   "text": "cake had one candle.",
+   "start": 50.339,
+   "end": 52.109,
+   "spk": "N"
+  },
+  {
+   "text": "Mom\u2026 why is there",
+   "start": 52.609,
+   "end": 53.851,
+   "spk": "K"
+  },
+  {
+   "text": "only one?",
+   "start": 53.851,
+   "end": 54.508,
+   "spk": "K"
+  },
+  {
+   "text": "In this town, you",
+   "start": 56.008,
+   "end": 57.142,
+   "spk": "N"
+  },
+  {
+   "text": "can plant anything. But",
+   "start": 57.142,
+   "end": 58.676,
+   "spk": "N"
+  },
+  {
+   "text": "it never grows what",
+   "start": 58.676,
+   "end": 59.944,
+   "spk": "N"
+  },
+  {
+   "text": "you planted.",
+   "start": 59.944,
+   "end": 60.744,
+   "spk": "N"
+  },
+  {
+   "text": "It grows\u2026 what you're",
+   "start": 61.144,
+   "end": 62.893,
+   "spk": "N"
+  },
+  {
+   "text": "afraid of.",
+   "start": 62.893,
+   "end": 63.725,
+   "spk": "N"
+  },
+  {
+   "text": "A boy planted tomatoes",
+   "start": 64.625,
+   "end": 66.363,
+   "spk": "N"
+  },
+  {
+   "text": "to prove he wasn't",
+   "start": 66.363,
+   "end": 67.784,
+   "spk": "N"
+  },
+  {
+   "text": "scared.",
+   "start": 67.784,
+   "end": 68.337,
+   "spk": "N"
+  },
+  {
+   "text": "The next morning, the",
+   "start": 68.837,
+   "end": 70.364,
+   "spk": "N"
+  },
+  {
+   "text": "whole field was watching",
+   "start": 70.364,
+   "end": 72.109,
+   "spk": "N"
+  },
+  {
+   "text": "him.",
+   "start": 72.109,
+   "end": 72.4,
+   "spk": "N"
+  },
+  {
+   "text": "In this town, there's",
+   "start": 73.9,
+   "end": 75.509,
+   "spk": "N"
+  },
+  {
+   "text": "one house nobody walks",
+   "start": 75.509,
+   "end": 77.196,
+   "spk": "N"
+  },
+  {
+   "text": "past twice.",
+   "start": 77.196,
+   "end": 78.039,
+   "spk": "N"
+  },
+  {
+   "text": "Last week\u2026 a new",
+   "start": 78.439,
+   "end": 79.943,
+   "spk": "N"
+  },
+  {
+   "text": "family moved in.",
+   "start": 79.943,
+   "end": 81.447,
+   "spk": "N"
+  },
+  {
+   "text": "Every night, another welcome",
+   "start": 82.347,
+   "end": 84.467,
+   "spk": "N"
+  },
+  {
+   "text": "mat appears at the",
+   "start": 84.467,
+   "end": 85.829,
+   "spk": "N"
+  },
+  {
+   "text": "door.",
+   "start": 85.829,
+   "end": 86.208,
+   "spk": "N"
+  },
+  {
+   "text": "We didn't buy those.",
+   "start": 86.708,
+   "end": 88.607,
+   "spk": "B"
+  },
+  {
+   "text": "Each one has a",
+   "start": 88.907,
+   "end": 89.991,
+   "spk": "N"
+  },
+  {
+   "text": "different family's name.",
+   "start": 89.991,
+   "end": 91.851,
+   "spk": "N"
+  },
+  {
+   "text": "And the last rule.",
+   "start": 93.351,
+   "end": 94.569,
+   "spk": "N"
+  },
+  {
+   "text": "When the siren rings,",
+   "start": 94.569,
+   "end": 95.99,
+   "spk": "N"
+  },
+  {
+   "text": "you hide. You do",
+   "start": 95.99,
+   "end": 97.072,
+   "spk": "N"
+  },
+  {
+   "text": "not look.",
+   "start": 97.072,
+   "end": 97.681,
+   "spk": "N"
+  },
+  {
+   "text": "It's just the wind,",
+   "start": 98.081,
+   "end": 99.216,
+   "spk": "M"
+  },
+  {
+   "text": "sweetheart.",
+   "start": 99.216,
+   "end": 99.873,
+   "spk": "M"
+  },
+  {
+   "text": "But the siren rang",
+   "start": 101.951,
+   "end": 103.522,
+   "spk": "N"
+  },
+  {
+   "text": "three days ago.",
+   "start": 103.522,
+   "end": 104.831,
+   "spk": "N"
+  },
+  {
+   "text": "And Mom\u2026 has been",
+   "start": 105.331,
+   "end": 106.626,
+   "spk": "N"
+  },
+  {
+   "text": "smiling at the window",
+   "start": 106.626,
+   "end": 108.226,
+   "spk": "N"
+  },
+  {
+   "text": "ever since.",
+   "start": 108.226,
+   "end": 109.064,
+   "spk": "N"
+  },
+  {
+   "text": "She hasn't blinked once.",
+   "start": 109.464,
+   "end": 111.512,
+   "spk": "N"
+  },
+  {
+   "text": "Six rules. Which one",
+   "start": 113.612,
+   "end": 115.146,
+   "spk": "N"
+  },
+  {
+   "text": "would you break first?",
+   "start": 115.146,
+   "end": 116.833,
+   "spk": "N"
+  }
+ ],
+ "vo": {
+  "intro": {
+   "file": "audio/intro.wav",
+   "start": 0.3,
+   "dur": 4.032,
+   "spk": "N",
+   "scene": 1
+  },
+  "s1a": {
+   "file": "audio/s1a.wav",
+   "start": 5.132,
+   "dur": 4.224,
+   "spk": "N",
+   "scene": 2
+  },
+  "s1b": {
+   "file": "audio/s1b.wav",
+   "start": 9.756,
+   "dur": 4.395,
+   "spk": "N",
+   "scene": 2
+  },
+  "s1c": {
+   "file": "audio/s1c.wav",
+   "start": 15.051,
+   "dur": 2.389,
+   "spk": "N",
+   "scene": 3
+  },
+  "s1d": {
+   "file": "audio/s1d.wav",
+   "start": 17.94,
+   "dur": 3.883,
+   "spk": "N",
+   "scene": 3
+  },
+  "s2a": {
+   "file": "audio/s2a.wav",
+   "start": 23.323,
+   "dur": 3.499,
+   "spk": "N",
+   "scene": 4
+  },
+  "s2b": {
+   "file": "audio/s2b.wav",
+   "start": 27.221,
+   "dur": 4.139,
+   "spk": "N",
+   "scene": 4
+  },
+  "s2c": {
+   "file": "audio/s2c.wav",
+   "start": 32.26,
+   "dur": 2.197,
+   "spk": "G",
+   "scene": 5
+  },
+  "s2d": {
+   "file": "audio/s2d.wav",
+   "start": 34.957,
+   "dur": 4.011,
+   "spk": "N",
+   "scene": 5
+  },
+  "s3a": {
+   "file": "audio/s3a.wav",
+   "start": 40.468,
+   "dur": 3.819,
+   "spk": "N",
+   "scene": 6
+  },
+  "s3b": {
+   "file": "audio/s3b.wav",
+   "start": 44.687,
+   "dur": 2.645,
+   "spk": "N",
+   "scene": 6
+  },
+  "s3c": {
+   "file": "audio/s3c.wav",
+   "start": 48.568,
+   "dur": 3.541,
+   "spk": "N",
+   "scene": 7
+  },
+  "s3d": {
+   "file": "audio/s3d.wav",
+   "start": 52.609,
+   "dur": 1.899,
+   "spk": "K",
+   "scene": 7
+  },
+  "s4a": {
+   "file": "audio/s4a.wav",
+   "start": 56.008,
+   "dur": 4.736,
+   "spk": "N",
+   "scene": 8
+  },
+  "s4b": {
+   "file": "audio/s4b.wav",
+   "start": 61.144,
+   "dur": 2.581,
+   "spk": "N",
+   "scene": 8
+  },
+  "s4c": {
+   "file": "audio/s4c.wav",
+   "start": 64.625,
+   "dur": 3.712,
+   "spk": "N",
+   "scene": 9
+  },
+  "s4d": {
+   "file": "audio/s4d.wav",
+   "start": 68.837,
+   "dur": 3.563,
+   "spk": "N",
+   "scene": 9
+  },
+  "s5a": {
+   "file": "audio/s5a.wav",
+   "start": 73.9,
+   "dur": 4.139,
+   "spk": "N",
+   "scene": 10
+  },
+  "s5b": {
+   "file": "audio/s5b.wav",
+   "start": 78.439,
+   "dur": 3.008,
+   "spk": "N",
+   "scene": 10
+  },
+  "s5c": {
+   "file": "audio/s5c.wav",
+   "start": 82.347,
+   "dur": 3.861,
+   "spk": "N",
+   "scene": 11
+  },
+  "s5d": {
+   "file": "audio/s5d.wav",
+   "start": 86.708,
+   "dur": 1.899,
+   "spk": "B",
+   "scene": 11
+  },
+  "s5e": {
+   "file": "audio/s5e.wav",
+   "start": 88.907,
+   "dur": 2.944,
+   "spk": "N",
+   "scene": 11
+  },
+  "s6a": {
+   "file": "audio/s6a.wav",
+   "start": 93.351,
+   "dur": 4.331,
+   "spk": "N",
+   "scene": 12
+  },
+  "s6b": {
+   "file": "audio/s6b.wav",
+   "start": 98.081,
+   "dur": 1.792,
+   "spk": "M",
+   "scene": 12
+  },
+  "s6c": {
+   "file": "audio/s6c.wav",
+   "start": 101.951,
+   "dur": 2.88,
+   "spk": "N",
+   "scene": 13
+  },
+  "s6d": {
+   "file": "audio/s6d.wav",
+   "start": 105.331,
+   "dur": 3.733,
+   "spk": "N",
+   "scene": 13
+  },
+  "s6e": {
+   "file": "audio/s6e.wav",
+   "start": 109.464,
+   "dur": 2.048,
+   "spk": "N",
+   "scene": 13
+  },
+  "out": {
+   "file": "audio/out.wav",
+   "start": 113.612,
+   "dur": 3.221,
+   "spk": "N",
+   "scene": 14
+  }
+ },
+ "duration": 121.233
+}
