@@ -5,3 +5,4 @@ episodes/*/frames/
 episodes/*/stills/
 episodes/*/audio/
 __pycache__/
+episodes/*/render.log
