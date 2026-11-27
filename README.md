@@ -1,6 +1,6 @@
 # Meine Claude-Skills
 
-Dein persönliches Skill-Paket: **58 Skills** in einem Ordner.
+Dein persönliches Skill-Paket: **59 Skills** in einem Ordner.
 
 ## Was drin ist
 
@@ -8,6 +8,7 @@ Dein persönliches Skill-Paket: **58 Skills** in einem Ordner.
 |---|---|---|
 | **Chef-Regeln** | `mein-assistent`: wählt den passenden Skill, erklärt auf einfachem Deutsch, fragt vor Kosten | neu, für dich |
 | **Videos** | `social-video`: Ideen, Hooks, Skripte, KI-Prompts, Hashtags (Englisch, 9:16) | neu, für dich |
+| | `story-video-studio`: macht fertige animierte Folgen (Ordner `video-studio/`) | neu, für dich |
 | | `watch`: sieht Videos an und analysiert sie (nur Claude Code) | claude-video |
 | **Webseiten & Design** | `ui-ux-pro-max`, `ui-styling`, `design-system`, `design`, `brand`, `banner-design`, `slides` | UI/UX Pro Max |
 | | `webseite-online`: kostenlos online stellen, Impressum, Link-in-Bio | neu, für dich |

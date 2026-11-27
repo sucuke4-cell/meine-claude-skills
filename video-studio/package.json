@@ -1,0 +1,6 @@
+{
+  "name": "video-studio",
+  "private": true,
+  "description": "Red Door story videos: three.js scenes rendered with Playwright, Kokoro voices, procedural music.",
+  "dependencies": { "three": "0.170.0" }
+}

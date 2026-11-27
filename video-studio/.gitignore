@@ -1,0 +1,7 @@
+node_modules/
+voices/
+out/
+episodes/*/frames/
+episodes/*/stills/
+episodes/*/audio/
+__pycache__/

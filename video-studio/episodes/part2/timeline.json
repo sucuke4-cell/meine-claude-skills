@@ -1,0 +1,563 @@
+{
+ "scenes": [
+  {
+   "id": 1,
+   "start": 0.0,
+   "end": 5.593
+  },
+  {
+   "id": 2,
+   "start": 5.593,
+   "end": 8.761
+  },
+  {
+   "id": 3,
+   "start": 8.761,
+   "end": 13.487
+  },
+  {
+   "id": 4,
+   "start": 13.487,
+   "end": 22.609
+  },
+  {
+   "id": 5,
+   "start": 22.609,
+   "end": 26.889
+  },
+  {
+   "id": 6,
+   "start": 26.889,
+   "end": 34.305
+  },
+  {
+   "id": 7,
+   "start": 34.305,
+   "end": 44.512
+  },
+  {
+   "id": 8,
+   "start": 44.512,
+   "end": 52.432
+  },
+  {
+   "id": 9,
+   "start": 52.432,
+   "end": 66.159
+  },
+  {
+   "id": 10,
+   "start": 66.159,
+   "end": 74.001
+  },
+  {
+   "id": 11,
+   "start": 74.001,
+   "end": 81.282
+  },
+  {
+   "id": 12,
+   "start": 81.282,
+   "end": 87.459
+  },
+  {
+   "id": 13,
+   "start": 87.459,
+   "end": 94.378
+  }
+ ],
+ "captions": [
+  {
+   "text": "Last time\u2026 Juno vanished.",
+   "start": 0.3,
+   "end": 2.775,
+   "spk": "N"
+  },
+  {
+   "text": "And the red door",
+   "start": 2.925,
+   "end": 4.572,
+   "spk": "N"
+  },
+  {
+   "text": "opened.",
+   "start": 4.572,
+   "end": 5.293,
+   "spk": "N"
+  },
+  {
+   "text": "Everyone in the lobby",
+   "start": 5.693,
+   "end": 7.682,
+   "spk": "N"
+  },
+  {
+   "text": "ran.",
+   "start": 7.682,
+   "end": 8.061,
+   "spk": "N"
+  },
+  {
+   "text": "Everyone\u2026 except Milo.",
+   "start": 8.861,
+   "end": 11.293,
+   "spk": "N"
+  },
+  {
+   "text": "I'm not leaving without",
+   "start": 11.643,
+   "end": 12.788,
+   "spk": "M"
+  },
+  {
+   "text": "her.",
+   "start": 12.788,
+   "end": 12.987,
+   "spk": "M"
+  },
+  {
+   "text": "Stop. Nobody who goes",
+   "start": 13.687,
+   "end": 15.401,
+   "spk": "A"
+  },
+  {
+   "text": "in there\u2026 ever comes",
+   "start": 15.401,
+   "end": 17.033,
+   "spk": "A"
+  },
+  {
+   "text": "back.",
+   "start": 17.033,
+   "end": 17.441,
+   "spk": "A"
+  },
+  {
+   "text": "Then why does the",
+   "start": 17.741,
+   "end": 18.686,
+   "spk": "M"
+  },
+  {
+   "text": "door even exist?",
+   "start": 18.686,
+   "end": 19.576,
+   "spk": "M"
+  },
+  {
+   "text": "The admin didn't answer.",
+   "start": 20.076,
+   "end": 22.209,
+   "spk": "N"
+  },
+  {
+   "text": "So Milo stepped into",
+   "start": 22.709,
+   "end": 24.403,
+   "spk": "N"
+  },
+  {
+   "text": "the red light.",
+   "start": 24.403,
+   "end": 25.589,
+   "spk": "N"
+  },
+  {
+   "text": "It was the same",
+   "start": 27.189,
+   "end": 28.484,
+   "spk": "N"
+  },
+  {
+   "text": "lobby. Same floor. Same",
+   "start": 28.484,
+   "end": 30.47,
+   "spk": "N"
+  },
+  {
+   "text": "door.",
+   "start": 30.47,
+   "end": 30.901,
+   "spk": "N"
+  },
+  {
+   "text": "But everything\u2026 was wrong.",
+   "start": 31.201,
+   "end": 33.505,
+   "spk": "N"
+  },
+  {
+   "text": "On the floor lay",
+   "start": 34.405,
+   "end": 35.818,
+   "spk": "N"
+  },
+  {
+   "text": "dozens of name tags.",
+   "start": 35.818,
+   "end": 37.584,
+   "spk": "N"
+  },
+  {
+   "text": "Players who had vanished\u2026",
+   "start": 37.784,
+   "end": 39.917,
+   "spk": "N"
+  },
+  {
+   "text": "years ago.",
+   "start": 39.917,
+   "end": 40.771,
+   "spk": "N"
+  },
+  {
+   "text": "And the newest one",
+   "start": 41.071,
+   "end": 42.59,
+   "spk": "N"
+  },
+  {
+   "text": "said\u2026",
+   "start": 42.59,
+   "end": 43.012,
+   "spk": "N"
+  },
+  {
+   "text": "Milo! Over here!",
+   "start": 44.712,
+   "end": 46.269,
+   "spk": "J"
+  },
+  {
+   "text": "Juno was trapped inside",
+   "start": 46.569,
+   "end": 48.498,
+   "spk": "N"
+  },
+  {
+   "text": "a block of red",
+   "start": 48.498,
+   "end": 49.672,
+   "spk": "N"
+  },
+  {
+   "text": "glass.",
+   "start": 49.672,
+   "end": 50.175,
+   "spk": "N"
+  },
+  {
+   "text": "You shouldn't have come!",
+   "start": 50.475,
+   "end": 52.032,
+   "spk": "J"
+  },
+  {
+   "text": "Then something stepped out",
+   "start": 52.632,
+   "end": 54.521,
+   "spk": "N"
+  },
+  {
+   "text": "of the fog.",
+   "start": 54.521,
+   "end": 55.32,
+   "spk": "N"
+  },
+  {
+   "text": "Every time the door",
+   "start": 55.92,
+   "end": 58.055,
+   "spk": "K"
+  },
+  {
+   "text": "opens\u2026 someone must stay.",
+   "start": 58.055,
+   "end": 60.865,
+   "spk": "K"
+  },
+  {
+   "text": "One of you leaves.",
+   "start": 61.265,
+   "end": 63.063,
+   "spk": "K"
+  },
+  {
+   "text": "One of you stays.",
+   "start": 63.063,
+   "end": 64.761,
+   "spk": "K"
+  },
+  {
+   "text": "Forever.",
+   "start": 64.761,
+   "end": 65.559,
+   "spk": "K"
+  },
+  {
+   "text": "Milo, don't\u2026",
+   "start": 66.359,
+   "end": 68.13,
+   "spk": "J"
+  },
+  {
+   "text": "Let her go. I'll",
+   "start": 68.43,
+   "end": 69.454,
+   "spk": "M"
+  },
+  {
+   "text": "stay.",
+   "start": 69.454,
+   "end": 69.774,
+   "spk": "M"
+  },
+  {
+   "text": "He didn't even hesitate.",
+   "start": 70.174,
+   "end": 72.201,
+   "spk": "N"
+  },
+  {
+   "text": "Juno woke up in",
+   "start": 74.401,
+   "end": 75.911,
+   "spk": "N"
+  },
+  {
+   "text": "the lobby.",
+   "start": 75.911,
+   "end": 76.918,
+   "spk": "N"
+  },
+  {
+   "text": "The door was closed.",
+   "start": 77.218,
+   "end": 78.892,
+   "spk": "N"
+  },
+  {
+   "text": "And Milo\u2026 was gone.",
+   "start": 78.892,
+   "end": 80.482,
+   "spk": "N"
+  },
+  {
+   "text": "But on the sign,",
+   "start": 81.382,
+   "end": 82.541,
+   "spk": "N"
+  },
+  {
+   "text": "someone had scratched a",
+   "start": 82.541,
+   "end": 84.207,
+   "spk": "N"
+  },
+  {
+   "text": "new rule.",
+   "start": 84.207,
+   "end": 84.859,
+   "spk": "N"
+  },
+  {
+   "text": "Welcome back, Juno.",
+   "start": 88.359,
+   "end": 90.978,
+   "spk": "AK"
+  }
+ ],
+ "vo": {
+  "recap1": {
+   "file": "audio/recap1.wav",
+   "start": 0.3,
+   "dur": 2.475,
+   "spk": "N",
+   "scene": 1
+  },
+  "recap2": {
+   "file": "audio/recap2.wav",
+   "start": 2.925,
+   "dur": 2.368,
+   "spk": "N",
+   "scene": 1
+  },
+  "ran": {
+   "file": "audio/ran.wav",
+   "start": 5.693,
+   "dur": 2.368,
+   "spk": "N",
+   "scene": 2
+  },
+  "except": {
+   "file": "audio/except.wav",
+   "start": 8.861,
+   "dur": 2.432,
+   "spk": "N",
+   "scene": 3
+  },
+  "notleaving": {
+   "file": "audio/notleaving.wav",
+   "start": 11.643,
+   "dur": 1.344,
+   "spk": "M",
+   "scene": 3
+  },
+  "stop": {
+   "file": "audio/stop.wav",
+   "start": 13.687,
+   "dur": 3.755,
+   "spk": "A",
+   "scene": 4
+  },
+  "why": {
+   "file": "audio/why.wav",
+   "start": 17.741,
+   "dur": 1.835,
+   "spk": "M",
+   "scene": 4
+  },
+  "noanswer": {
+   "file": "audio/noanswer.wav",
+   "start": 20.076,
+   "dur": 2.133,
+   "spk": "N",
+   "scene": 4
+  },
+  "stepped": {
+   "file": "audio/stepped.wav",
+   "start": 22.709,
+   "dur": 2.88,
+   "spk": "N",
+   "scene": 5
+  },
+  "same": {
+   "file": "audio/same.wav",
+   "start": 27.189,
+   "dur": 3.712,
+   "spk": "N",
+   "scene": 6
+  },
+  "wrong": {
+   "file": "audio/wrong.wav",
+   "start": 31.201,
+   "dur": 2.304,
+   "spk": "N",
+   "scene": 6
+  },
+  "tags": {
+   "file": "audio/tags.wav",
+   "start": 34.405,
+   "dur": 3.179,
+   "spk": "N",
+   "scene": 7
+  },
+  "years": {
+   "file": "audio/years.wav",
+   "start": 37.784,
+   "dur": 2.987,
+   "spk": "N",
+   "scene": 7
+  },
+  "newest": {
+   "file": "audio/newest.wav",
+   "start": 41.071,
+   "dur": 1.941,
+   "spk": "N",
+   "scene": 7
+  },
+  "overhere": {
+   "file": "audio/overhere.wav",
+   "start": 44.712,
+   "dur": 1.557,
+   "spk": "J",
+   "scene": 8
+  },
+  "trapped": {
+   "file": "audio/trapped.wav",
+   "start": 46.569,
+   "dur": 3.605,
+   "spk": "N",
+   "scene": 8
+  },
+  "shouldnt": {
+   "file": "audio/shouldnt.wav",
+   "start": 50.475,
+   "dur": 1.557,
+   "spk": "J",
+   "scene": 8
+  },
+  "fog": {
+   "file": "audio/fog.wav",
+   "start": 52.632,
+   "dur": 2.688,
+   "spk": "N",
+   "scene": 9
+  },
+  "rule": {
+   "file": "audio/rule.wav",
+   "start": 55.92,
+   "dur": 4.945,
+   "spk": "K",
+   "scene": 9
+  },
+  "choose": {
+   "file": "audio/choose.wav",
+   "start": 61.265,
+   "dur": 4.294,
+   "spk": "K",
+   "scene": 9
+  },
+  "dont": {
+   "file": "audio/dont.wav",
+   "start": 66.359,
+   "dur": 1.771,
+   "spk": "J",
+   "scene": 10
+  },
+  "letgo": {
+   "file": "audio/letgo.wav",
+   "start": 68.43,
+   "dur": 1.344,
+   "spk": "M",
+   "scene": 10
+  },
+  "hesitate": {
+   "file": "audio/hesitate.wav",
+   "start": 70.174,
+   "dur": 2.027,
+   "spk": "N",
+   "scene": 10
+  },
+  "woke": {
+   "file": "audio/woke.wav",
+   "start": 74.401,
+   "dur": 2.517,
+   "spk": "N",
+   "scene": 11
+  },
+  "gone": {
+   "file": "audio/gone.wav",
+   "start": 77.218,
+   "dur": 3.264,
+   "spk": "N",
+   "scene": 11
+  },
+  "newrule": {
+   "file": "audio/newrule.wav",
+   "start": 81.382,
+   "dur": 3.477,
+   "spk": "N",
+   "scene": 12
+  },
+  "welcome": {
+   "file": "audio/welcome.wav",
+   "start": 88.359,
+   "dur": 2.618,
+   "spk": "AK",
+   "scene": 13
+  }
+ },
+ "duration": 94.378
+}

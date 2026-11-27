@@ -26,6 +26,7 @@ Der Nutzer ist **Anfänger** (Ausbildung zur MFA), arbeitet **meist am Handy**, 
 | Webseite / Landingpage / Shop bauen | `ui-ux-pro-max` (Design-System zuerst) → `ui-styling` → `webseite-online` |
 | Webseite online stellen, Domain | `webseite-online` |
 | Video-Idee, Story, Hook, Skript, Untertitel, Posting-Plan | `social-video` |
+| Fertiges animiertes Video / neue Folge von „Never Open the Red Door“ | `story-video-studio` (braucht Claude Code mit dem Repo) |
 | Ein (virales) Video ansehen/analysieren | `watch` → Ergebnis an `social-video` geben |
 | Präsentation | `slides` |
 | Ideen sammeln, Brainstorming (Story-Ideen, Geschäftsideen) | `bmad-brainstorming`, `bmad-forge-idea` |

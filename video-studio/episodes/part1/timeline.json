@@ -1,0 +1,271 @@
+{
+ "scenes": [
+  {
+   "id": 1,
+   "start": 0.0,
+   "end": 3.416
+  },
+  {
+   "id": 2,
+   "start": 3.416,
+   "end": 6.995
+  },
+  {
+   "id": 3,
+   "start": 6.995,
+   "end": 10.247
+  },
+  {
+   "id": 4,
+   "start": 10.247,
+   "end": 14.417
+  },
+  {
+   "id": 5,
+   "start": 14.417,
+   "end": 20.636
+  },
+  {
+   "id": 6,
+   "start": 20.636,
+   "end": 23.093
+  },
+  {
+   "id": 7,
+   "start": 23.093,
+   "end": 28.536
+  },
+  {
+   "id": 8,
+   "start": 28.536,
+   "end": 32.08
+  },
+  {
+   "id": 9,
+   "start": 32.08,
+   "end": 35.08
+  },
+  {
+   "id": 10,
+   "start": 35.08,
+   "end": 39.617
+  },
+  {
+   "id": 11,
+   "start": 39.617,
+   "end": 45.787
+  }
+ ],
+ "captions": [
+  {
+   "text": "This server had only",
+   "start": 0.35,
+   "end": 2.292,
+   "juno": false
+  },
+  {
+   "text": "one rule.",
+   "start": 2.292,
+   "end": 3.166,
+   "juno": false
+  },
+  {
+   "text": "Never. Open. The red",
+   "start": 3.516,
+   "end": 5.939,
+   "juno": false
+  },
+  {
+   "text": "door.",
+   "start": 5.939,
+   "end": 6.545,
+   "juno": false
+  },
+  {
+   "text": "Milo thought it was",
+   "start": 7.095,
+   "end": 8.782,
+   "juno": false
+  },
+  {
+   "text": "just a joke.",
+   "start": 8.782,
+   "end": 9.847,
+   "juno": false
+  },
+  {
+   "text": "But nobody ever went",
+   "start": 10.347,
+   "end": 11.876,
+   "juno": false
+  },
+  {
+   "text": "near it. Not even",
+   "start": 11.876,
+   "end": 13.176,
+   "juno": false
+  },
+  {
+   "text": "the admins.",
+   "start": 13.176,
+   "end": 14.017,
+   "juno": false
+  },
+  {
+   "text": "Then, at exactly midnight\u2026",
+   "start": 14.517,
+   "end": 17.098,
+   "juno": false
+  },
+  {
+   "text": "it knocked.",
+   "start": 19.198,
+   "end": 20.286,
+   "juno": false
+  },
+  {
+   "text": "From the inside.",
+   "start": 20.786,
+   "end": 22.493,
+   "juno": false
+  },
+  {
+   "text": "His best friend Juno",
+   "start": 23.193,
+   "end": 24.985,
+   "juno": false
+  },
+  {
+   "text": "whispered:",
+   "start": 24.985,
+   "end": 25.881,
+   "juno": false
+  },
+  {
+   "text": "Don't. Answer. It.",
+   "start": 26.131,
+   "end": 28.136,
+   "juno": true
+  },
+  {
+   "text": "Milo turned around for",
+   "start": 28.636,
+   "end": 30.599,
+   "juno": false
+  },
+  {
+   "text": "one second\u2026",
+   "start": 30.599,
+   "end": 31.58,
+   "juno": false
+  },
+  {
+   "text": "\u2026and Juno was gone.",
+   "start": 32.08,
+   "end": 34.171,
+   "juno": false
+  },
+  {
+   "text": "Then new words appeared",
+   "start": 35.18,
+   "end": 37.045,
+   "juno": false
+  },
+  {
+   "text": "on the door.",
+   "start": 37.045,
+   "end": 38.017,
+   "juno": false
+  },
+  {
+   "text": "And slowly\u2026 the red",
+   "start": 39.717,
+   "end": 41.46,
+   "juno": false
+  },
+  {
+   "text": "door started to open.",
+   "start": 41.46,
+   "end": 43.387,
+   "juno": false
+  }
+ ],
+ "vo": [
+  {
+   "file": "audio/vo_1_0.wav",
+   "start": 0.35,
+   "dur": 2.816
+  },
+  {
+   "file": "audio/vo_2_1.wav",
+   "start": 3.516,
+   "dur": 3.029
+  },
+  {
+   "file": "audio/vo_3_2.wav",
+   "start": 7.095,
+   "dur": 2.752
+  },
+  {
+   "file": "audio/vo_4_3.wav",
+   "start": 10.347,
+   "dur": 3.669
+  },
+  {
+   "file": "audio/vo_5_4.wav",
+   "start": 14.517,
+   "dur": 2.581
+  },
+  {
+   "file": "audio/vo_5_5.wav",
+   "start": 19.198,
+   "dur": 1.088
+  },
+  {
+   "file": "audio/vo_6_6.wav",
+   "start": 20.786,
+   "dur": 1.707
+  },
+  {
+   "file": "audio/vo_7_7.wav",
+   "start": 23.193,
+   "dur": 2.688
+  },
+  {
+   "file": "audio/vo_7_8.wav",
+   "start": 26.131,
+   "dur": 2.005
+  },
+  {
+   "file": "audio/vo_8_9.wav",
+   "start": 28.636,
+   "dur": 2.944
+  },
+  {
+   "file": "audio/vo_9_10.wav",
+   "start": 32.08,
+   "dur": 2.091
+  },
+  {
+   "file": "audio/vo_10_11.wav",
+   "start": 35.18,
+   "dur": 2.837
+  },
+  {
+   "file": "audio/vo_11_12.wav",
+   "start": 39.717,
+   "dur": 3.669
+  }
+ ],
+ "sfx": {
+  "knocks": [
+   17.398,
+   17.948,
+   18.498
+  ],
+  "bass": 32.129999999999995,
+  "creak": 40.617,
+  "end": 45.787
+ },
+ "duration": 45.787
+}
