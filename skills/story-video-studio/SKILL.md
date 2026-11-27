@@ -32,3 +32,9 @@ Repo `sucuke4-cell/meine-claude-skills`, folder `video-studio/`:
 - **Keeper:** tall, black, hooded, glowing red eyes; rule: "every time the door opens, someone must stay."
 - **Rules:** #1 Never open the red door. #2 Never trust the admin.
 - The characters are original blocky avatars "in Roblox style": no Roblox logos, and never present it as official Roblox content.
+
+## Series 2: "Shadow Shift" (In this town, your shadow clocks out at 9 PM)
+- Folder `episodes/shadows1`: its own town world (`main.js`, built into `scene.js` by `build_scene.py`, which reuses the helpers and avatars from part2). Street with houses, lamps, a clock tower, the factory (interior at z=-60) and Theo's room (at z=+60). Times of day are set with `setTOD('dusk'|'night'|'morning')`. Shadow people come from `makeShadow()` and are moved with `placeShadow(holder, x, z, rotY, standK)`.
+- Cast: **Theo** (12, green hoodie, brown cap hair, voice `am_liam`), **Mom** (`af_sarah`), the **Foreman** shadow (tall, top hat, white eyes, `am_fenrir` pitched down + echo), and Theo's own shadow (it cannot talk and writes on walls).
+- World rule: at 9 PM every shadow stands up and walks to the old factory for the night shift; they come back at sunrise. People without a shadow slowly fade (Theo's hand turns transparent).
+- Part 1 cliffhanger: the shadows build a glowing "sunrise" in the factory. Theo's shadow hid in his closet and wrote "THEY LIED. IT'S NOT A SUNRISE." The tower strikes nine again at midnight.
