@@ -1,6 +1,6 @@
 # Meine Claude-Skills
 
-Dein persönliches Skill-Paket: **20 Skills** in einem Ordner.
+Dein persönliches Skill-Paket: **26 Skills** in einem Ordner.
 
 ## Was drin ist
 
@@ -11,6 +11,7 @@ Dein persönliches Skill-Paket: **20 Skills** in einem Ordner.
 | | `watch`: sieht Videos an und analysiert sie (nur Claude Code) | claude-video |
 | **Webseiten & Design** | `ui-ux-pro-max`, `ui-styling`, `design-system`, `design`, `brand`, `banner-design`, `slides` | UI/UX Pro Max |
 | | `webseite-online`: kostenlos online stellen, Impressum, Link-in-Bio | neu, für dich |
+| **Code** | `ponytail`, `ponytail-review`, `ponytail-audit`, `ponytail-debt`, `ponytail-gain`, `ponytail-help`: Claude schreibt den einfachsten Code, der funktioniert | Ponytail |
 | **Investieren** | `depot-check`, `sparplan-optimierer`, `aktien-check`, `insider-radar`, `politiker-tracker`, `earnings-analyst`, `klumpen-finder`, `copy-trader-check`, `wochen-ritual` | Depot-Skills von Lenny Investiert |
 
 Du musst die Namen nicht kennen. Sag einfach, was du willst, z. B. „Mach mir 5 Story-Ideen“.
@@ -18,9 +19,13 @@ Du musst die Namen nicht kennen. Sag einfach, was du willst, z. B. „Mach mir 5
 ## Installieren
 
 ### Am Handy (Claude-App / claude.ai)
-1. In der Claude-App: **Einstellungen → Capabilities**: **Code-Ausführung** und **Websuche** einschalten.
-2. Im Ordner [`download/`](download/) liegt jeder Skill als ZIP. Lade jede ZIP unter **Einstellungen → Capabilities → Skills** hoch. Fang mit `mein-assistent`, `social-video`, `ui-ux-pro-max` und `webseite-online` an.
-3. `watch` gibt es dort nicht, der läuft nur in Claude Code (siehe Laptop).
+So hat es bei dir geklappt (die Handy-App selbst hat keinen Upload, deshalb über Chrome):
+1. In der Claude-App: **Einstellungen → Funktionen**: **Codeausführung und Dateierstellung** einschalten.
+2. In Chrome auf **claude.ai** → **Einstellungen → Plugins → Hinzufügen → Marketplace hinzufügen** → `https://github.com/sucuke4-cell/meine-claude-skills`.
+3. Plugin **meine-skills** installieren.
+4. **Nach jeder Änderung am Repo:** Plugins → Marketplaces verwalten → „…“ beim Eintrag → **Synchronisieren**.
+
+Einzelne Skills als ZIP liegen zusätzlich in [`download/`](download/). `watch` läuft nur in Claude Code (siehe Laptop).
 
 ### Am Laptop (Claude Desktop, Code-Bereich, oder Terminal)
 Im Terminal:
@@ -44,3 +49,4 @@ Alle übernommenen Skills stehen unter der MIT-Lizenz, siehe [`licenses/`](licen
 - UI/UX Pro Max: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill (Stand: Commit `11ca2b3`)
 - claude-video (`watch`) von Bradley Bonanno: https://github.com/bradautomates/claude-video (v0.3.2)
 - Depot-Skills von Lenny Investiert: https://github.com/finanzlenny-ui/claude-depot-skills
+- Ponytail von Dietrich Gebert: https://github.com/DietrichGebert/ponytail (v5.3.3, nur die Skills, ohne Hooks)

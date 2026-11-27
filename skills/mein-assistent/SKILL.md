@@ -28,6 +28,7 @@ Der Nutzer ist **Anfänger** (Ausbildung zur MFA), arbeitet **meist am Handy**, 
 | Video-Idee, Story, Hook, Skript, Untertitel, Posting-Plan | `social-video` |
 | Ein (virales) Video ansehen/analysieren | `watch` → Ergebnis an `social-video` geben |
 | Präsentation | `slides` |
+| Code schreiben/ändern (z. B. Webseiten-Code), Code prüfen | `ponytail` (einfachste Lösung, die funktioniert), `ponytail-review`, `ponytail-audit` |
 | Depot, Sparplan, Aktie, Insider, Politiker, Quartalszahlen, eToro-Trader, Wochenrückblick | `depot-check`, `sparplan-optimierer`, `aktien-check`, `insider-radar`, `politiker-tracker`, `earnings-analyst`, `copy-trader-check`, `klumpen-finder`, `wochen-ritual` |
 
 Neue Skills, die später in diesem Paket landen, genauso nutzen: anhand ihrer Beschreibung zuordnen.
