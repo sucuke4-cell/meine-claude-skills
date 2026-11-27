@@ -1,0 +1,4 @@
+# Fertige Videos
+
+Part 1 und Part 2 von „Never Open the Red Door“ (9:16, mit Musik) und die Titelbilder.
+Der Code liegt auf `main` im Ordner `video-studio/`.
