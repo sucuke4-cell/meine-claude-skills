@@ -1,0 +1,14 @@
+{
+  "name": "meine-claude-skills",
+  "owner": { "name": "sucuke4-cell" },
+  "metadata": { "description": "Persönliche Skills", "version": "1.0.0" },
+  "plugins": [
+    {
+      "name": "meine-skills",
+      "source": "./",
+      "description": "Alle persönlichen Skills in einem Paket.",
+      "version": "1.0.0",
+      "strict": false
+    }
+  ]
+}
