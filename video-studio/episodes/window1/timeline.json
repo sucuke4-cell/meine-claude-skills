@@ -1,0 +1,695 @@
+{
+ "scenes": [
+  {
+   "id": 1,
+   "start": 0.0,
+   "end": 4.576
+  },
+  {
+   "id": 2,
+   "start": 4.576,
+   "end": 12.404
+  },
+  {
+   "id": 3,
+   "start": 12.404,
+   "end": 18.781
+  },
+  {
+   "id": 4,
+   "start": 18.781,
+   "end": 25.781
+  },
+  {
+   "id": 5,
+   "start": 25.781,
+   "end": 31.781
+  },
+  {
+   "id": 6,
+   "start": 31.781,
+   "end": 40.385
+  },
+  {
+   "id": 7,
+   "start": 40.385,
+   "end": 47.539
+  },
+  {
+   "id": 8,
+   "start": 47.539,
+   "end": 53.039
+  },
+  {
+   "id": 9,
+   "start": 53.039,
+   "end": 60.039
+  },
+  {
+   "id": 10,
+   "start": 60.039,
+   "end": 67.539
+  },
+  {
+   "id": 11,
+   "start": 67.539,
+   "end": 74.539
+  },
+  {
+   "id": 12,
+   "start": 74.539,
+   "end": 81.039
+  },
+  {
+   "id": 13,
+   "start": 81.039,
+   "end": 88.039
+  },
+  {
+   "id": 14,
+   "start": 88.039,
+   "end": 96.06
+  },
+  {
+   "id": 15,
+   "start": 96.06,
+   "end": 106.357
+  },
+  {
+   "id": 16,
+   "start": 106.357,
+   "end": 113.132
+  }
+ ],
+ "captions": [
+  {
+   "text": "In a grey little",
+   "start": 0.3,
+   "end": 1.307,
+   "spk": "N"
+  },
+  {
+   "text": "town, there was a",
+   "start": 1.307,
+   "end": 2.377,
+   "spk": "N"
+  },
+  {
+   "text": "boy who never left",
+   "start": 2.377,
+   "end": 3.51,
+   "spk": "N"
+  },
+  {
+   "text": "his room.",
+   "start": 3.51,
+   "end": 4.076,
+   "spk": "N"
+  },
+  {
+   "text": "Jonah was sick. The",
+   "start": 4.776,
+   "end": 6.181,
+   "spk": "N"
+  },
+  {
+   "text": "world outside felt too",
+   "start": 6.181,
+   "end": 7.808,
+   "spk": "N"
+  },
+  {
+   "text": "big.",
+   "start": 7.808,
+   "end": 8.104,
+   "spk": "N"
+  },
+  {
+   "text": "So he watched all",
+   "start": 8.404,
+   "end": 9.537,
+   "spk": "N"
+  },
+  {
+   "text": "of it\u2026 through one",
+   "start": 9.537,
+   "end": 10.737,
+   "spk": "N"
+  },
+  {
+   "text": "small window.",
+   "start": 10.737,
+   "end": 11.604,
+   "spk": "N"
+  },
+  {
+   "text": "Then one morning, a",
+   "start": 12.704,
+   "end": 13.966,
+   "spk": "N"
+  },
+  {
+   "text": "new girl moved in",
+   "start": 13.966,
+   "end": 15.095,
+   "spk": "N"
+  },
+  {
+   "text": "across the alley.",
+   "start": 15.095,
+   "end": 16.224,
+   "spk": "N"
+  },
+  {
+   "text": "Hi! I'm Ivy!",
+   "start": 16.624,
+   "end": 18.181,
+   "spk": "I"
+  },
+  {
+   "text": "Every day, Ivy drew",
+   "start": 19.081,
+   "end": 20.448,
+   "spk": "N"
+  },
+  {
+   "text": "on her window with",
+   "start": 20.448,
+   "end": 21.743,
+   "spk": "N"
+  },
+  {
+   "text": "chalk.",
+   "start": 21.743,
+   "end": 22.175,
+   "spk": "N"
+  },
+  {
+   "text": "Today\u2026 we're going to",
+   "start": 22.575,
+   "end": 23.991,
+   "spk": "I"
+  },
+  {
+   "text": "the ocean.",
+   "start": 23.991,
+   "end": 24.665,
+   "spk": "I"
+  },
+  {
+   "text": "And suddenly, Jonah could",
+   "start": 26.081,
+   "end": 27.748,
+   "spk": "N"
+  },
+  {
+   "text": "hear the waves.",
+   "start": 27.748,
+   "end": 28.748,
+   "spk": "N"
+  },
+  {
+   "text": "Whoa\u2026 is that a",
+   "start": 29.148,
+   "end": 30.26,
+   "spk": "J"
+  },
+  {
+   "text": "whale?",
+   "start": 30.26,
+   "end": 30.705,
+   "spk": "J"
+  },
+  {
+   "text": "After that, Ivy took",
+   "start": 32.081,
+   "end": 33.581,
+   "spk": "N"
+  },
+  {
+   "text": "him everywhere.",
+   "start": 33.581,
+   "end": 34.705,
+   "spk": "N"
+  },
+  {
+   "text": "A forest full of",
+   "start": 35.005,
+   "end": 36.463,
+   "spk": "N"
+  },
+  {
+   "text": "fireflies.",
+   "start": 36.463,
+   "end": 37.373,
+   "spk": "N"
+  },
+  {
+   "text": "A city that never",
+   "start": 37.673,
+   "end": 39.234,
+   "spk": "N"
+  },
+  {
+   "text": "slept.",
+   "start": 39.234,
+   "end": 39.785,
+   "spk": "N"
+  },
+  {
+   "text": "Snow on mountains he",
+   "start": 40.685,
+   "end": 42.156,
+   "spk": "N"
+  },
+  {
+   "text": "could almost feel.",
+   "start": 42.156,
+   "end": 43.48,
+   "spk": "N"
+  },
+  {
+   "text": "For one whole summer,",
+   "start": 43.88,
+   "end": 45.185,
+   "spk": "N"
+  },
+  {
+   "text": "they travelled the world.",
+   "start": 45.185,
+   "end": 46.739,
+   "spk": "N"
+  },
+  {
+   "text": "Without ever leaving home.",
+   "start": 47.839,
+   "end": 49.737,
+   "spk": "N"
+  },
+  {
+   "text": "Then one morning\u2026 Ivy's",
+   "start": 53.339,
+   "end": 55.081,
+   "spk": "N"
+  },
+  {
+   "text": "window was empty.",
+   "start": 55.081,
+   "end": 56.368,
+   "spk": "N"
+  },
+  {
+   "text": "And the next day.",
+   "start": 56.868,
+   "end": 58.041,
+   "spk": "N"
+  },
+  {
+   "text": "And the next.",
+   "start": 58.041,
+   "end": 58.937,
+   "spk": "N"
+  },
+  {
+   "text": "Her family had moved",
+   "start": 60.339,
+   "end": 61.731,
+   "spk": "N"
+  },
+  {
+   "text": "away in the night.",
+   "start": 61.731,
+   "end": 62.984,
+   "spk": "N"
+  },
+  {
+   "text": "But on her window\u2026",
+   "start": 63.384,
+   "end": 64.694,
+   "spk": "N"
+  },
+  {
+   "text": "was one last drawing.",
+   "start": 64.694,
+   "end": 66.221,
+   "spk": "N"
+  },
+  {
+   "text": "An arrow. Pointing out.",
+   "start": 67.839,
+   "end": 69.499,
+   "spk": "N"
+  },
+  {
+   "text": "And three words.",
+   "start": 69.499,
+   "end": 70.655,
+   "spk": "N"
+  },
+  {
+   "text": "Now it's your turn.",
+   "start": 71.255,
+   "end": 72.663,
+   "spk": "I"
+  },
+  {
+   "text": "Jonah pressed his hand",
+   "start": 74.839,
+   "end": 76.206,
+   "spk": "N"
+  },
+  {
+   "text": "to the glass. And",
+   "start": 76.206,
+   "end": 77.262,
+   "spk": "N"
+  },
+  {
+   "text": "for a long time\u2026",
+   "start": 77.262,
+   "end": 78.257,
+   "spk": "N"
+  },
+  {
+   "text": "he just cried.",
+   "start": 78.257,
+   "end": 79.127,
+   "spk": "N"
+  },
+  {
+   "text": "Then, for the first",
+   "start": 81.339,
+   "end": 82.739,
+   "spk": "N"
+  },
+  {
+   "text": "time in years\u2026",
+   "start": 82.739,
+   "end": 83.771,
+   "spk": "N"
+  },
+  {
+   "text": "Jonah opened his door.",
+   "start": 84.271,
+   "end": 86.319,
+   "spk": "N"
+  },
+  {
+   "text": "He stepped outside. And",
+   "start": 88.339,
+   "end": 89.84,
+   "spk": "N"
+  },
+  {
+   "text": "the whole world was",
+   "start": 89.84,
+   "end": 91.08,
+   "spk": "N"
+  },
+  {
+   "text": "waiting.",
+   "start": 91.08,
+   "end": 91.603,
+   "spk": "N"
+  },
+  {
+   "text": "He went to see",
+   "start": 92.003,
+   "end": 92.924,
+   "spk": "N"
+  },
+  {
+   "text": "every place she gave",
+   "start": 92.924,
+   "end": 94.239,
+   "spk": "N"
+  },
+  {
+   "text": "him. For real.",
+   "start": 94.239,
+   "end": 95.16,
+   "spk": "N"
+  },
+  {
+   "text": "And on a beach,",
+   "start": 96.36,
+   "end": 97.412,
+   "spk": "N"
+  },
+  {
+   "text": "far from that little",
+   "start": 97.412,
+   "end": 98.816,
+   "spk": "N"
+  },
+  {
+   "text": "grey town\u2026",
+   "start": 98.816,
+   "end": 99.517,
+   "spk": "N"
+  },
+  {
+   "text": "he wrote four words",
+   "start": 100.017,
+   "end": 101.534,
+   "spk": "N"
+  },
+  {
+   "text": "in the sand.",
+   "start": 101.534,
+   "end": 102.492,
+   "spk": "N"
+  },
+  {
+   "text": "Wish you were here.",
+   "start": 102.992,
+   "end": 104.357,
+   "spk": "J"
+  },
+  {
+   "text": "Who gave YOUR world",
+   "start": 106.657,
+   "end": 108.001,
+   "spk": "N"
+  },
+  {
+   "text": "color? Tag them.",
+   "start": 108.001,
+   "end": 109.132,
+   "spk": "N"
+  }
+ ],
+ "vo": {
+  "hook": {
+   "file": "audio/hook.wav",
+   "start": 0.3,
+   "dur": 3.776,
+   "spk": "N",
+   "scene": 1
+  },
+  "sick": {
+   "file": "audio/sick.wav",
+   "start": 4.776,
+   "dur": 3.328,
+   "spk": "N",
+   "scene": 2
+  },
+  "window": {
+   "file": "audio/window.wav",
+   "start": 8.404,
+   "dur": 3.2,
+   "spk": "N",
+   "scene": 2
+  },
+  "moved": {
+   "file": "audio/moved.wav",
+   "start": 12.704,
+   "dur": 3.52,
+   "spk": "N",
+   "scene": 3
+  },
+  "hi": {
+   "file": "audio/hi.wav",
+   "start": 16.624,
+   "dur": 1.557,
+   "spk": "I",
+   "scene": 3
+  },
+  "chalk": {
+   "file": "audio/chalk.wav",
+   "start": 19.081,
+   "dur": 3.093,
+   "spk": "N",
+   "scene": 4
+  },
+  "ocean": {
+   "file": "audio/ocean.wav",
+   "start": 22.575,
+   "dur": 2.091,
+   "spk": "I",
+   "scene": 4
+  },
+  "waves": {
+   "file": "audio/waves.wav",
+   "start": 26.081,
+   "dur": 2.667,
+   "spk": "N",
+   "scene": 5
+  },
+  "whoa": {
+   "file": "audio/whoa.wav",
+   "start": 29.148,
+   "dur": 1.557,
+   "spk": "J",
+   "scene": 5
+  },
+  "everywhere": {
+   "file": "audio/everywhere.wav",
+   "start": 32.081,
+   "dur": 2.624,
+   "spk": "N",
+   "scene": 6
+  },
+  "forest": {
+   "file": "audio/forest.wav",
+   "start": 35.005,
+   "dur": 2.368,
+   "spk": "N",
+   "scene": 6
+  },
+  "city": {
+   "file": "audio/city.wav",
+   "start": 37.673,
+   "dur": 2.112,
+   "spk": "N",
+   "scene": 6
+  },
+  "mountains": {
+   "file": "audio/mountains.wav",
+   "start": 40.685,
+   "dur": 2.795,
+   "spk": "N",
+   "scene": 7
+  },
+  "summer": {
+   "file": "audio/summer.wav",
+   "start": 43.88,
+   "dur": 2.859,
+   "spk": "N",
+   "scene": 7
+  },
+  "leaving": {
+   "file": "audio/leaving.wav",
+   "start": 47.839,
+   "dur": 1.899,
+   "spk": "N",
+   "scene": 8
+  },
+  "empty": {
+   "file": "audio/empty.wav",
+   "start": 53.339,
+   "dur": 3.029,
+   "spk": "N",
+   "scene": 9
+  },
+  "next": {
+   "file": "audio/next.wav",
+   "start": 56.868,
+   "dur": 2.069,
+   "spk": "N",
+   "scene": 9
+  },
+  "gone": {
+   "file": "audio/gone.wav",
+   "start": 60.339,
+   "dur": 2.645,
+   "spk": "N",
+   "scene": 10
+  },
+  "onelast": {
+   "file": "audio/onelast.wav",
+   "start": 63.384,
+   "dur": 2.837,
+   "spk": "N",
+   "scene": 10
+  },
+  "arrow": {
+   "file": "audio/arrow.wav",
+   "start": 67.839,
+   "dur": 2.816,
+   "spk": "N",
+   "scene": 11
+  },
+  "yourturn": {
+   "file": "audio/yourturn.wav",
+   "start": 71.255,
+   "dur": 1.408,
+   "spk": "I",
+   "scene": 11
+  },
+  "cried": {
+   "file": "audio/cried.wav",
+   "start": 74.839,
+   "dur": 4.288,
+   "spk": "N",
+   "scene": 12
+  },
+  "firsttime": {
+   "file": "audio/firsttime.wav",
+   "start": 81.339,
+   "dur": 2.432,
+   "spk": "N",
+   "scene": 13
+  },
+  "opened": {
+   "file": "audio/opened.wav",
+   "start": 84.271,
+   "dur": 2.048,
+   "spk": "N",
+   "scene": 13
+  },
+  "stepped": {
+   "file": "audio/stepped.wav",
+   "start": 88.339,
+   "dur": 3.264,
+   "spk": "N",
+   "scene": 14
+  },
+  "real": {
+   "file": "audio/real.wav",
+   "start": 92.003,
+   "dur": 3.157,
+   "spk": "N",
+   "scene": 14
+  },
+  "beach": {
+   "file": "audio/beach.wav",
+   "start": 96.36,
+   "dur": 3.157,
+   "spk": "N",
+   "scene": 15
+  },
+  "wrote": {
+   "file": "audio/wrote.wav",
+   "start": 100.017,
+   "dur": 2.475,
+   "spk": "N",
+   "scene": 15
+  },
+  "wish": {
+   "file": "audio/wish.wav",
+   "start": 102.992,
+   "dur": 1.365,
+   "spk": "J",
+   "scene": 15
+  },
+  "out": {
+   "file": "audio/out.wav",
+   "start": 106.657,
+   "dur": 2.475,
+   "spk": "N",
+   "scene": 16
+  }
+ },
+ "duration": 113.132
+}
