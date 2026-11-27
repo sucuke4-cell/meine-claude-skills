@@ -1,0 +1,597 @@
+{
+ "scenes": [
+  {
+   "id": 1,
+   "start": 0.0,
+   "end": 7.28
+  },
+  {
+   "id": 2,
+   "start": 7.28,
+   "end": 24.049
+  },
+  {
+   "id": 3,
+   "start": 24.049,
+   "end": 36.528
+  },
+  {
+   "id": 4,
+   "start": 36.528,
+   "end": 45.528
+  },
+  {
+   "id": 5,
+   "start": 45.528,
+   "end": 54.528
+  },
+  {
+   "id": 6,
+   "start": 54.528,
+   "end": 62.528
+  },
+  {
+   "id": 7,
+   "start": 62.528,
+   "end": 71.528
+  },
+  {
+   "id": 8,
+   "start": 71.528,
+   "end": 79.109
+  },
+  {
+   "id": 9,
+   "start": 79.109,
+   "end": 86.109
+  },
+  {
+   "id": 10,
+   "start": 86.109,
+   "end": 98.109
+  },
+  {
+   "id": 11,
+   "start": 98.109,
+   "end": 107.109
+  }
+ ],
+ "captions": [
+  {
+   "text": "Theo's shadow had come",
+   "start": 0.3,
+   "end": 2.003,
+   "spk": "N"
+  },
+  {
+   "text": "back\u2026 with a warning.",
+   "start": 2.003,
+   "end": 3.628,
+   "spk": "N"
+  },
+  {
+   "text": "They lied. It's not",
+   "start": 3.928,
+   "end": 5.731,
+   "spk": "N"
+  },
+  {
+   "text": "a sunrise.",
+   "start": 5.731,
+   "end": 6.68,
+   "spk": "N"
+  },
+  {
+   "text": "It couldn't speak. So",
+   "start": 7.58,
+   "end": 9.326,
+   "spk": "N"
+  },
+  {
+   "text": "it drew.",
+   "start": 9.326,
+   "end": 9.991,
+   "spk": "N"
+  },
+  {
+   "text": "A black sun?",
+   "start": 11.591,
+   "end": 12.615,
+   "spk": "T"
+  },
+  {
+   "text": "When the black sun",
+   "start": 13.015,
+   "end": 14.326,
+   "spk": "N"
+  },
+  {
+   "text": "rises\u2026 the shadows never",
+   "start": 14.326,
+   "end": 16.073,
+   "spk": "N"
+  },
+  {
+   "text": "have to go back.",
+   "start": 16.073,
+   "end": 17.239,
+   "spk": "N"
+  },
+  {
+   "text": "And everyone in town\u2026",
+   "start": 17.639,
+   "end": 19.456,
+   "spk": "N"
+  },
+  {
+   "text": "fades. Forever.",
+   "start": 19.456,
+   "end": 20.753,
+   "spk": "N"
+  },
+  {
+   "text": "Tonight?",
+   "start": 21.953,
+   "end": 22.849,
+   "spk": "T"
+  },
+  {
+   "text": "Mom! You have to",
+   "start": 24.349,
+   "end": 25.414,
+   "spk": "T"
+  },
+  {
+   "text": "see this!",
+   "start": 25.414,
+   "end": 26.013,
+   "spk": "T"
+  },
+  {
+   "text": "Theo, it's just a",
+   "start": 26.413,
+   "end": 27.482,
+   "spk": "MO"
+  },
+  {
+   "text": "drawing. Go to sleep.",
+   "start": 27.482,
+   "end": 28.803,
+   "spk": "MO"
+  },
+  {
+   "text": "But behind her\u2026 her",
+   "start": 29.303,
+   "end": 30.731,
+   "spk": "N"
+  },
+  {
+   "text": "shadow turned its head.",
+   "start": 30.731,
+   "end": 32.46,
+   "spk": "N"
+  },
+  {
+   "text": "And slowly\u2026 it smiled.",
+   "start": 32.96,
+   "end": 35.328,
+   "spk": "N"
+  },
+  {
+   "text": "At nine o'clock, the",
+   "start": 36.828,
+   "end": 38.586,
+   "spk": "N"
+  },
+  {
+   "text": "tower struck.",
+   "start": 38.586,
+   "end": 39.729,
+   "spk": "N"
+  },
+  {
+   "text": "And something black rose",
+   "start": 40.329,
+   "end": 42.218,
+   "spk": "N"
+  },
+  {
+   "text": "over the old factory.",
+   "start": 42.218,
+   "end": 43.871,
+   "spk": "N"
+  },
+  {
+   "text": "The street lights died.",
+   "start": 45.828,
+   "end": 47.906,
+   "spk": "N"
+  },
+  {
+   "text": "One by one.",
+   "start": 47.906,
+   "end": 48.9,
+   "spk": "N"
+  },
+  {
+   "text": "Theo\u2026 I can't feel",
+   "start": 49.3,
+   "end": 50.566,
+   "spk": "MO"
+  },
+  {
+   "text": "my hands.",
+   "start": 50.566,
+   "end": 51.199,
+   "spk": "MO"
+  },
+  {
+   "text": "Hold on, Mom!",
+   "start": 51.499,
+   "end": 52.885,
+   "spk": "T"
+  },
+  {
+   "text": "Every lamp in this",
+   "start": 54.828,
+   "end": 55.842,
+   "spk": "T"
+  },
+  {
+   "text": "town is wired to",
+   "start": 55.842,
+   "end": 56.743,
+   "spk": "T"
+  },
+  {
+   "text": "the clock tower.",
+   "start": 56.743,
+   "end": 57.644,
+   "spk": "T"
+  },
+  {
+   "text": "If they all turn",
+   "start": 57.944,
+   "end": 58.847,
+   "spk": "T"
+  },
+  {
+   "text": "on at once\u2026 the",
+   "start": 58.847,
+   "end": 59.693,
+   "spk": "T"
+  },
+  {
+   "text": "shadows have nowhere to",
+   "start": 59.693,
+   "end": 60.99,
+   "spk": "T"
+  },
+  {
+   "text": "hide!",
+   "start": 60.99,
+   "end": 61.272,
+   "spk": "T"
+  },
+  {
+   "text": "Going somewhere, Theo?",
+   "start": 62.928,
+   "end": 64.498,
+   "spk": "F"
+  },
+  {
+   "text": "Theo's shadow jumped at",
+   "start": 64.898,
+   "end": 66.903,
+   "spk": "N"
+  },
+  {
+   "text": "the Foreman.",
+   "start": 66.903,
+   "end": 67.949,
+   "spk": "N"
+  },
+  {
+   "text": "Now!",
+   "start": 68.249,
+   "end": 68.953,
+   "spk": "T"
+  },
+  {
+   "text": "Theo pulled the lever.",
+   "start": 71.828,
+   "end": 73.983,
+   "spk": "N"
+  },
+  {
+   "text": "And for one second\u2026",
+   "start": 74.483,
+   "end": 75.889,
+   "spk": "N"
+  },
+  {
+   "text": "the whole town turned",
+   "start": 75.889,
+   "end": 77.443,
+   "spk": "N"
+  },
+  {
+   "text": "to light.",
+   "start": 77.443,
+   "end": 78.109,
+   "spk": "N"
+  },
+  {
+   "text": "The black sun cracked.",
+   "start": 79.409,
+   "end": 80.966,
+   "spk": "N"
+  },
+  {
+   "text": "And every shadow\u2026 was",
+   "start": 80.966,
+   "end": 82.452,
+   "spk": "N"
+  },
+  {
+   "text": "pulled back home.",
+   "start": 82.452,
+   "end": 83.655,
+   "spk": "N"
+  },
+  {
+   "text": "Mom could feel her",
+   "start": 86.409,
+   "end": 88.099,
+   "spk": "N"
+  },
+  {
+   "text": "hands again.",
+   "start": 88.099,
+   "end": 89.225,
+   "spk": "N"
+  },
+  {
+   "text": "We did it\u2026",
+   "start": 89.625,
+   "end": 90.585,
+   "spk": "T"
+  },
+  {
+   "text": "Theo looked down. He",
+   "start": 91.085,
+   "end": 92.737,
+   "spk": "N"
+  },
+  {
+   "text": "had a shadow again.",
+   "start": 92.737,
+   "end": 94.307,
+   "spk": "N"
+  },
+  {
+   "text": "You're back!",
+   "start": 94.707,
+   "end": 95.496,
+   "spk": "T"
+  },
+  {
+   "text": "But Theo's shadow\u2026 was",
+   "start": 98.709,
+   "end": 100.587,
+   "spk": "N"
+  },
+  {
+   "text": "wearing a top hat.",
+   "start": 100.587,
+   "end": 102.123,
+   "spk": "N"
+  }
+ ],
+ "vo": {
+  "recap": {
+   "file": "audio/recap.wav",
+   "start": 0.3,
+   "dur": 3.328,
+   "spk": "N",
+   "scene": 1
+  },
+  "lied": {
+   "file": "audio/lied.wav",
+   "start": 3.928,
+   "dur": 2.752,
+   "spk": "N",
+   "scene": 1
+  },
+  "drew": {
+   "file": "audio/drew.wav",
+   "start": 7.58,
+   "dur": 2.411,
+   "spk": "N",
+   "scene": 2
+  },
+  "blacksun": {
+   "file": "audio/blacksun.wav",
+   "start": 11.591,
+   "dur": 1.024,
+   "spk": "T",
+   "scene": 2
+  },
+  "never": {
+   "file": "audio/never.wav",
+   "start": 13.015,
+   "dur": 4.224,
+   "spk": "N",
+   "scene": 2
+  },
+  "fades": {
+   "file": "audio/fades.wav",
+   "start": 17.639,
+   "dur": 3.115,
+   "spk": "N",
+   "scene": 2
+  },
+  "tonight": {
+   "file": "audio/tonight.wav",
+   "start": 21.953,
+   "dur": 0.896,
+   "spk": "T",
+   "scene": 2
+  },
+  "mom": {
+   "file": "audio/mom.wav",
+   "start": 24.349,
+   "dur": 1.664,
+   "spk": "T",
+   "scene": 3
+  },
+  "drawing": {
+   "file": "audio/drawing.wav",
+   "start": 26.413,
+   "dur": 2.389,
+   "spk": "MO",
+   "scene": 3
+  },
+  "turned": {
+   "file": "audio/turned.wav",
+   "start": 29.303,
+   "dur": 3.157,
+   "spk": "N",
+   "scene": 3
+  },
+  "smiled": {
+   "file": "audio/smiled.wav",
+   "start": 32.96,
+   "dur": 2.368,
+   "spk": "N",
+   "scene": 3
+  },
+  "struck": {
+   "file": "audio/struck.wav",
+   "start": 36.828,
+   "dur": 2.901,
+   "spk": "N",
+   "scene": 4
+  },
+  "rose": {
+   "file": "audio/rose.wav",
+   "start": 40.329,
+   "dur": 3.541,
+   "spk": "N",
+   "scene": 4
+  },
+  "died": {
+   "file": "audio/died.wav",
+   "start": 45.828,
+   "dur": 3.072,
+   "spk": "N",
+   "scene": 5
+  },
+  "hands": {
+   "file": "audio/hands.wav",
+   "start": 49.3,
+   "dur": 1.899,
+   "spk": "MO",
+   "scene": 5
+  },
+  "holdon": {
+   "file": "audio/holdon.wav",
+   "start": 51.499,
+   "dur": 1.387,
+   "spk": "T",
+   "scene": 5
+  },
+  "wired": {
+   "file": "audio/wired.wav",
+   "start": 54.828,
+   "dur": 2.816,
+   "spk": "T",
+   "scene": 6
+  },
+  "nowhere": {
+   "file": "audio/nowhere.wav",
+   "start": 57.944,
+   "dur": 3.328,
+   "spk": "T",
+   "scene": 6
+  },
+  "going": {
+   "file": "audio/going.wav",
+   "start": 62.928,
+   "dur": 1.57,
+   "spk": "F",
+   "scene": 7
+  },
+  "jumped": {
+   "file": "audio/jumped.wav",
+   "start": 64.898,
+   "dur": 3.051,
+   "spk": "N",
+   "scene": 7
+  },
+  "now": {
+   "file": "audio/now.wav",
+   "start": 68.249,
+   "dur": 0.704,
+   "spk": "T",
+   "scene": 7
+  },
+  "lever": {
+   "file": "audio/lever.wav",
+   "start": 71.828,
+   "dur": 2.155,
+   "spk": "N",
+   "scene": 8
+  },
+  "light": {
+   "file": "audio/light.wav",
+   "start": 74.483,
+   "dur": 3.627,
+   "spk": "N",
+   "scene": 8
+  },
+  "cracked": {
+   "file": "audio/cracked.wav",
+   "start": 79.409,
+   "dur": 4.245,
+   "spk": "N",
+   "scene": 9
+  },
+  "feel": {
+   "file": "audio/feel.wav",
+   "start": 86.409,
+   "dur": 2.816,
+   "spk": "N",
+   "scene": 10
+  },
+  "didit": {
+   "file": "audio/didit.wav",
+   "start": 89.625,
+   "dur": 0.96,
+   "spk": "T",
+   "scene": 10
+  },
+  "down": {
+   "file": "audio/down.wav",
+   "start": 91.085,
+   "dur": 3.221,
+   "spk": "N",
+   "scene": 10
+  },
+  "back": {
+   "file": "audio/back.wav",
+   "start": 94.707,
+   "dur": 0.789,
+   "spk": "T",
+   "scene": 10
+  },
+  "tophat": {
+   "file": "audio/tophat.wav",
+   "start": 98.709,
+   "dur": 3.413,
+   "spk": "N",
+   "scene": 11
+  }
+ },
+ "duration": 107.109
+}
