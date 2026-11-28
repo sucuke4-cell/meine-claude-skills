@@ -268,7 +268,7 @@ window.renderAt = function (t) {
       const kidsIdx = [...Array(16).keys()];
       kidsIdx.forEach((i) => { const row = i < 9 ? 0 : 1; const n = row ? 7 : 9; const j = row ? i - 9 : i; const a = (-1 + 2 * j / (n - 1)) * (row ? 1.1 : 1.25); const R = row ? 6.4 : 4.4;
         const x = Math.sin(a) * R, z = JZ + Math.cos(a) * R; const k = crowd[i]; put(k, x, z, faceTo(x, z, 0, JZ));
-        if (!flying) { act(k, sc.id === 11 ? (T > vs('looked') + 0.6 ? 'surprise' : 'worried') : 'cry', { armLx: -1.0, armRx: -1.0, armLz: 0.3, armRz: -0.3, headX: sc.id === 11 ? 0.3 : 0 }); if (sc.id === 12) setTears(k, true, t + i);
+        if (!flying) { act(k, sc.id === 11 ? (T > vs('looked') + 0.6 ? 'surprise' : 'worried') : 'cry', { armLx: -1.0, armRx: -1.0, armLz: 0.3, armRz: -0.3, headX: sc.id === 11 ? (T > vs('looked') + 0.6 ? -0.05 : 0.12) : 0 }); if (sc.id === 12) setTears(k, true, t + i);
           const kt = kites[i]; kt.visible = true; const hp = hand(k, 'R').lerp(hand(k, 'L'), 0.5); kt.position.copy(hp).add(v3(0, 0.25, 0)); kt.rotation.set(-0.9, faceTo(x, z, 0, JZ) + Math.PI, 0); kt.scale.setScalar(0.8); }
         else { act(k, i % 2 ? 'laugh' : 'happy', { armRx: -1.4, headX: -0.3 }); kites[i].scale.setScalar(1.25); flyKite(kites[i], k, t, i, { dx: Math.sin(a) * 3, dz: -4 - (i % 3) * 1.5 - (k.position.z - JZ), y: 8 + (i % 5) * 1.3 }); }
         // golden strings
@@ -288,7 +288,7 @@ window.renderAt = function (t) {
       if (sc.id === 11) C = cuts(t, [
         CU(vs('flyhigh') - 0.05, leo, { ang: -0.6, d: 3.0 }),
         CU(vs('looked') - 0.05, leo, { ang: -0.3, d: 4.0, ly: -0.8, fov: 48 }),
-        [99, v3(0.8, 4.4, JZ - 1.4), v3(0.8, 4.6, JZ - 1.8), v3(0, 1.3, JZ + 5), null, 60]]);
+        [99, v3(1.6, 3.6, JZ - 0.6), v3(1.6, 3.7, JZ - 0.9), v3(0, 1.6, JZ + 5), null, 58]]);
       else if (sc.id === 12) C = cuts(t, [
         CU(vs('shot') - 0.05, june, { ang: 0, d: 3.2 }),
         [vs('allgold') - 0.05, v3(0, 8.0, JZ + 11), v3(0, 7.4, JZ + 10), v3(0, 1.0, JZ + 0.5), null, 56],
