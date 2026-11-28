@@ -12,6 +12,7 @@ Visual symbol: [the one thing on screen that tells the story, e.g. a battery abo
 Twist: [ … ]
 Cast (all NEW): [name, age, look/outfit, personality] x 2–4
 World (NEW place): [town name, 3–5 locations, time of day, weather]
+Style: [rounded avatars / detailed block avatars]
 Length: [90–130 s]
 Ending question for the comments: [ … ]
 

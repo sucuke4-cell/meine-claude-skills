@@ -14,7 +14,7 @@ th { background: #2a1a4a; color: #fff; text-align: left; padding: 5px 6px; }
 td { border-bottom: 1px solid #e3e0ec; padding: 5px 6px; vertical-align: top; }
 tr:nth-child(even) td { background: #f7f5fb; }
 td img { width: 230px; border-radius: 8px; display: block; }
-td img[src*="world-"] { width: 110px; }
+td img[src*="world-"], td img[src*="block-"] { width: 110px; }
 code { background: #f1eef8; padding: 1px 4px; border-radius: 4px; font-size: 8.4pt; }
 pre { background: #0f1430; color: #e8e8ff; padding: 10px 12px; border-radius: 10px; white-space: pre-wrap; font-size: 8.6pt; }
 pre code { background: none; color: inherit; }
