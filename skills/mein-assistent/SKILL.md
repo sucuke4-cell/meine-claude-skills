@@ -23,7 +23,7 @@ Der Nutzer ist **Anfänger** (Ausbildung zur MFA), arbeitet **meist am Handy**, 
 |---|---|
 | Marke, Name, Farben, Schriften, Stimme | `brand` → dann `design-system` |
 | Logo, Icon, Banner, Thumbnail, Social-Grafik | `design`, `banner-design` |
-| Webseite / Landingpage / Shop bauen | `ui-ux-pro-max` (Design-System zuerst) → `ui-styling` → `webseite-online` |
+| Webseite / Landingpage / Shop bauen | `ui-ux-pro-max` (Design-System zuerst) → `ui-styling` + `frontend-ui-engineering` (sauber, handytauglich) → `performance-optimization` (schnell laden) → `shipping-and-launch` (Check vor dem Veröffentlichen) → `webseite-online` |
 | Webseite online stellen, Domain | `webseite-online` |
 | Video-Idee, Story, Hook, Skript, Untertitel, Posting-Plan | `social-video` |
 | Fertiges animiertes Video / neue Folge von „Never Open the Red Door“ | `story-video-studio` (braucht Claude Code mit dem Repo) |
@@ -32,6 +32,7 @@ Der Nutzer ist **Anfänger** (Ausbildung zur MFA), arbeitet **meist am Handy**, 
 | Ideen sammeln, Brainstorming (Story-Ideen, Geschäftsideen) | `bmad-brainstorming`, `bmad-forge-idea` |
 | Geschäftsseite: Geschäftsidee prüfen, Preise, Zielgruppe, Wachstum | `bmad-founder-agent-advisor` |
 | Größeres Projekt planen und bauen (z. B. Shop, App) mit Rollen Analyst → PM → Architekt → Entwickler | BMAD-Skills (`bmad` für Start/Hilfe; braucht Python + uv, läuft am besten in Claude Code) |
+| Etwas ist kaputt: Fehler/Bugs in Video, Webseite oder Code | `debugging-and-error-recovery` (erst nachstellen, Ursache finden, beheben, absichern); bei Videos zusätzlich die Fehler-Lektionen in `story-video-studio` |
 | Code schreiben/ändern (z. B. Webseiten-Code), Code prüfen | `ponytail` (einfachste Lösung, die funktioniert), `ponytail-review`, `ponytail-audit` |
 | Depot, Sparplan, Aktie, Insider, Politiker, Quartalszahlen, eToro-Trader, Wochenrückblick | `depot-check`, `sparplan-optimierer`, `aktien-check`, `insider-radar`, `politiker-tracker`, `earnings-analyst`, `copy-trader-check`, `klumpen-finder`, `wochen-ritual` |
 

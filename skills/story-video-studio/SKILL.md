@@ -69,6 +69,7 @@ Repo `sucuke4-cell/meine-claude-skills`, folder `video-studio/`:
 - Fast cuts: each scene is a list of shots `cuts(t, [[untilTime, camFrom, camTo, lookFrom, lookTo, fov], ...])`, a new angle every ~1.5–2.5 s, timed to voice keys (`vs('key')`).
 - Captions: 1–2 words at a time, 104 px, pop-in scale, numbers/key words in yellow; title card at the top for the first line.
 - `CU(until, avatar, {ang, d, up, ly, fov, keep})` = automatic close-up: camera in front of the face at ~3.1 units, frames head + battery, slow push-in, and hides other characters' HUDs (solo) so they don't cover the face.
+- When the user reports bugs, follow `debugging-and-error-recovery` (reproduce at the exact second, find the root cause, fix, then add a lesson below so it never comes back).
 - HARD LESSONS v3:
   6. Close-ups closer than ~2.8 units crop the face and the HUD; use CU() instead of hand-placed cameras.
   7. Faces are a flat decal on the front of the head: pure side views (two characters facing each other, camera at 90°) show only hair. "Cheat" characters 30–45° toward the camera before hugs/dialogue, or use over-the-shoulder close-ups.

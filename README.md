@@ -1,6 +1,6 @@
 # Meine Claude-Skills
 
-Dein persönliches Skill-Paket: **59 Skills** in einem Ordner.
+Dein persönliches Skill-Paket: **63 Skills** in einem Ordner.
 
 ## Was drin ist
 
@@ -13,6 +13,7 @@ Dein persönliches Skill-Paket: **59 Skills** in einem Ordner.
 | **Webseiten & Design** | `ui-ux-pro-max`, `ui-styling`, `design-system`, `design`, `brand`, `banner-design`, `slides` | UI/UX Pro Max |
 | | `webseite-online`: kostenlos online stellen, Impressum, Link-in-Bio | neu, für dich |
 | **Code** | `ponytail`, `ponytail-review`, `ponytail-audit`, `ponytail-debt`, `ponytail-gain`, `ponytail-help`: Claude schreibt den einfachsten Code, der funktioniert | Ponytail |
+| **Profi-Werkzeuge** | `debugging-and-error-recovery` (Fehler systematisch finden), `frontend-ui-engineering` (saubere Webseiten), `performance-optimization` (schnelle Webseiten), `shipping-and-launch` (Check vor dem Veröffentlichen) | Agent Skills von Addy Osmani |
 | **Planen & Ideen** | 32 BMAD-Method-Skills (`bmad`, `bmad-brainstorming`, `bmad-founder-agent-advisor`, `bmad-agent-*` …): Brainstorming, Geschäftsberater, Projektplanung mit Rollen. Start: „bmad, hilf mir“ | BMAD Method |
 | **Investieren** | `depot-check`, `sparplan-optimierer`, `aktien-check`, `insider-radar`, `politiker-tracker`, `earnings-analyst`, `klumpen-finder`, `copy-trader-check`, `wochen-ritual` | Depot-Skills von Lenny Investiert |
 
