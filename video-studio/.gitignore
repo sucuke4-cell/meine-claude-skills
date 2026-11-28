@@ -8,3 +8,5 @@ __pycache__/
 episodes/*/render.log
 episodes/*/render.log
 episodes/*/stills/
+episodes/*/sheet*.jpg
+episodes/*/pair.jpg
