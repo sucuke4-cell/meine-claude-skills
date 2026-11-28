@@ -1,0 +1,1438 @@
+{
+ "scenes": [
+  {
+   "id": 1,
+   "start": 0.0,
+   "end": 5.082
+  },
+  {
+   "id": 2,
+   "start": 5.082,
+   "end": 14.082
+  },
+  {
+   "id": 3,
+   "start": 14.082,
+   "end": 19.164
+  },
+  {
+   "id": 4,
+   "start": 19.164,
+   "end": 23.664
+  },
+  {
+   "id": 5,
+   "start": 23.664,
+   "end": 33.696
+  },
+  {
+   "id": 6,
+   "start": 33.696,
+   "end": 38.696
+  },
+  {
+   "id": 7,
+   "start": 38.696,
+   "end": 45.696
+  },
+  {
+   "id": 8,
+   "start": 45.696,
+   "end": 55.696
+  },
+  {
+   "id": 9,
+   "start": 55.696,
+   "end": 62.696
+  },
+  {
+   "id": 10,
+   "start": 62.696,
+   "end": 70.696
+  },
+  {
+   "id": 11,
+   "start": 70.696,
+   "end": 78.196
+  },
+  {
+   "id": 12,
+   "start": 78.196,
+   "end": 85.196
+  },
+  {
+   "id": 13,
+   "start": 85.196,
+   "end": 92.696
+  },
+  {
+   "id": 14,
+   "start": 92.696,
+   "end": 99.696
+  },
+  {
+   "id": 15,
+   "start": 99.696,
+   "end": 104.79
+  }
+ ],
+ "captions": [
+  {
+   "text": "Every night,",
+   "start": 0.2,
+   "end": 0.769,
+   "spk": "N"
+  },
+  {
+   "text": "the stone",
+   "start": 0.769,
+   "end": 1.217,
+   "spk": "N"
+  },
+  {
+   "text": "face in",
+   "start": 1.217,
+   "end": 1.582,
+   "spk": "N"
+  },
+  {
+   "text": "the jungle",
+   "start": 1.582,
+   "end": 2.07,
+   "spk": "N"
+  },
+  {
+   "text": "opened its",
+   "start": 2.07,
+   "end": 2.558,
+   "spk": "N"
+  },
+  {
+   "text": "eyes.",
+   "start": 2.558,
+   "end": 2.843,
+   "spk": "N"
+  },
+  {
+   "text": "And every",
+   "start": 3.043,
+   "end": 3.509,
+   "spk": "N"
+  },
+  {
+   "text": "morning\u2026",
+   "start": 3.509,
+   "end": 3.933,
+   "spk": "N"
+  },
+  {
+   "text": "someone was",
+   "start": 3.933,
+   "end": 4.485,
+   "spk": "N"
+  },
+  {
+   "text": "gone.",
+   "start": 4.485,
+   "end": 4.782,
+   "spk": "N"
+  },
+  {
+   "text": "Ten years",
+   "start": 5.282,
+   "end": 5.747,
+   "spk": "N"
+  },
+  {
+   "text": "ago, Zuri's",
+   "start": 5.747,
+   "end": 6.297,
+   "spk": "N"
+  },
+  {
+   "text": "grandpa walked",
+   "start": 6.297,
+   "end": 6.973,
+   "spk": "N"
+  },
+  {
+   "text": "into that",
+   "start": 6.973,
+   "end": 7.438,
+   "spk": "N"
+  },
+  {
+   "text": "temple.",
+   "start": 7.438,
+   "end": 7.819,
+   "spk": "N"
+  },
+  {
+   "text": "He never",
+   "start": 8.019,
+   "end": 8.471,
+   "spk": "N"
+  },
+  {
+   "text": "came back.",
+   "start": 8.471,
+   "end": 9.014,
+   "spk": "N"
+  },
+  {
+   "text": "All he",
+   "start": 9.214,
+   "end": 9.543,
+   "spk": "N"
+  },
+  {
+   "text": "left behind",
+   "start": 9.543,
+   "end": 10.078,
+   "spk": "N"
+  },
+  {
+   "text": "was a",
+   "start": 10.078,
+   "end": 10.366,
+   "spk": "N"
+  },
+  {
+   "text": "map, with",
+   "start": 10.366,
+   "end": 10.819,
+   "spk": "N"
+  },
+  {
+   "text": "three words",
+   "start": 10.819,
+   "end": 11.354,
+   "spk": "N"
+  },
+  {
+   "text": "on it.",
+   "start": 11.354,
+   "end": 11.683,
+   "spk": "N"
+  },
+  {
+   "text": "Trust the",
+   "start": 11.933,
+   "end": 12.468,
+   "spk": "N"
+  },
+  {
+   "text": "eyes.",
+   "start": 12.468,
+   "end": 12.809,
+   "spk": "N"
+  },
+  {
+   "text": "Nobody who",
+   "start": 14.282,
+   "end": 14.969,
+   "spk": "E"
+  },
+  {
+   "text": "goes in",
+   "start": 14.969,
+   "end": 15.485,
+   "spk": "E"
+  },
+  {
+   "text": "there comes",
+   "start": 15.485,
+   "end": 16.23,
+   "spk": "E"
+  },
+  {
+   "text": "back, child.",
+   "start": 16.23,
+   "end": 17.032,
+   "spk": "E"
+  },
+  {
+   "text": "Then I'll",
+   "start": 17.332,
+   "end": 17.916,
+   "spk": "Z"
+  },
+  {
+   "text": "be the",
+   "start": 17.916,
+   "end": 18.34,
+   "spk": "Z"
+  },
+  {
+   "text": "first.",
+   "start": 18.34,
+   "end": 18.764,
+   "spk": "Z"
+  },
+  {
+   "text": "So at",
+   "start": 19.364,
+   "end": 19.63,
+   "spk": "N"
+  },
+  {
+   "text": "sunrise,",
+   "start": 19.63,
+   "end": 20.01,
+   "spk": "N"
+  },
+  {
+   "text": "Zuri took",
+   "start": 20.01,
+   "end": 20.427,
+   "spk": "N"
+  },
+  {
+   "text": "his",
+   "start": 20.427,
+   "end": 20.617,
+   "spk": "N"
+  },
+  {
+   "text": "lantern,",
+   "start": 20.617,
+   "end": 20.997,
+   "spk": "N"
+  },
+  {
+   "text": "and walked",
+   "start": 20.997,
+   "end": 21.453,
+   "spk": "N"
+  },
+  {
+   "text": "into the",
+   "start": 21.453,
+   "end": 21.833,
+   "spk": "N"
+  },
+  {
+   "text": "jungle.",
+   "start": 21.833,
+   "end": 22.174,
+   "spk": "N"
+  },
+  {
+   "text": "Lost, little",
+   "start": 23.864,
+   "end": 24.716,
+   "spk": "C"
+  },
+  {
+   "text": "explorer?",
+   "start": 24.716,
+   "end": 25.385,
+   "spk": "C"
+  },
+  {
+   "text": "I'm Mister",
+   "start": 25.385,
+   "end": 26.115,
+   "spk": "C"
+  },
+  {
+   "text": "Crane, from",
+   "start": 26.115,
+   "end": 26.906,
+   "spk": "C"
+  },
+  {
+   "text": "the city",
+   "start": 26.906,
+   "end": 27.515,
+   "spk": "C"
+  },
+  {
+   "text": "museum.",
+   "start": 27.515,
+   "end": 28.062,
+   "spk": "C"
+  },
+  {
+   "text": "I only",
+   "start": 28.262,
+   "end": 28.708,
+   "spk": "C"
+  },
+  {
+   "text": "want to",
+   "start": 28.708,
+   "end": 29.21,
+   "spk": "C"
+  },
+  {
+   "text": "help you",
+   "start": 29.21,
+   "end": 29.767,
+   "spk": "C"
+  },
+  {
+   "text": "find your",
+   "start": 29.767,
+   "end": 30.38,
+   "spk": "C"
+  },
+  {
+   "text": "grandpa.",
+   "start": 30.38,
+   "end": 30.937,
+   "spk": "C"
+  },
+  {
+   "text": "Behind him,",
+   "start": 31.237,
+   "end": 31.816,
+   "spk": "N"
+  },
+  {
+   "text": "a stone",
+   "start": 31.816,
+   "end": 32.216,
+   "spk": "N"
+  },
+  {
+   "text": "head",
+   "start": 32.216,
+   "end": 32.484,
+   "spk": "N"
+  },
+  {
+   "text": "blinked.",
+   "start": 32.484,
+   "end": 32.929,
+   "spk": "N"
+  },
+  {
+   "text": "Red.",
+   "start": 32.929,
+   "end": 33.196,
+   "spk": "N"
+  },
+  {
+   "text": "The temple",
+   "start": 33.896,
+   "end": 34.334,
+   "spk": "N"
+  },
+  {
+   "text": "was bigger",
+   "start": 34.334,
+   "end": 34.772,
+   "spk": "N"
+  },
+  {
+   "text": "than",
+   "start": 34.772,
+   "end": 34.991,
+   "spk": "N"
+  },
+  {
+   "text": "anything",
+   "start": 34.991,
+   "end": 35.356,
+   "spk": "N"
+  },
+  {
+   "text": "she had",
+   "start": 35.356,
+   "end": 35.685,
+   "spk": "N"
+  },
+  {
+   "text": "ever seen.",
+   "start": 35.685,
+   "end": 36.123,
+   "spk": "N"
+  },
+  {
+   "text": "And its",
+   "start": 36.323,
+   "end": 36.689,
+   "spk": "N"
+  },
+  {
+   "text": "eyes were",
+   "start": 36.689,
+   "end": 37.136,
+   "spk": "N"
+  },
+  {
+   "text": "watching.",
+   "start": 37.136,
+   "end": 37.583,
+   "spk": "N"
+  },
+  {
+   "text": "Inside, the",
+   "start": 38.896,
+   "end": 39.435,
+   "spk": "N"
+  },
+  {
+   "text": "floor was",
+   "start": 39.435,
+   "end": 39.89,
+   "spk": "N"
+  },
+  {
+   "text": "a puzzle.",
+   "start": 39.89,
+   "end": 40.346,
+   "spk": "N"
+  },
+  {
+   "text": "One wrong",
+   "start": 40.346,
+   "end": 40.801,
+   "spk": "N"
+  },
+  {
+   "text": "step, and",
+   "start": 40.801,
+   "end": 41.257,
+   "spk": "N"
+  },
+  {
+   "text": "the stones",
+   "start": 41.257,
+   "end": 41.754,
+   "spk": "N"
+  },
+  {
+   "text": "fell away.",
+   "start": 41.754,
+   "end": 42.251,
+   "spk": "N"
+  },
+  {
+   "text": "Grandpa's",
+   "start": 42.501,
+   "end": 43.006,
+   "spk": "Z"
+  },
+  {
+   "text": "map! Only",
+   "start": 43.006,
+   "end": 43.511,
+   "spk": "Z"
+  },
+  {
+   "text": "step on",
+   "start": 43.511,
+   "end": 43.925,
+   "spk": "Z"
+  },
+  {
+   "text": "the tiles",
+   "start": 43.925,
+   "end": 44.43,
+   "spk": "Z"
+  },
+  {
+   "text": "with an",
+   "start": 44.43,
+   "end": 44.843,
+   "spk": "Z"
+  },
+  {
+   "text": "eye!",
+   "start": 44.843,
+   "end": 45.118,
+   "spk": "Z"
+  },
+  {
+   "text": "Then they",
+   "start": 45.896,
+   "end": 46.278,
+   "spk": "N"
+  },
+  {
+   "text": "reached a",
+   "start": 46.278,
+   "end": 46.659,
+   "spk": "N"
+  },
+  {
+   "text": "hall full",
+   "start": 46.659,
+   "end": 47.04,
+   "spk": "N"
+  },
+  {
+   "text": "of stone",
+   "start": 47.04,
+   "end": 47.387,
+   "spk": "N"
+  },
+  {
+   "text": "eyes.",
+   "start": 47.387,
+   "end": 47.63,
+   "spk": "N"
+  },
+  {
+   "text": "When Crane",
+   "start": 47.83,
+   "end": 48.327,
+   "spk": "N"
+  },
+  {
+   "text": "said he",
+   "start": 48.327,
+   "end": 48.7,
+   "spk": "N"
+  },
+  {
+   "text": "was a",
+   "start": 48.7,
+   "end": 48.99,
+   "spk": "N"
+  },
+  {
+   "text": "museum guide\u2026",
+   "start": 48.99,
+   "end": 49.612,
+   "spk": "N"
+  },
+  {
+   "text": "every eye",
+   "start": 49.612,
+   "end": 50.067,
+   "spk": "N"
+  },
+  {
+   "text": "glowed red.",
+   "start": 50.067,
+   "end": 50.606,
+   "spk": "N"
+  },
+  {
+   "text": "When Zuri",
+   "start": 50.806,
+   "end": 51.25,
+   "spk": "N"
+  },
+  {
+   "text": "said she",
+   "start": 51.25,
+   "end": 51.653,
+   "spk": "N"
+  },
+  {
+   "text": "missed her",
+   "start": 51.653,
+   "end": 52.137,
+   "spk": "N"
+  },
+  {
+   "text": "grandpa\u2026",
+   "start": 52.137,
+   "end": 52.541,
+   "spk": "N"
+  },
+  {
+   "text": "they glowed",
+   "start": 52.541,
+   "end": 53.065,
+   "spk": "N"
+  },
+  {
+   "text": "green.",
+   "start": 53.065,
+   "end": 53.388,
+   "spk": "N"
+  },
+  {
+   "text": "They know",
+   "start": 53.638,
+   "end": 54.161,
+   "spk": "Z"
+  },
+  {
+   "text": "when we",
+   "start": 54.161,
+   "end": 54.589,
+   "spk": "Z"
+  },
+  {
+   "text": "lie.",
+   "start": 54.589,
+   "end": 54.874,
+   "spk": "Z"
+  },
+  {
+   "text": "At the",
+   "start": 55.896,
+   "end": 56.205,
+   "spk": "N"
+  },
+  {
+   "text": "very end,",
+   "start": 56.205,
+   "end": 56.63,
+   "spk": "N"
+  },
+  {
+   "text": "there was",
+   "start": 56.63,
+   "end": 57.055,
+   "spk": "N"
+  },
+  {
+   "text": "a room",
+   "start": 57.055,
+   "end": 57.364,
+   "spk": "N"
+  },
+  {
+   "text": "filled with",
+   "start": 57.364,
+   "end": 57.866,
+   "spk": "N"
+  },
+  {
+   "text": "gold.",
+   "start": 57.866,
+   "end": 58.136,
+   "spk": "N"
+  },
+  {
+   "text": "And in",
+   "start": 58.336,
+   "end": 58.633,
+   "spk": "N"
+  },
+  {
+   "text": "the middle,",
+   "start": 58.633,
+   "end": 59.115,
+   "spk": "N"
+  },
+  {
+   "text": "frozen inside",
+   "start": 59.115,
+   "end": 59.672,
+   "spk": "N"
+  },
+  {
+   "text": "a",
+   "start": 59.672,
+   "end": 59.783,
+   "spk": "N"
+  },
+  {
+   "text": "crystal\u2026",
+   "start": 59.783,
+   "end": 60.154,
+   "spk": "N"
+  },
+  {
+   "text": "Grandpa!",
+   "start": 60.354,
+   "end": 61.143,
+   "spk": "Z"
+  },
+  {
+   "text": "Then Zuri",
+   "start": 62.896,
+   "end": 63.349,
+   "spk": "N"
+  },
+  {
+   "text": "saw the",
+   "start": 63.349,
+   "end": 63.72,
+   "spk": "N"
+  },
+  {
+   "text": "carving on",
+   "start": 63.72,
+   "end": 64.214,
+   "spk": "N"
+  },
+  {
+   "text": "the wall.",
+   "start": 64.214,
+   "end": 64.667,
+   "spk": "N"
+  },
+  {
+   "text": "The temple",
+   "start": 64.867,
+   "end": 65.29,
+   "spk": "N"
+  },
+  {
+   "text": "kept",
+   "start": 65.29,
+   "end": 65.501,
+   "spk": "N"
+  },
+  {
+   "text": "everyone",
+   "start": 65.501,
+   "end": 65.854,
+   "spk": "N"
+  },
+  {
+   "text": "who came",
+   "start": 65.854,
+   "end": 66.206,
+   "spk": "N"
+  },
+  {
+   "text": "for its",
+   "start": 66.206,
+   "end": 66.523,
+   "spk": "N"
+  },
+  {
+   "text": "treasure.",
+   "start": 66.523,
+   "end": 66.91,
+   "spk": "N"
+  },
+  {
+   "text": "Ten years",
+   "start": 67.16,
+   "end": 67.584,
+   "spk": "N"
+  },
+  {
+   "text": "ago, her",
+   "start": 67.584,
+   "end": 67.968,
+   "spk": "N"
+  },
+  {
+   "text": "grandpa had",
+   "start": 67.968,
+   "end": 68.468,
+   "spk": "N"
+  },
+  {
+   "text": "come for",
+   "start": 68.468,
+   "end": 68.853,
+   "spk": "N"
+  },
+  {
+   "text": "the gold",
+   "start": 68.853,
+   "end": 69.238,
+   "spk": "N"
+  },
+  {
+   "text": "too.",
+   "start": 69.238,
+   "end": 69.469,
+   "spk": "N"
+  },
+  {
+   "text": "Finally.",
+   "start": 70.896,
+   "end": 71.666,
+   "spk": "C"
+  },
+  {
+   "text": "It's all",
+   "start": 71.666,
+   "end": 72.437,
+   "spk": "C"
+  },
+  {
+   "text": "mine!",
+   "start": 72.437,
+   "end": 72.976,
+   "spk": "C"
+  },
+  {
+   "text": "Crane grabbed",
+   "start": 73.176,
+   "end": 73.813,
+   "spk": "N"
+  },
+  {
+   "text": "the gold.",
+   "start": 73.813,
+   "end": 74.28,
+   "spk": "N"
+  },
+  {
+   "text": "Every eye",
+   "start": 74.28,
+   "end": 74.747,
+   "spk": "N"
+  },
+  {
+   "text": "in the",
+   "start": 74.747,
+   "end": 75.086,
+   "spk": "N"
+  },
+  {
+   "text": "temple turned",
+   "start": 75.086,
+   "end": 75.723,
+   "spk": "N"
+  },
+  {
+   "text": "red.",
+   "start": 75.723,
+   "end": 75.978,
+   "spk": "N"
+  },
+  {
+   "text": "And Crane",
+   "start": 76.228,
+   "end": 76.662,
+   "spk": "N"
+  },
+  {
+   "text": "turned to",
+   "start": 76.662,
+   "end": 77.096,
+   "spk": "N"
+  },
+  {
+   "text": "stone.",
+   "start": 77.096,
+   "end": 77.412,
+   "spk": "N"
+  },
+  {
+   "text": "Zuri put",
+   "start": 78.396,
+   "end": 78.775,
+   "spk": "N"
+  },
+  {
+   "text": "her hand",
+   "start": 78.775,
+   "end": 79.155,
+   "spk": "N"
+  },
+  {
+   "text": "on the",
+   "start": 79.155,
+   "end": 79.458,
+   "spk": "N"
+  },
+  {
+   "text": "crystal.",
+   "start": 79.458,
+   "end": 79.837,
+   "spk": "N"
+  },
+  {
+   "text": "I don't",
+   "start": 80.137,
+   "end": 80.548,
+   "spk": "Z"
+  },
+  {
+   "text": "want the",
+   "start": 80.548,
+   "end": 81.003,
+   "spk": "Z"
+  },
+  {
+   "text": "gold. I",
+   "start": 81.003,
+   "end": 81.414,
+   "spk": "Z"
+  },
+  {
+   "text": "just want",
+   "start": 81.414,
+   "end": 81.915,
+   "spk": "Z"
+  },
+  {
+   "text": "my grandpa",
+   "start": 81.915,
+   "end": 82.462,
+   "spk": "Z"
+  },
+  {
+   "text": "back.",
+   "start": 82.462,
+   "end": 82.781,
+   "spk": "Z"
+  },
+  {
+   "text": "Every eye",
+   "start": 83.081,
+   "end": 83.562,
+   "spk": "N"
+  },
+  {
+   "text": "turned green.",
+   "start": 83.562,
+   "end": 84.218,
+   "spk": "N"
+  },
+  {
+   "text": "The crystal",
+   "start": 85.396,
+   "end": 86.02,
+   "spk": "N"
+  },
+  {
+   "text": "melted.",
+   "start": 86.02,
+   "end": 86.452,
+   "spk": "N"
+  },
+  {
+   "text": "Zuri? You've",
+   "start": 86.852,
+   "end": 87.77,
+   "spk": "G"
+  },
+  {
+   "text": "grown so",
+   "start": 87.77,
+   "end": 88.425,
+   "spk": "G"
+  },
+  {
+   "text": "much.",
+   "start": 88.425,
+   "end": 88.884,
+   "spk": "G"
+  },
+  {
+   "text": "She hugged",
+   "start": 89.184,
+   "end": 89.621,
+   "spk": "N"
+  },
+  {
+   "text": "him, and",
+   "start": 89.621,
+   "end": 89.985,
+   "spk": "N"
+  },
+  {
+   "text": "didn't let",
+   "start": 89.985,
+   "end": 90.422,
+   "spk": "N"
+  },
+  {
+   "text": "go.",
+   "start": 90.422,
+   "end": 90.604,
+   "spk": "N"
+  },
+  {
+   "text": "They walked",
+   "start": 92.896,
+   "end": 93.394,
+   "spk": "N"
+  },
+  {
+   "text": "out of",
+   "start": 93.394,
+   "end": 93.7,
+   "spk": "N"
+  },
+  {
+   "text": "the jungle",
+   "start": 93.7,
+   "end": 94.16,
+   "spk": "N"
+  },
+  {
+   "text": "as the",
+   "start": 94.16,
+   "end": 94.466,
+   "spk": "N"
+  },
+  {
+   "text": "sun came",
+   "start": 94.466,
+   "end": 94.849,
+   "spk": "N"
+  },
+  {
+   "text": "up. With",
+   "start": 94.849,
+   "end": 95.232,
+   "spk": "N"
+  },
+  {
+   "text": "no gold",
+   "start": 95.232,
+   "end": 95.576,
+   "spk": "N"
+  },
+  {
+   "text": "at all.",
+   "start": 95.576,
+   "end": 95.921,
+   "spk": "N"
+  },
+  {
+   "text": "Because some",
+   "start": 96.221,
+   "end": 96.729,
+   "spk": "N"
+  },
+  {
+   "text": "treasures,",
+   "start": 96.729,
+   "end": 97.164,
+   "spk": "N"
+  },
+  {
+   "text": "you can't",
+   "start": 97.164,
+   "end": 97.563,
+   "spk": "N"
+  },
+  {
+   "text": "carry out.",
+   "start": 97.563,
+   "end": 97.998,
+   "spk": "N"
+  },
+  {
+   "text": "Would you",
+   "start": 99.996,
+   "end": 100.455,
+   "spk": "N"
+  },
+  {
+   "text": "take the",
+   "start": 100.455,
+   "end": 100.872,
+   "spk": "N"
+  },
+  {
+   "text": "gold\u2026 or",
+   "start": 100.872,
+   "end": 101.29,
+   "spk": "N"
+  },
+  {
+   "text": "the truth?",
+   "start": 101.29,
+   "end": 101.79,
+   "spk": "N"
+  }
+ ],
+ "vo": {
+  "hook": {
+   "file": "audio/hook.wav",
+   "start": 0.2,
+   "dur": 2.643,
+   "spk": "N",
+   "scene": 1,
+   "text": "Every night, the stone face in the jungle opened its eyes."
+  },
+  "gone": {
+   "file": "audio/gone.wav",
+   "start": 3.043,
+   "dur": 1.739,
+   "spk": "N",
+   "scene": 1,
+   "text": "And every morning... someone was gone."
+  },
+  "tenyears": {
+   "file": "audio/tenyears.wav",
+   "start": 5.282,
+   "dur": 2.538,
+   "spk": "N",
+   "scene": 2,
+   "text": "Ten years ago, Zuri's grandpa walked into that temple."
+  },
+  "never": {
+   "file": "audio/never.wav",
+   "start": 8.019,
+   "dur": 0.995,
+   "spk": "N",
+   "scene": 2,
+   "text": "He never came back."
+  },
+  "map": {
+   "file": "audio/map.wav",
+   "start": 9.214,
+   "dur": 2.469,
+   "spk": "N",
+   "scene": 2,
+   "text": "All he left behind was a map, with three words on it."
+  },
+  "trust": {
+   "file": "audio/trust.wav",
+   "start": 11.933,
+   "dur": 0.876,
+   "spk": "N",
+   "scene": 2,
+   "text": "Trust the eyes."
+  },
+  "nobody": {
+   "file": "audio/nobody.wav",
+   "start": 14.282,
+   "dur": 2.751,
+   "spk": "E",
+   "scene": 3,
+   "text": "Nobody who goes in there comes back, child."
+  },
+  "first": {
+   "file": "audio/first.wav",
+   "start": 17.332,
+   "dur": 1.432,
+   "spk": "Z",
+   "scene": 3,
+   "text": "Then I'll be the first."
+  },
+  "sunrise": {
+   "file": "audio/sunrise.wav",
+   "start": 19.364,
+   "dur": 2.81,
+   "spk": "N",
+   "scene": 4,
+   "text": "So at sunrise, Zuri took his lantern, and walked into the jungle."
+  },
+  "lost": {
+   "file": "audio/lost.wav",
+   "start": 23.864,
+   "dur": 4.199,
+   "spk": "C",
+   "scene": 5,
+   "text": "Lost, little explorer? I'm Mister Crane, from the city museum."
+  },
+  "help": {
+   "file": "audio/help.wav",
+   "start": 28.262,
+   "dur": 2.675,
+   "spk": "C",
+   "scene": 5,
+   "text": "I only want to help you find your grandpa."
+  },
+  "blinked": {
+   "file": "audio/blinked.wav",
+   "start": 31.237,
+   "dur": 1.959,
+   "spk": "N",
+   "scene": 5,
+   "text": "Behind him, a stone head blinked. Red."
+  },
+  "bigger": {
+   "file": "audio/bigger.wav",
+   "start": 33.896,
+   "dur": 2.227,
+   "spk": "N",
+   "scene": 6,
+   "text": "The temple was bigger than anything she had ever seen."
+  },
+  "watching": {
+   "file": "audio/watching.wav",
+   "start": 36.323,
+   "dur": 1.26,
+   "spk": "N",
+   "scene": 6,
+   "text": "And its eyes were watching."
+  },
+  "puzzle": {
+   "file": "audio/puzzle.wav",
+   "start": 38.896,
+   "dur": 3.355,
+   "spk": "N",
+   "scene": 7,
+   "text": "Inside, the floor was a puzzle. One wrong step, and the stones fell away."
+  },
+  "tiles": {
+   "file": "audio/tiles.wav",
+   "start": 42.501,
+   "dur": 2.617,
+   "spk": "Z",
+   "scene": 7,
+   "text": "Grandpa's map! Only step on the tiles with an eye!"
+  },
+  "hall": {
+   "file": "audio/hall.wav",
+   "start": 45.896,
+   "dur": 1.734,
+   "spk": "N",
+   "scene": 8,
+   "text": "Then they reached a hall full of stone eyes."
+  },
+  "crane_lie": {
+   "file": "audio/crane_lie.wav",
+   "start": 47.83,
+   "dur": 2.776,
+   "spk": "N",
+   "scene": 8,
+   "text": "When Crane said he was a museum guide... every eye glowed red."
+  },
+  "zuri_true": {
+   "file": "audio/zuri_true.wav",
+   "start": 50.806,
+   "dur": 2.582,
+   "spk": "N",
+   "scene": 8,
+   "text": "When Zuri said she missed her grandpa... they glowed green."
+  },
+  "know": {
+   "file": "audio/know.wav",
+   "start": 53.638,
+   "dur": 1.236,
+   "spk": "Z",
+   "scene": 8,
+   "text": "They know when we lie."
+  },
+  "gold": {
+   "file": "audio/gold.wav",
+   "start": 55.896,
+   "dur": 2.24,
+   "spk": "N",
+   "scene": 9,
+   "text": "At the very end, there was a room filled with gold."
+  },
+  "crystal": {
+   "file": "audio/crystal.wav",
+   "start": 58.336,
+   "dur": 1.818,
+   "spk": "N",
+   "scene": 9,
+   "text": "And in the middle, frozen inside a crystal..."
+  },
+  "grandpa": {
+   "file": "audio/grandpa.wav",
+   "start": 60.354,
+   "dur": 0.788,
+   "spk": "Z",
+   "scene": 9,
+   "text": "Grandpa!"
+  },
+  "carving": {
+   "file": "audio/carving.wav",
+   "start": 62.896,
+   "dur": 1.771,
+   "spk": "N",
+   "scene": 10,
+   "text": "Then Zuri saw the carving on the wall."
+  },
+  "kept": {
+   "file": "audio/kept.wav",
+   "start": 64.867,
+   "dur": 2.043,
+   "spk": "N",
+   "scene": 10,
+   "text": "The temple kept everyone who came for its treasure."
+  },
+  "toogold": {
+   "file": "audio/toogold.wav",
+   "start": 67.16,
+   "dur": 2.308,
+   "spk": "N",
+   "scene": 10,
+   "text": "Ten years ago, her grandpa had come for the gold too."
+  },
+  "mine": {
+   "file": "audio/mine.wav",
+   "start": 70.896,
+   "dur": 2.08,
+   "spk": "C",
+   "scene": 11,
+   "text": "Finally. It's all mine!"
+  },
+  "grabbed": {
+   "file": "audio/grabbed.wav",
+   "start": 73.176,
+   "dur": 2.802,
+   "spk": "N",
+   "scene": 11,
+   "text": "Crane grabbed the gold. Every eye in the temple turned red."
+  },
+  "stone": {
+   "file": "audio/stone.wav",
+   "start": 76.228,
+   "dur": 1.185,
+   "spk": "N",
+   "scene": 11,
+   "text": "And Crane turned to stone."
+  },
+  "hand": {
+   "file": "audio/hand.wav",
+   "start": 78.396,
+   "dur": 1.441,
+   "spk": "N",
+   "scene": 12,
+   "text": "Zuri put her hand on the crystal."
+  },
+  "dontwant": {
+   "file": "audio/dontwant.wav",
+   "start": 80.137,
+   "dur": 2.644,
+   "spk": "Z",
+   "scene": 12,
+   "text": "I don't want the gold. I just want my grandpa back."
+  },
+  "green": {
+   "file": "audio/green.wav",
+   "start": 83.081,
+   "dur": 1.137,
+   "spk": "N",
+   "scene": 12,
+   "text": "Every eye turned green."
+  },
+  "melted": {
+   "file": "audio/melted.wav",
+   "start": 85.396,
+   "dur": 1.056,
+   "spk": "N",
+   "scene": 13,
+   "text": "The crystal melted."
+  },
+  "grown": {
+   "file": "audio/grown.wav",
+   "start": 86.852,
+   "dur": 2.032,
+   "spk": "G",
+   "scene": 13,
+   "text": "Zuri? You've grown so much."
+  },
+  "hugged": {
+   "file": "audio/hugged.wav",
+   "start": 89.184,
+   "dur": 1.42,
+   "spk": "N",
+   "scene": 13,
+   "text": "She hugged him, and didn't let go."
+  },
+  "walked": {
+   "file": "audio/walked.wav",
+   "start": 92.896,
+   "dur": 3.025,
+   "spk": "N",
+   "scene": 14,
+   "text": "They walked out of the jungle as the sun came up. With no gold at all."
+  },
+  "treasures": {
+   "file": "audio/treasures.wav",
+   "start": 96.221,
+   "dur": 1.777,
+   "spk": "N",
+   "scene": 14,
+   "text": "Because some treasures, you can't carry out."
+  },
+  "question": {
+   "file": "audio/question.wav",
+   "start": 99.996,
+   "dur": 1.794,
+   "spk": "N",
+   "scene": 15,
+   "text": "Would you take the gold... or the truth?"
+  }
+ },
+ "duration": 104.79
+}

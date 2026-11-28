@@ -65,8 +65,9 @@ function legTex(o) { return tex(128, 256, (g, w, h) => { fabric(g, w, h, o.pants
 
 // ---------------- faces ----------------
 const faceCache = new Map();
-function faceTex(skin, expr, o) {
-  const key = [skin, expr, o.beard, o.mustache, o.brows, o.lashes, o.freckles, o.blush].join('|'); if (faceCache.has(key)) return faceCache.get(key);
+function faceTex(skin, exprIn, o) {
+  const [expr, talk] = exprIn.split('~');
+  const key = [skin, exprIn, o.beard, o.mustache, o.brows, o.lashes, o.freckles, o.blush].join('|'); if (faceCache.has(key)) return faceCache.get(key);
   const t = tex(256, 256, (g, w, h) => {
     g.fillStyle = hex(skin); g.fillRect(0, 0, w, h); g.fillStyle = 'rgba(0,0,0,0.05)'; g.fillRect(0, h * 0.86, w, h * 0.14);
     const ink = '#1a1414'; g.fillStyle = ink; g.strokeStyle = ink; g.lineCap = 'round';
@@ -82,6 +83,7 @@ function faceTex(skin, expr, o) {
       case 'stern': eye(L, 0.8); eye(R, 0.8); brow(90, 86); g.lineWidth = 7; g.beginPath(); g.moveTo(108, 180); g.lineTo(148, 180); g.stroke(); break;
       default: eye(L); eye(R); if (o.brows !== false) brow(86, 86); g.lineWidth = 7; g.beginPath(); g.arc(128, 160, 24, Math.PI * 0.2, Math.PI * 0.8); g.stroke();
     }
+    if (talk) { g.fillStyle = hex(skin); g.fillRect(88, 150, 80, 70); g.fillStyle = ink; g.beginPath(); if (talk === 'o') g.ellipse(128, 184, 14, 18, 0, 0, 7); else if (talk === 'e') g.ellipse(128, 178, 24, 9, 0, 0, 7); else { g.moveTo(102, 166); g.quadraticCurveTo(128, 210, 154, 166); g.closePath(); } g.fill(); g.fillStyle = '#c8504a'; g.beginPath(); g.ellipse(128, talk === 'e' ? 182 : 192, 10, 5, 0, 0, 7); g.fill(); g.fillStyle = ink; }
     if (o.freckles) { g.fillStyle = 'rgba(140,70,40,0.5)'; for (const [x, y] of [[70, 140], [80, 146], [62, 148], [186, 140], [176, 146], [194, 148]]) { g.beginPath(); g.arc(x, y, 3, 0, 7); g.fill(); } }
     if (o.blush) { g.fillStyle = 'rgba(255,110,110,0.3)'; g.beginPath(); g.ellipse(64, 150, 18, 10, 0, 0, 7); g.fill(); g.beginPath(); g.ellipse(192, 150, 18, 10, 0, 0, 7); g.fill(); }
     if (o.mustache) { g.fillStyle = hex(o.mustache); g.beginPath(); g.moveTo(128, 154); g.bezierCurveTo(100, 142, 80, 160, 92, 168); g.bezierCurveTo(104, 164, 118, 160, 128, 162); g.bezierCurveTo(138, 160, 152, 164, 164, 168); g.bezierCurveTo(176, 160, 156, 142, 128, 154); g.fill(); }
@@ -178,7 +180,7 @@ function addBackpack(body, c) { const m = M(c, { roughness: 0.85 }); const b = n
 function addScarf(body, c) { const m = M(c, { roughness: 1 }); const r = new THREE.Mesh(new THREE.TorusGeometry(0.62, 0.18, 10, 24), m); r.rotation.x = Math.PI / 2; r.scale.set(1.25, 0.85, 1); r.position.y = 2.05; body.add(r); const tail = new THREE.Mesh(rbox(0.36, 0.9, 0.1, 0.05), m); tail.position.set(0.45, 1.6, 0.55); tail.rotation.z = 0.15; body.add(tail); }
 function addProp(arm, kind) {
   const p = new THREE.Group(); p.position.set(0, -1.95, 0.25); arm.add(p);
-  if (kind === 'lantern') { const frame = M(0x3a2a1a, { metalness: 0.5 }); const glass = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.22, 0.42, 12), new THREE.MeshStandardMaterial({ color: 0xffd88a, emissive: 0xffb040, emissiveIntensity: 2.2, transparent: true, opacity: 0.9 })); glass.position.y = -0.35; p.add(glass); const top = new THREE.Mesh(new THREE.ConeGeometry(0.28, 0.2, 12), frame); top.position.y = -0.06; p.add(top); const base = new THREE.Mesh(new THREE.CylinderGeometry(0.26, 0.26, 0.08, 12), frame); base.position.y = -0.6; p.add(base); const handle = new THREE.Mesh(new THREE.TorusGeometry(0.14, 0.025, 6, 16, Math.PI), frame); handle.position.y = 0.04; p.add(handle); const l = new THREE.PointLight(0xffb050, 3, 6, 1.6); l.position.y = -0.35; p.add(l); }
+  if (kind === 'lantern') { const frame = M(0x3a2a1a, { metalness: 0.5 }); const glass = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.22, 0.42, 12), new THREE.MeshStandardMaterial({ color: 0xffd88a, emissive: 0xffb040, emissiveIntensity: 1.1, transparent: true, opacity: 0.9 })); glass.position.y = -0.35; p.add(glass); const top = new THREE.Mesh(new THREE.ConeGeometry(0.28, 0.2, 12), frame); top.position.y = -0.06; p.add(top); const base = new THREE.Mesh(new THREE.CylinderGeometry(0.26, 0.26, 0.08, 12), frame); base.position.y = -0.6; p.add(base); const handle = new THREE.Mesh(new THREE.TorusGeometry(0.14, 0.025, 6, 16, Math.PI), frame); handle.position.y = 0.04; p.add(handle); const l = new THREE.PointLight(0xffb050, 2, 6, 1.6); l.position.y = -0.35; p.add(l); }
   else if (kind === 'flashlight') { const body = new THREE.Mesh(new THREE.CylinderGeometry(0.09, 0.12, 0.6, 12), M(0x2a2a2a, { metalness: 0.6, roughness: 0.3 })); body.rotation.x = Math.PI / 2; body.position.z = 0.25; p.add(body); const lens = new THREE.Mesh(new THREE.CircleGeometry(0.11, 16), new THREE.MeshBasicMaterial({ color: 0xfffbe0, toneMapped: false })); lens.position.z = 0.56; p.add(lens); const beam = new THREE.Mesh(new THREE.ConeGeometry(0.9, 4, 20, 1, true), new THREE.MeshBasicMaterial({ color: 0xfff4c0, transparent: true, opacity: 0.12, depthWrite: false, side: THREE.DoubleSide })); beam.rotation.x = -Math.PI / 2; beam.position.z = 2.55; p.add(beam); const l = new THREE.SpotLight(0xfff4d0, 20, 14, 0.4, 0.5); l.position.z = 0.5; l.target.position.set(0, 0, 5); p.add(l, l.target); }
   else if (kind === 'ticket') { const t = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.3, 0.02), M(0xe8b830, { metalness: 0.7, roughness: 0.3, emissive: 0x4a3000, emissiveIntensity: 0.3 })); t.position.set(0, -0.1, 0.1); t.rotation.set(-0.3, 0, 0.2); p.add(t); }
 }
@@ -187,3 +189,13 @@ function addBelt(body, c) { const b = new THREE.Mesh(rbox(2.06, 0.22, 1.06, 0.06
 // ---------------- animation helpers ----------------
 export function setBlockFace(av, expr) { const P = av.userData.P; if (P._e === expr) return; P._e = expr; P.faceM.map = faceTex(P.o.skin, expr, P.o.face || {}); P.faceM.needsUpdate = true; }
 export function poseBlock(av, p = {}) { const P = av.userData.P; P.armL.rotation.set(p.armLx || 0, 0, p.armLz || 0); P.armR.rotation.set(p.armRx || 0, 0, p.armRz || 0); P.legL.rotation.x = p.legL || 0; P.legR.rotation.x = p.legR || 0; P.head.rotation.set(p.headX || 0, p.headY || 0, p.headZ || 0); P.body.rotation.set(p.bodyX || 0, p.bodyY || 0, p.bodyZ || 0); }
+
+// lip flap while speaking (call every frame)
+export function talkBlock(av, t, speaking, base) { if (!speaking) { setBlockFace(av, base); return; } const k = Math.floor(t * 9) % 4; setBlockFace(av, k === 3 ? base : base + '~' + ['a', 'o', 'e'][k]); }
+export const walkBlock = (ph, amt = 0.6, ex = {}) => { const s = Math.sin(ph) * amt; return { legL: s, legR: -s, armLx: -s * 0.8, armRx: s * 0.8, ...ex }; };
+// turn to stone from the feet up: k 0..1
+const STONE = new THREE.MeshStandardMaterial({ color: 0xb0aea4, roughness: 0.95, flatShading: true });
+export function petrify(av, k) {
+  av.updateMatrixWorld(true); const base = av.position.y, top = base + 5.4 * av.scale.y; const lim = base + (top - base) * k; const v = new THREE.Vector3();
+  av.traverse(m => { if (!m.isMesh) return; if (!m.userData.orig) m.userData.orig = m.material; m.getWorldPosition(v); m.material = (k > 0 && v.y <= lim) ? STONE : m.userData.orig; });
+}
