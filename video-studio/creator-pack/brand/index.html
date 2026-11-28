@@ -21,7 +21,17 @@ const C = {
   balloon: () => makeBlockAvatar({ seed: 4, scale: 0.6, skin: 0xc68642, shirt: 'puffer', color: 0xd8322a, sleeve: 0xd8322a, cuff: 0xf4f4f4, pants: 0x2a3a6a, shoes: 0x8a5a3a, boots: true, gloves: 0x3a7ad8, hair: { style: 'swoop', color: 0x2a1a10 }, hat: 'earmuffs', hatColor: 0xf4f4f4, face: { blush: true } }),
 };
 let camera;
-if (MODE === 'profile') {
+if (MODE === 'profile' && Q.get('c') === 'balloon') {
+  scene.background = grad([[0, '#3a5ac8'], [0.5, '#e8a0c0'], [0.85, '#ffd8a0'], [1, '#fff0c8']]);
+  scene.add(new THREE.HemisphereLight(0xfff0f8, 0x6a5a8a, 1.5));
+  const key = new THREE.DirectionalLight(0xfff0e0, 2.4); key.position.set(3, 5, 6); scene.add(key);
+  const rim = new THREE.DirectionalLight(0xffb0e0, 2.0); rim.position.set(-4, 4, -4); scene.add(rim);
+  const pal = [[0xff5a5a, 0xffd84a], [0x4a8aff, 0xffffff], [0x5ad87a, 0xffb84a], [0xb06aff, 0xff8ab0], [0xff8a3a, 0x3ac8c8]];
+  [[-2.6, 4.6, -6, 1.0, 0], [2.8, 5.0, -7, 1.15, 1], [0.6, 6.4, -12, 1.0, 2], [-4.6, 2.6, -10, 0.8, 3], [4.4, 2.2, -9, 0.75, 4]].forEach(([x, y, z, sc, i]) => { const g = new THREE.Group(); const t = canvasTex(256, 256, (c) => { for (let k = 0; k < 8; k++) { c.fillStyle = '#' + (k % 2 ? pal[i][0] : pal[i][1]).toString(16).padStart(6, '0'); c.fillRect(k * 32, 0, 32, 256); } }); const env = new THREE.Mesh(new THREE.SphereGeometry(1.6, 28, 20), mat(0xffffff, { map: t })); env.scale.set(1, 1.2, 1); env.position.y = 2.6; g.add(env); const neck = new THREE.Mesh(new THREE.ConeGeometry(0.9, 1.2, 16, 1, true), mat(pal[i][0])); neck.rotation.x = Math.PI; neck.position.y = 0.9; g.add(neck); const bk = new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.5, 0.7), mat(0x8a5a2a)); bk.position.y = -0.1; g.add(bk); g.position.set(x, y - 2.6, z); g.scale.setScalar(sc); scene.add(g); });
+  const b = C.balloon(); setBlockFace(b, 'grin'); poseBlock(b, { armRz: 2.4, armLz: -0.15, headY: -0.1, headZ: 0.06 }); scene.add(b);
+  const fill = new THREE.PointLight(0xfff0e0, 3, 6, 1.6); fill.position.set(0.6, 2.4, 2.4); scene.add(fill);
+  camera = new THREE.PerspectiveCamera(34, 1, 0.1, 100); camera.position.set(0.25, 2.75, 4.8); camera.lookAt(0, 2.55, 0);
+} else if (MODE === 'profile') {
   scene.background = grad([[0, '#06121a'], [0.55, '#0e2e2a'], [1, '#1a4a3a']]);
   scene.add(new THREE.HemisphereLight(0xd8fff0, 0x102018, 0.9));
   const key = new THREE.DirectionalLight(0xfff0d8, 2.0); key.position.set(3, 5, 6); scene.add(key);
