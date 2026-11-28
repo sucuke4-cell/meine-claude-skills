@@ -2,7 +2,8 @@
 
 render_music(cues, duration) -> mono float array at SR.
 cues: list of (start_seconds, mood). Moods:
-  mystery, tension, action, sad, otherworld, dread, climax, silence
+  mystery, tension, action, sad, otherworld, dread, climax, silence,
+  warm (major, gentle piano arpeggios), hope (major, uplifting pulse + bells, no braam)
 """
 import numpy as np
 from scipy.signal import butter, sosfilt, fftconvolve
@@ -66,7 +67,9 @@ PROG = {  # (chord tones as midi), one chord per bar
     'sad':   [[53, 57, 60], [48, 52, 55], [57, 60, 64], [55, 59, 62]],      # F C Am G
     'other': [[50, 53, 57], [46, 50, 53], [43, 46, 50], [45, 49, 52]],      # Dm Bb Gm A
     'dread': [[57, 60, 63], [56, 59, 62], [57, 60, 63], [53, 56, 59]],      # Adim-ish clusters
+    'major': [[48, 52, 55], [55, 59, 62], [57, 60, 64], [53, 57, 60]],      # C G Am F
 }
+ARP = [0, 1, 2, 1, 2, 1, 0, 2]
 OSTINATO = [0, 2, 1, 2, 0, 2, 1, 2]  # indexes into chord, eighth notes
 MB_MEL = [81, 84, 88, 87, 84, 81, 80, 76]
 
@@ -76,7 +79,7 @@ def render_section(mood, a, b, out, rng):
     tb = bar0 * bar
     while tb < b:
         ci = int(round(tb / bar)) % 4
-        prog = PROG['sad' if mood == 'sad' else 'other' if mood == 'otherworld' else 'dread' if mood in ('dread', 'climax') else 'minor']
+        prog = PROG['major' if mood in ('warm', 'hope') else 'sad' if mood == 'sad' else 'other' if mood == 'otherworld' else 'dread' if mood in ('dread', 'climax') else 'minor']
         ch = prog[ci]
         def put(sig, at, g):
             if at < a - 0.01 or at >= b: return
@@ -84,8 +87,8 @@ def render_section(mood, a, b, out, rng):
             if i < len(out): out[i:j] += sig[: j - i] * g
         # pad / strings for the bar (clipped to section by the window later)
         if mood != 'silence':
-            st = strings([m - 12 for m in ch] + [ch[0]], bar + 1.2, attack=0.6, release=1.0, bright=1100 if mood in ('sad', 'mystery') else 1500)
-            put(st, max(tb, a), {'mystery': 0.22, 'tension': 0.25, 'action': 0.25, 'sad': 0.30, 'otherworld': 0.22, 'dread': 0.26, 'climax': 0.30}[mood])
+            st = strings([m - 12 for m in ch] + [ch[0]], bar + 1.2, attack=0.6, release=1.0, bright=1100 if mood in ('sad', 'mystery', 'warm') else 1500)
+            put(st, max(tb, a), {'mystery': 0.22, 'tension': 0.25, 'action': 0.25, 'sad': 0.30, 'otherworld': 0.22, 'dread': 0.26, 'climax': 0.30, 'warm': 0.24, 'hope': 0.30}[mood])
         for k in range(8):  # eighth-note grid
             t8 = tb + k * BEAT / 2
             if mood in ('mystery', 'tension', 'action', 'climax'):
@@ -93,6 +96,10 @@ def render_section(mood, a, b, out, rng):
                 put(piano(hz(m), 1.6, 0.9 if k % 2 == 0 else 0.6), t8, {'mystery': 0.07, 'tension': 0.08, 'action': 0.09, 'climax': 0.08}[mood])
             if mood == 'sad' and k in (0, 3, 4, 6):
                 put(piano(hz(ch[[0, 1, 2, 1][[0, 3, 4, 6].index(k)]] + 12), 3.0, 0.9), t8, 0.10)
+            if mood in ('warm', 'hope'):
+                put(piano(hz(ch[ARP[k]] + 12), 2.4, 0.9 if k % 4 == 0 else 0.65), t8, 0.085 if mood == 'warm' else 0.095)
+            if mood == 'hope' and k in (0, 3, 6):
+                put(musicbox(hz(ch[[2, 1, 0][[0, 3, 6].index(k)]] + 24), 1.6), t8, 0.045)
             if mood == 'otherworld' and k % 2 == 0:
                 put(musicbox(hz(MB_MEL[(int(tb / bar) * 4 + k // 2) % 8]), 1.8), t8, 0.06)
             if mood in ('tension', 'action', 'climax') and k % 2 == 1:
@@ -108,6 +115,11 @@ def render_section(mood, a, b, out, rng):
                 put(tom(1.0, 140 if k else 110, 55), tq, 0.35)
             if mood == 'action' and k == 0:
                 put(tom(0.8), tq, 0.3)
+            if mood == 'hope':
+                put(sub(hz(ch[0] - 24), 0.5, 1.0), tq, 0.3 if k in (0, 2) else 0.16)
+                if k in (1, 3): put(tick(0.6), tq, 0.02)
+            if mood == 'warm' and k == 0:
+                put(sub(hz(ch[0] - 24), 0.9, 1.0), tq, 0.22)
         if mood in ('dread', 'climax') and ci % 2 == 0:
             put(braam(ch[0] - 12, bar * 2), tb, 0.35 if mood == 'climax' else 0.25)
         tb += bar

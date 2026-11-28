@@ -5,6 +5,8 @@ import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
 import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
+import { BokehPass } from 'three/addons/postprocessing/BokehPass.js';
+import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js';
 
 export function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
 export const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
@@ -27,9 +29,12 @@ export function setupRenderer(W, H) {
   document.body.prepend(renderer.domElement);
   return renderer;
 }
-export function setupComposer(renderer, scene, camera, W, H) {
+export function setupComposer(renderer, scene, camera, W, H, opt = {}) {
   const composer = new EffectComposer(renderer);
   composer.addPass(new RenderPass(scene, camera));
+  let gtao = null, bokeh = null;
+  if (opt.ao) { gtao = new GTAOPass(scene, camera, W, H); gtao.blendIntensity = opt.ao; composer.addPass(gtao); }
+  if (opt.dof) { bokeh = new BokehPass(scene, camera, { focus: 6, aperture: 0.002, maxblur: 0.006 }); composer.addPass(bokeh); }
   const bloom = new UnrealBloomPass(new THREE.Vector2(W, H), 0.3, 0.6, 0.92);
   composer.addPass(bloom);
   // subtle vignette + grade
@@ -42,7 +47,7 @@ export function setupComposer(renderer, scene, camera, W, H) {
         gl_FragColor = c; }`
   });
   composer.addPass(vignette);
-  return { composer, bloom, vignette };
+  return { composer, bloom, vignette, gtao, bokeh };
 }
 
 // ---------------- sky: gradient dome + sun glow + clouds ----------------

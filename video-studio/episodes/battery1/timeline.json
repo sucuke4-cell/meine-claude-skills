@@ -1,0 +1,1645 @@
+{
+ "scenes": [
+  {
+   "id": 1,
+   "start": 0.0,
+   "end": 3.8
+  },
+  {
+   "id": 2,
+   "start": 3.8,
+   "end": 11.774
+  },
+  {
+   "id": 3,
+   "start": 11.774,
+   "end": 18.409
+  },
+  {
+   "id": 4,
+   "start": 18.409,
+   "end": 25.923
+  },
+  {
+   "id": 5,
+   "start": 25.923,
+   "end": 30.923
+  },
+  {
+   "id": 6,
+   "start": 30.923,
+   "end": 36.923
+  },
+  {
+   "id": 7,
+   "start": 36.923,
+   "end": 44.631
+  },
+  {
+   "id": 8,
+   "start": 44.631,
+   "end": 49.131
+  },
+  {
+   "id": 9,
+   "start": 49.131,
+   "end": 60.54
+  },
+  {
+   "id": 10,
+   "start": 60.54,
+   "end": 71.69
+  },
+  {
+   "id": 11,
+   "start": 71.69,
+   "end": 78.69
+  },
+  {
+   "id": 12,
+   "start": 78.69,
+   "end": 84.69
+  },
+  {
+   "id": 13,
+   "start": 84.69,
+   "end": 92.69
+  },
+  {
+   "id": 14,
+   "start": 92.69,
+   "end": 99.69
+  },
+  {
+   "id": 15,
+   "start": 99.69,
+   "end": 106.69
+  },
+  {
+   "id": 16,
+   "start": 106.69,
+   "end": 115.472
+  },
+  {
+   "id": 17,
+   "start": 115.472,
+   "end": 121.972
+  },
+  {
+   "id": 18,
+   "start": 121.972,
+   "end": 127.267
+  }
+ ],
+ "captions": [
+  {
+   "text": "What if",
+   "start": 0.2,
+   "end": 0.619,
+   "spk": "N"
+  },
+  {
+   "text": "everyone",
+   "start": 0.619,
+   "end": 1.085,
+   "spk": "N"
+  },
+  {
+   "text": "could see",
+   "start": 1.085,
+   "end": 1.598,
+   "spk": "N"
+  },
+  {
+   "text": "how much",
+   "start": 1.598,
+   "end": 2.064,
+   "spk": "N"
+  },
+  {
+   "text": "energy you",
+   "start": 2.064,
+   "end": 2.623,
+   "spk": "N"
+  },
+  {
+   "text": "had left?",
+   "start": 2.623,
+   "end": 3.135,
+   "spk": "N"
+  },
+  {
+   "text": "In the",
+   "start": 4.0,
+   "end": 4.368,
+   "spk": "N"
+  },
+  {
+   "text": "town of",
+   "start": 4.368,
+   "end": 4.783,
+   "spk": "N"
+  },
+  {
+   "text": "Maple Hill,",
+   "start": 4.783,
+   "end": 5.382,
+   "spk": "N"
+  },
+  {
+   "text": "every person",
+   "start": 5.382,
+   "end": 6.027,
+   "spk": "N"
+  },
+  {
+   "text": "had a",
+   "start": 6.027,
+   "end": 6.349,
+   "spk": "N"
+  },
+  {
+   "text": "battery",
+   "start": 6.349,
+   "end": 6.763,
+   "spk": "N"
+  },
+  {
+   "text": "floating",
+   "start": 6.763,
+   "end": 7.224,
+   "spk": "N"
+  },
+  {
+   "text": "above their",
+   "start": 7.224,
+   "end": 7.823,
+   "spk": "N"
+  },
+  {
+   "text": "head.",
+   "start": 7.823,
+   "end": 8.145,
+   "spk": "N"
+  },
+  {
+   "text": "Sleep charged",
+   "start": 8.395,
+   "end": 9.152,
+   "spk": "N"
+  },
+  {
+   "text": "it. Hugs",
+   "start": 9.152,
+   "end": 9.657,
+   "spk": "N"
+  },
+  {
+   "text": "charged it.",
+   "start": 9.657,
+   "end": 10.313,
+   "spk": "N"
+  },
+  {
+   "text": "Bad days",
+   "start": 10.313,
+   "end": 10.818,
+   "spk": "N"
+  },
+  {
+   "text": "drained it.",
+   "start": 10.818,
+   "end": 11.474,
+   "spk": "N"
+  },
+  {
+   "text": "Most kids",
+   "start": 11.974,
+   "end": 12.482,
+   "spk": "N"
+  },
+  {
+   "text": "walked into",
+   "start": 12.482,
+   "end": 13.083,
+   "spk": "N"
+  },
+  {
+   "text": "school at",
+   "start": 13.083,
+   "end": 13.591,
+   "spk": "N"
+  },
+  {
+   "text": "a hundred",
+   "start": 13.591,
+   "end": 14.099,
+   "spk": "N"
+  },
+  {
+   "text": "percent.",
+   "start": 14.099,
+   "end": 14.561,
+   "spk": "N"
+  },
+  {
+   "text": "But not",
+   "start": 14.761,
+   "end": 15.25,
+   "spk": "N"
+  },
+  {
+   "text": "Eli.",
+   "start": 15.25,
+   "end": 15.576,
+   "spk": "N"
+  },
+  {
+   "text": "Eli's battery",
+   "start": 15.776,
+   "end": 16.489,
+   "spk": "N"
+  },
+  {
+   "text": "was always",
+   "start": 16.489,
+   "end": 17.059,
+   "spk": "N"
+  },
+  {
+   "text": "at three",
+   "start": 17.059,
+   "end": 17.534,
+   "spk": "N"
+  },
+  {
+   "text": "percent.",
+   "start": 17.534,
+   "end": 18.009,
+   "spk": "N"
+  },
+  {
+   "text": "Careful,",
+   "start": 18.609,
+   "end": 19.118,
+   "spk": "B"
+  },
+  {
+   "text": "everyone!",
+   "start": 19.118,
+   "end": 19.677,
+   "spk": "B"
+  },
+  {
+   "text": "Low Battery",
+   "start": 19.677,
+   "end": 20.337,
+   "spk": "B"
+  },
+  {
+   "text": "Eli might",
+   "start": 20.337,
+   "end": 20.896,
+   "spk": "B"
+  },
+  {
+   "text": "shut down!",
+   "start": 20.896,
+   "end": 21.506,
+   "spk": "B"
+  },
+  {
+   "text": "The whole",
+   "start": 21.706,
+   "end": 22.224,
+   "spk": "N"
+  },
+  {
+   "text": "class",
+   "start": 22.224,
+   "end": 22.553,
+   "spk": "N"
+  },
+  {
+   "text": "laughed.",
+   "start": 22.553,
+   "end": 23.023,
+   "spk": "N"
+  },
+  {
+   "text": "Eli just",
+   "start": 23.223,
+   "end": 23.674,
+   "spk": "N"
+  },
+  {
+   "text": "smiled, and",
+   "start": 23.674,
+   "end": 24.26,
+   "spk": "N"
+  },
+  {
+   "text": "looked down",
+   "start": 24.26,
+   "end": 24.846,
+   "spk": "N"
+  },
+  {
+   "text": "at his",
+   "start": 24.846,
+   "end": 25.207,
+   "spk": "N"
+  },
+  {
+   "text": "desk.",
+   "start": 25.207,
+   "end": 25.523,
+   "spk": "N"
+  },
+  {
+   "text": "Eli, are",
+   "start": 26.123,
+   "end": 26.611,
+   "spk": "T"
+  },
+  {
+   "text": "you",
+   "start": 26.611,
+   "end": 26.855,
+   "spk": "T"
+  },
+  {
+   "text": "sleeping",
+   "start": 26.855,
+   "end": 27.343,
+   "spk": "T"
+  },
+  {
+   "text": "enough at",
+   "start": 27.343,
+   "end": 27.881,
+   "spk": "T"
+  },
+  {
+   "text": "home?",
+   "start": 27.881,
+   "end": 28.222,
+   "spk": "T"
+  },
+  {
+   "text": "I'm fine,",
+   "start": 28.472,
+   "end": 29.074,
+   "spk": "E"
+  },
+  {
+   "text": "Mister Hale.",
+   "start": 29.074,
+   "end": 29.839,
+   "spk": "E"
+  },
+  {
+   "text": "Really.",
+   "start": 29.839,
+   "end": 30.33,
+   "spk": "E"
+  },
+  {
+   "text": "At lunch,",
+   "start": 31.123,
+   "end": 31.698,
+   "spk": "N"
+  },
+  {
+   "text": "a new",
+   "start": 31.698,
+   "end": 32.065,
+   "spk": "N"
+  },
+  {
+   "text": "girl named",
+   "start": 32.065,
+   "end": 32.693,
+   "spk": "N"
+  },
+  {
+   "text": "Ivy sat",
+   "start": 32.693,
+   "end": 33.164,
+   "spk": "N"
+  },
+  {
+   "text": "all alone.",
+   "start": 33.164,
+   "end": 33.792,
+   "spk": "N"
+  },
+  {
+   "text": "Her battery",
+   "start": 33.992,
+   "end": 34.662,
+   "spk": "N"
+  },
+  {
+   "text": "was",
+   "start": 34.662,
+   "end": 34.919,
+   "spk": "N"
+  },
+  {
+   "text": "dropping",
+   "start": 34.919,
+   "end": 35.434,
+   "spk": "N"
+  },
+  {
+   "text": "fast.",
+   "start": 35.434,
+   "end": 35.794,
+   "spk": "N"
+  },
+  {
+   "text": "Hey. You",
+   "start": 37.123,
+   "end": 37.586,
+   "spk": "E"
+  },
+  {
+   "text": "can have",
+   "start": 37.586,
+   "end": 38.05,
+   "spk": "E"
+  },
+  {
+   "text": "my cookie.",
+   "start": 38.05,
+   "end": 38.607,
+   "spk": "E"
+  },
+  {
+   "text": "First days",
+   "start": 38.607,
+   "end": 39.164,
+   "spk": "E"
+  },
+  {
+   "text": "are the",
+   "start": 39.164,
+   "end": 39.581,
+   "spk": "E"
+  },
+  {
+   "text": "worst.",
+   "start": 39.581,
+   "end": 39.952,
+   "spk": "E"
+  },
+  {
+   "text": "Ivy's battery",
+   "start": 40.202,
+   "end": 40.992,
+   "spk": "N"
+  },
+  {
+   "text": "jumped to",
+   "start": 40.992,
+   "end": 41.571,
+   "spk": "N"
+  },
+  {
+   "text": "sixty",
+   "start": 41.571,
+   "end": 41.94,
+   "spk": "N"
+  },
+  {
+   "text": "percent.",
+   "start": 41.94,
+   "end": 42.467,
+   "spk": "N"
+  },
+  {
+   "text": "And Eli's",
+   "start": 42.666,
+   "end": 43.26,
+   "spk": "N"
+  },
+  {
+   "text": "dropped to",
+   "start": 43.26,
+   "end": 43.907,
+   "spk": "N"
+  },
+  {
+   "text": "two.",
+   "start": 43.907,
+   "end": 44.231,
+   "spk": "N"
+  },
+  {
+   "text": "Wait\u2026 did",
+   "start": 44.831,
+   "end": 45.331,
+   "spk": "I"
+  },
+  {
+   "text": "your battery",
+   "start": 45.331,
+   "end": 45.967,
+   "spk": "I"
+  },
+  {
+   "text": "just go",
+   "start": 45.967,
+   "end": 46.376,
+   "spk": "I"
+  },
+  {
+   "text": "down?",
+   "start": 46.376,
+   "end": 46.694,
+   "spk": "I"
+  },
+  {
+   "text": "Ha. It",
+   "start": 46.944,
+   "end": 47.373,
+   "spk": "E"
+  },
+  {
+   "text": "does that",
+   "start": 47.373,
+   "end": 47.961,
+   "spk": "E"
+  },
+  {
+   "text": "sometimes.",
+   "start": 47.961,
+   "end": 48.604,
+   "spk": "E"
+  },
+  {
+   "text": "After that,",
+   "start": 49.331,
+   "end": 50.047,
+   "spk": "N"
+  },
+  {
+   "text": "Ivy started",
+   "start": 50.047,
+   "end": 50.764,
+   "spk": "N"
+  },
+  {
+   "text": "watching",
+   "start": 50.764,
+   "end": 51.315,
+   "spk": "N"
+  },
+  {
+   "text": "him.",
+   "start": 51.315,
+   "end": 51.646,
+   "spk": "N"
+  },
+  {
+   "text": "When a",
+   "start": 51.846,
+   "end": 52.206,
+   "spk": "N"
+  },
+  {
+   "text": "kid dropped",
+   "start": 52.206,
+   "end": 52.79,
+   "spk": "N"
+  },
+  {
+   "text": "his books,",
+   "start": 52.79,
+   "end": 53.33,
+   "spk": "N"
+  },
+  {
+   "text": "Eli helped.",
+   "start": 53.33,
+   "end": 53.914,
+   "spk": "N"
+  },
+  {
+   "text": "Plus twenty",
+   "start": 53.914,
+   "end": 54.498,
+   "spk": "N"
+  },
+  {
+   "text": "for the",
+   "start": 54.498,
+   "end": 54.903,
+   "spk": "N"
+  },
+  {
+   "text": "kid. Minus",
+   "start": 54.903,
+   "end": 55.442,
+   "spk": "N"
+  },
+  {
+   "text": "one for",
+   "start": 55.442,
+   "end": 55.847,
+   "spk": "N"
+  },
+  {
+   "text": "Eli.",
+   "start": 55.847,
+   "end": 56.117,
+   "spk": "N"
+  },
+  {
+   "text": "When a",
+   "start": 56.367,
+   "end": 56.718,
+   "spk": "N"
+  },
+  {
+   "text": "little girl",
+   "start": 56.718,
+   "end": 57.288,
+   "spk": "N"
+  },
+  {
+   "text": "cried at",
+   "start": 57.288,
+   "end": 57.727,
+   "spk": "N"
+  },
+  {
+   "text": "the bus",
+   "start": 57.727,
+   "end": 58.122,
+   "spk": "N"
+  },
+  {
+   "text": "stop, he",
+   "start": 58.122,
+   "end": 58.56,
+   "spk": "N"
+  },
+  {
+   "text": "made her",
+   "start": 58.56,
+   "end": 58.999,
+   "spk": "N"
+  },
+  {
+   "text": "laugh. Minus",
+   "start": 58.999,
+   "end": 59.613,
+   "spk": "N"
+  },
+  {
+   "text": "one again.",
+   "start": 59.613,
+   "end": 60.14,
+   "spk": "N"
+  },
+  {
+   "text": "So one",
+   "start": 60.74,
+   "end": 61.168,
+   "spk": "N"
+  },
+  {
+   "text": "day, Ivy",
+   "start": 61.168,
+   "end": 61.703,
+   "spk": "N"
+  },
+  {
+   "text": "followed",
+   "start": 61.703,
+   "end": 62.238,
+   "spk": "N"
+  },
+  {
+   "text": "him home.",
+   "start": 62.238,
+   "end": 62.827,
+   "spk": "N"
+  },
+  {
+   "text": "His mom",
+   "start": 63.027,
+   "end": 63.452,
+   "spk": "N"
+  },
+  {
+   "text": "had just",
+   "start": 63.452,
+   "end": 63.925,
+   "spk": "N"
+  },
+  {
+   "text": "finished",
+   "start": 63.925,
+   "end": 64.397,
+   "spk": "N"
+  },
+  {
+   "text": "a double",
+   "start": 64.397,
+   "end": 64.869,
+   "spk": "N"
+  },
+  {
+   "text": "shift. Her",
+   "start": 64.869,
+   "end": 65.436,
+   "spk": "N"
+  },
+  {
+   "text": "battery was",
+   "start": 65.436,
+   "end": 66.05,
+   "spk": "N"
+  },
+  {
+   "text": "almost empty.",
+   "start": 66.05,
+   "end": 66.758,
+   "spk": "N"
+  },
+  {
+   "text": "Welcome home,",
+   "start": 67.008,
+   "end": 68.024,
+   "spk": "E"
+  },
+  {
+   "text": "Mom.",
+   "start": 68.024,
+   "end": 68.43,
+   "spk": "E"
+  },
+  {
+   "text": "He hugged",
+   "start": 68.63,
+   "end": 69.152,
+   "spk": "N"
+  },
+  {
+   "text": "her. And",
+   "start": 69.152,
+   "end": 69.627,
+   "spk": "N"
+  },
+  {
+   "text": "all his",
+   "start": 69.627,
+   "end": 70.055,
+   "spk": "N"
+  },
+  {
+   "text": "energy flowed",
+   "start": 70.055,
+   "end": 70.768,
+   "spk": "N"
+  },
+  {
+   "text": "into her.",
+   "start": 70.768,
+   "end": 71.29,
+   "spk": "N"
+  },
+  {
+   "text": "That night,",
+   "start": 71.99,
+   "end": 72.565,
+   "spk": "N"
+  },
+  {
+   "text": "Eli's battery",
+   "start": 72.565,
+   "end": 73.228,
+   "spk": "N"
+  },
+  {
+   "text": "blinked at",
+   "start": 73.228,
+   "end": 73.759,
+   "spk": "N"
+  },
+  {
+   "text": "one",
+   "start": 73.759,
+   "end": 73.98,
+   "spk": "N"
+  },
+  {
+   "text": "percent.",
+   "start": 73.98,
+   "end": 74.422,
+   "spk": "N"
+  },
+  {
+   "text": "He never",
+   "start": 74.722,
+   "end": 75.211,
+   "spk": "N"
+  },
+  {
+   "text": "charged",
+   "start": 75.211,
+   "end": 75.65,
+   "spk": "N"
+  },
+  {
+   "text": "himself.",
+   "start": 75.65,
+   "end": 76.139,
+   "spk": "N"
+  },
+  {
+   "text": "Not once.",
+   "start": 76.139,
+   "end": 76.677,
+   "spk": "N"
+  },
+  {
+   "text": "He gave",
+   "start": 76.677,
+   "end": 77.116,
+   "spk": "N"
+  },
+  {
+   "text": "it all",
+   "start": 77.116,
+   "end": 77.507,
+   "spk": "N"
+  },
+  {
+   "text": "away.",
+   "start": 77.507,
+   "end": 77.849,
+   "spk": "N"
+  },
+  {
+   "text": "The next",
+   "start": 78.89,
+   "end": 79.316,
+   "spk": "N"
+  },
+  {
+   "text": "morning,",
+   "start": 79.316,
+   "end": 79.741,
+   "spk": "N"
+  },
+  {
+   "text": "in the",
+   "start": 79.741,
+   "end": 80.081,
+   "spk": "N"
+  },
+  {
+   "text": "middle of",
+   "start": 80.081,
+   "end": 80.549,
+   "spk": "N"
+  },
+  {
+   "text": "class\u2026",
+   "start": 80.549,
+   "end": 80.889,
+   "spk": "N"
+  },
+  {
+   "text": "Eli's battery",
+   "start": 81.189,
+   "end": 82.155,
+   "spk": "N"
+  },
+  {
+   "text": "hit zero.",
+   "start": 82.155,
+   "end": 82.863,
+   "spk": "N"
+  },
+  {
+   "text": "Eli!",
+   "start": 83.063,
+   "end": 83.618,
+   "spk": "T"
+  },
+  {
+   "text": "You all",
+   "start": 84.99,
+   "end": 85.393,
+   "spk": "I"
+  },
+  {
+   "text": "laughed at",
+   "start": 85.393,
+   "end": 85.93,
+   "spk": "I"
+  },
+  {
+   "text": "him. But",
+   "start": 85.93,
+   "end": 86.377,
+   "spk": "I"
+  },
+  {
+   "text": "every one",
+   "start": 86.377,
+   "end": 86.87,
+   "spk": "I"
+  },
+  {
+   "text": "of you",
+   "start": 86.87,
+   "end": 87.228,
+   "spk": "I"
+  },
+  {
+   "text": "has his",
+   "start": 87.228,
+   "end": 87.63,
+   "spk": "I"
+  },
+  {
+   "text": "energy inside",
+   "start": 87.63,
+   "end": 88.301,
+   "spk": "I"
+  },
+  {
+   "text": "you.",
+   "start": 88.301,
+   "end": 88.57,
+   "spk": "I"
+  },
+  {
+   "text": "He gave",
+   "start": 88.87,
+   "end": 89.302,
+   "spk": "I"
+  },
+  {
+   "text": "it to",
+   "start": 89.302,
+   "end": 89.637,
+   "spk": "I"
+  },
+  {
+   "text": "you. Every",
+   "start": 89.637,
+   "end": 90.213,
+   "spk": "I"
+  },
+  {
+   "text": "single day.",
+   "start": 90.213,
+   "end": 90.837,
+   "spk": "I"
+  },
+  {
+   "text": "Brock looked",
+   "start": 92.89,
+   "end": 93.553,
+   "spk": "N"
+  },
+  {
+   "text": "up at",
+   "start": 93.553,
+   "end": 93.884,
+   "spk": "N"
+  },
+  {
+   "text": "his own",
+   "start": 93.884,
+   "end": 94.309,
+   "spk": "N"
+  },
+  {
+   "text": "battery.",
+   "start": 94.309,
+   "end": 94.782,
+   "spk": "N"
+  },
+  {
+   "text": "And",
+   "start": 94.982,
+   "end": 95.195,
+   "spk": "N"
+  },
+  {
+   "text": "remembered",
+   "start": 95.195,
+   "end": 95.704,
+   "spk": "N"
+  },
+  {
+   "text": "who helped",
+   "start": 95.704,
+   "end": 96.213,
+   "spk": "N"
+  },
+  {
+   "text": "him up,",
+   "start": 96.213,
+   "end": 96.596,
+   "spk": "N"
+  },
+  {
+   "text": "when he",
+   "start": 96.596,
+   "end": 96.978,
+   "spk": "N"
+  },
+  {
+   "text": "fell last",
+   "start": 96.978,
+   "end": 97.445,
+   "spk": "N"
+  },
+  {
+   "text": "winter.",
+   "start": 97.445,
+   "end": 97.827,
+   "spk": "N"
+  },
+  {
+   "text": "Then let's",
+   "start": 98.077,
+   "end": 98.588,
+   "spk": "B"
+  },
+  {
+   "text": "give it",
+   "start": 98.588,
+   "end": 98.972,
+   "spk": "B"
+  },
+  {
+   "text": "back.",
+   "start": 98.972,
+   "end": 99.271,
+   "spk": "B"
+  },
+  {
+   "text": "One by",
+   "start": 99.89,
+   "end": 100.283,
+   "spk": "N"
+  },
+  {
+   "text": "one, every",
+   "start": 100.283,
+   "end": 100.873,
+   "spk": "N"
+  },
+  {
+   "text": "kid put",
+   "start": 100.873,
+   "end": 101.315,
+   "spk": "N"
+  },
+  {
+   "text": "a hand",
+   "start": 101.315,
+   "end": 101.708,
+   "spk": "N"
+  },
+  {
+   "text": "on Eli's",
+   "start": 101.708,
+   "end": 102.199,
+   "spk": "N"
+  },
+  {
+   "text": "shoulder.",
+   "start": 102.199,
+   "end": 102.739,
+   "spk": "N"
+  },
+  {
+   "text": "And the",
+   "start": 103.039,
+   "end": 103.49,
+   "spk": "N"
+  },
+  {
+   "text": "energy flowed",
+   "start": 103.49,
+   "end": 104.242,
+   "spk": "N"
+  },
+  {
+   "text": "back.",
+   "start": 104.242,
+   "end": 104.593,
+   "spk": "N"
+  },
+  {
+   "text": "Eli's eyes",
+   "start": 106.89,
+   "end": 107.671,
+   "spk": "N"
+  },
+  {
+   "text": "opened.",
+   "start": 107.671,
+   "end": 108.257,
+   "spk": "N"
+  },
+  {
+   "text": "And for",
+   "start": 108.507,
+   "end": 108.891,
+   "spk": "N"
+  },
+  {
+   "text": "the first",
+   "start": 108.891,
+   "end": 109.361,
+   "spk": "N"
+  },
+  {
+   "text": "time in",
+   "start": 109.361,
+   "end": 109.745,
+   "spk": "N"
+  },
+  {
+   "text": "his life\u2026",
+   "start": 109.745,
+   "end": 110.215,
+   "spk": "N"
+  },
+  {
+   "text": "his battery",
+   "start": 110.465,
+   "end": 111.119,
+   "spk": "N"
+  },
+  {
+   "text": "said one",
+   "start": 111.119,
+   "end": 111.621,
+   "spk": "N"
+  },
+  {
+   "text": "hundred",
+   "start": 111.621,
+   "end": 112.073,
+   "spk": "N"
+  },
+  {
+   "text": "percent.",
+   "start": 112.073,
+   "end": 112.576,
+   "spk": "N"
+  },
+  {
+   "text": "Is this\u2026",
+   "start": 112.976,
+   "end": 113.506,
+   "spk": "E"
+  },
+  {
+   "text": "what it",
+   "start": 113.506,
+   "end": 113.983,
+   "spk": "E"
+  },
+  {
+   "text": "feels like?",
+   "start": 113.983,
+   "end": 114.672,
+   "spk": "E"
+  },
+  {
+   "text": "Because energy",
+   "start": 115.772,
+   "end": 116.574,
+   "spk": "N"
+  },
+  {
+   "text": "was never",
+   "start": 116.574,
+   "end": 117.126,
+   "spk": "N"
+  },
+  {
+   "text": "meant to",
+   "start": 117.126,
+   "end": 117.627,
+   "spk": "N"
+  },
+  {
+   "text": "be kept.",
+   "start": 117.627,
+   "end": 118.129,
+   "spk": "N"
+  },
+  {
+   "text": "It was",
+   "start": 118.429,
+   "end": 118.821,
+   "spk": "N"
+  },
+  {
+   "text": "meant to",
+   "start": 118.821,
+   "end": 119.312,
+   "spk": "N"
+  },
+  {
+   "text": "be shared.",
+   "start": 119.312,
+   "end": 119.901,
+   "spk": "N"
+  },
+  {
+   "text": "Who would",
+   "start": 122.272,
+   "end": 122.779,
+   "spk": "N"
+  },
+  {
+   "text": "you give",
+   "start": 122.779,
+   "end": 123.239,
+   "spk": "N"
+  },
+  {
+   "text": "your energy",
+   "start": 123.239,
+   "end": 123.837,
+   "spk": "N"
+  },
+  {
+   "text": "to?",
+   "start": 123.837,
+   "end": 124.067,
+   "spk": "N"
+  }
+ ],
+ "vo": {
+  "hook": {
+   "file": "audio/hook.wav",
+   "start": 0.2,
+   "dur": 2.935,
+   "spk": "N",
+   "scene": 1,
+   "text": "What if everyone could see how much energy you had left?"
+  },
+  "town": {
+   "file": "audio/town.wav",
+   "start": 4.0,
+   "dur": 4.145,
+   "spk": "N",
+   "scene": 2,
+   "text": "In the town of Maple Hill, every person had a battery floating above their head."
+  },
+  "charge": {
+   "file": "audio/charge.wav",
+   "start": 8.395,
+   "dur": 3.079,
+   "spk": "N",
+   "scene": 2,
+   "text": "Sleep charged it. Hugs charged it. Bad days drained it."
+  },
+  "most": {
+   "file": "audio/most.wav",
+   "start": 11.974,
+   "dur": 2.587,
+   "spk": "N",
+   "scene": 3,
+   "text": "Most kids walked into school at a hundred percent."
+  },
+  "notEli": {
+   "file": "audio/notEli.wav",
+   "start": 14.761,
+   "dur": 0.815,
+   "spk": "N",
+   "scene": 3,
+   "text": "But not Eli."
+  },
+  "three": {
+   "file": "audio/three.wav",
+   "start": 15.776,
+   "dur": 2.233,
+   "spk": "N",
+   "scene": 3,
+   "text": "Eli's battery was always at three percent."
+  },
+  "careful": {
+   "file": "audio/careful.wav",
+   "start": 18.609,
+   "dur": 2.897,
+   "spk": "B",
+   "scene": 4,
+   "text": "Careful, everyone! Low Battery Eli might shut down!"
+  },
+  "laughed": {
+   "file": "audio/laughed.wav",
+   "start": 21.706,
+   "dur": 1.317,
+   "spk": "N",
+   "scene": 4,
+   "text": "The whole class laughed."
+  },
+  "smiled": {
+   "file": "audio/smiled.wav",
+   "start": 23.223,
+   "dur": 2.3,
+   "spk": "N",
+   "scene": 4,
+   "text": "Eli just smiled, and looked down at his desk."
+  },
+  "sleep": {
+   "file": "audio/sleep.wav",
+   "start": 26.123,
+   "dur": 2.1,
+   "spk": "T",
+   "scene": 5,
+   "text": "Eli, are you sleeping enough at home?"
+  },
+  "fine": {
+   "file": "audio/fine.wav",
+   "start": 28.472,
+   "dur": 1.858,
+   "spk": "E",
+   "scene": 5,
+   "text": "I'm fine, Mister Hale. Really."
+  },
+  "lunch": {
+   "file": "audio/lunch.wav",
+   "start": 31.123,
+   "dur": 2.67,
+   "spk": "N",
+   "scene": 6,
+   "text": "At lunch, a new girl named Ivy sat all alone."
+  },
+  "dropping": {
+   "file": "audio/dropping.wav",
+   "start": 33.992,
+   "dur": 1.802,
+   "spk": "N",
+   "scene": 6,
+   "text": "Her battery was dropping fast."
+  },
+  "cookie": {
+   "file": "audio/cookie.wav",
+   "start": 37.123,
+   "dur": 2.83,
+   "spk": "E",
+   "scene": 7,
+   "text": "Hey. You can have my cookie. First days are the worst."
+  },
+  "jumped": {
+   "file": "audio/jumped.wav",
+   "start": 40.202,
+   "dur": 2.264,
+   "spk": "N",
+   "scene": 7,
+   "text": "Ivy's battery jumped to sixty percent."
+  },
+  "two": {
+   "file": "audio/two.wav",
+   "start": 42.666,
+   "dur": 1.564,
+   "spk": "N",
+   "scene": 7,
+   "text": "And Eli's dropped to two."
+  },
+  "wait": {
+   "file": "audio/wait.wav",
+   "start": 44.831,
+   "dur": 1.864,
+   "spk": "I",
+   "scene": 8,
+   "text": "Wait... did your battery just go down?"
+  },
+  "does": {
+   "file": "audio/does.wav",
+   "start": 46.944,
+   "dur": 1.66,
+   "spk": "E",
+   "scene": 8,
+   "text": "Ha. It does that sometimes."
+  },
+  "watching": {
+   "file": "audio/watching.wav",
+   "start": 49.331,
+   "dur": 2.316,
+   "spk": "N",
+   "scene": 9,
+   "text": "After that, Ivy started watching him."
+  },
+  "books": {
+   "file": "audio/books.wav",
+   "start": 51.846,
+   "dur": 4.271,
+   "spk": "N",
+   "scene": 9,
+   "text": "When a kid dropped his books, Eli helped. Plus twenty for the kid. Minus one for Eli."
+  },
+  "busstop": {
+   "file": "audio/busstop.wav",
+   "start": 56.367,
+   "dur": 3.773,
+   "spk": "N",
+   "scene": 9,
+   "text": "When a little girl cried at the bus stop, he made her laugh. Minus one again."
+  },
+  "followed": {
+   "file": "audio/followed.wav",
+   "start": 60.74,
+   "dur": 2.088,
+   "spk": "N",
+   "scene": 10,
+   "text": "So one day, Ivy followed him home."
+  },
+  "shift": {
+   "file": "audio/shift.wav",
+   "start": 63.027,
+   "dur": 3.731,
+   "spk": "N",
+   "scene": 10,
+   "text": "His mom had just finished a double shift. Her battery was almost empty."
+  },
+  "welcome": {
+   "file": "audio/welcome.wav",
+   "start": 67.008,
+   "dur": 1.421,
+   "spk": "E",
+   "scene": 10,
+   "text": "Welcome home, Mom."
+  },
+  "hugged": {
+   "file": "audio/hugged.wav",
+   "start": 68.63,
+   "dur": 2.661,
+   "spk": "N",
+   "scene": 10,
+   "text": "He hugged her. And all his energy flowed into her."
+  },
+  "blinked": {
+   "file": "audio/blinked.wav",
+   "start": 71.99,
+   "dur": 2.432,
+   "spk": "N",
+   "scene": 11,
+   "text": "That night, Eli's battery blinked at one percent."
+  },
+  "never": {
+   "file": "audio/never.wav",
+   "start": 74.722,
+   "dur": 3.128,
+   "spk": "N",
+   "scene": 11,
+   "text": "He never charged himself. Not once. He gave it all away."
+  },
+  "morning": {
+   "file": "audio/morning.wav",
+   "start": 78.89,
+   "dur": 1.999,
+   "spk": "N",
+   "scene": 12,
+   "text": "The next morning, in the middle of class..."
+  },
+  "zero": {
+   "file": "audio/zero.wav",
+   "start": 81.189,
+   "dur": 1.674,
+   "spk": "N",
+   "scene": 12,
+   "text": "Eli's battery hit zero."
+  },
+  "eli": {
+   "file": "audio/eli.wav",
+   "start": 83.063,
+   "dur": 0.555,
+   "spk": "T",
+   "scene": 12,
+   "text": "Eli!"
+  },
+  "laughed2": {
+   "file": "audio/laughed2.wav",
+   "start": 84.99,
+   "dur": 3.58,
+   "spk": "I",
+   "scene": 13,
+   "text": "You all laughed at him. But every one of you has his energy inside you."
+  },
+  "gave": {
+   "file": "audio/gave.wav",
+   "start": 88.87,
+   "dur": 1.967,
+   "spk": "I",
+   "scene": 13,
+   "text": "He gave it to you. Every single day."
+  },
+  "brock": {
+   "file": "audio/brock.wav",
+   "start": 92.89,
+   "dur": 1.892,
+   "spk": "N",
+   "scene": 14,
+   "text": "Brock looked up at his own battery."
+  },
+  "remember": {
+   "file": "audio/remember.wav",
+   "start": 94.982,
+   "dur": 2.844,
+   "spk": "N",
+   "scene": 14,
+   "text": "And remembered who helped him up, when he fell last winter."
+  },
+  "giveback": {
+   "file": "audio/giveback.wav",
+   "start": 98.077,
+   "dur": 1.194,
+   "spk": "B",
+   "scene": 14,
+   "text": "Then let's give it back."
+  },
+  "onebyone": {
+   "file": "audio/onebyone.wav",
+   "start": 99.89,
+   "dur": 2.849,
+   "spk": "N",
+   "scene": 15,
+   "text": "One by one, every kid put a hand on Eli's shoulder."
+  },
+  "flowed": {
+   "file": "audio/flowed.wav",
+   "start": 103.039,
+   "dur": 1.553,
+   "spk": "N",
+   "scene": 15,
+   "text": "And the energy flowed back."
+  },
+  "opened": {
+   "file": "audio/opened.wav",
+   "start": 106.89,
+   "dur": 1.366,
+   "spk": "N",
+   "scene": 16,
+   "text": "Eli's eyes opened."
+  },
+  "first": {
+   "file": "audio/first.wav",
+   "start": 108.507,
+   "dur": 1.709,
+   "spk": "N",
+   "scene": 16,
+   "text": "And for the first time in his life..."
+  },
+  "hundred": {
+   "file": "audio/hundred.wav",
+   "start": 110.465,
+   "dur": 2.11,
+   "spk": "N",
+   "scene": 16,
+   "text": "his battery said one hundred percent."
+  },
+  "feels": {
+   "file": "audio/feels.wav",
+   "start": 112.976,
+   "dur": 1.697,
+   "spk": "E",
+   "scene": 16,
+   "text": "Is this... what it feels like?"
+  },
+  "never2": {
+   "file": "audio/never2.wav",
+   "start": 115.772,
+   "dur": 2.356,
+   "spk": "N",
+   "scene": 17,
+   "text": "Because energy was never meant to be kept."
+  },
+  "shared": {
+   "file": "audio/shared.wav",
+   "start": 118.429,
+   "dur": 1.472,
+   "spk": "N",
+   "scene": 17,
+   "text": "It was meant to be shared."
+  },
+  "who": {
+   "file": "audio/who.wav",
+   "start": 122.272,
+   "dur": 1.795,
+   "spk": "N",
+   "scene": 18,
+   "text": "Who would you give your energy to?"
+  }
+ },
+ "duration": 127.267
+}

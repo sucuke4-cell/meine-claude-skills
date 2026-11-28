@@ -60,3 +60,18 @@ Repo `sucuke4-cell/meine-claude-skills`, folder `video-studio/`:
   3. Night/storm scenes need real ambient fill (hemi ~0.9-1.1, a moonlight directional ~0.6-0.9) or everything reads as pure black — moody-dark is fine, invisible is not.
   4. Point lights placed close to a character for "rim light" easily blow out with bloom on; keep intensities low (~3-6 at a few units' distance), not 10+.
   5. After any batch of fixes, re-render stills for literally all scenes (not just the one you changed) before committing to the full render — fixes elsewhere can reveal or hide problems.
+
+## Look v3 — "near 1:1 whatifstoriess" (use for ALL new episodes)
+- Demo: `episodes/battery1` "What If Your Energy Was Visible?" (Maple Hill: town street, brick school, classroom, cafeteria, Eli's kitchen, bedroom; energy-battery HUD above every head). Copy its scene.js structure for new stories.
+- `shared/interior_kit.js`: room() (floor + 4 one-sided inward walls + ceiling, sunlit window openings that cast real light patches; a camera OUTSIDE a wall still sees in), desk/chair/chalkboard/wallClock/poster/longTable/tray/cookie/locker, bed/nightLamp/rug/shelf/counter/fridge, busStop/schoolBuilding/fence/flowerBed/streetLamp, sign(text), makeBattery() HUD sprite, energyStream() glowing particles from A to B.
+- `shared/avatars_round.js` additions: talking mouths (`talkFace(av, t, speaking, baseExpr)` flaps the mouth while that character's voice line plays), gesture library `G` (wave, point, shrug, cheer, handsHead, crossArms, hug, explain, sad, give, handShoulder, laughBend, sit) applied with `poseG(av, t, ...gestures)` on top of idle breathing.
+- `shared/music.py`: new major-key moods `warm` and `hope` for wholesome/emotional stories (the old moods are all minor/dark).
+- Fast cuts: each scene is a list of shots `cuts(t, [[untilTime, camFrom, camTo, lookFrom, lookTo, fov], ...])`, a new angle every ~1.5–2.5 s, timed to voice keys (`vs('key')`).
+- Captions: 1–2 words at a time, 104 px, pop-in scale, numbers/key words in yellow; title card at the top for the first line.
+- `CU(until, avatar, {ang, d, up, ly, fov, keep})` = automatic close-up: camera in front of the face at ~3.1 units, frames head + battery, slow push-in, and hides other characters' HUDs (solo) so they don't cover the face.
+- HARD LESSONS v3:
+  6. Close-ups closer than ~2.8 units crop the face and the HUD; use CU() instead of hand-placed cameras.
+  7. Faces are a flat decal on the front of the head: pure side views (two characters facing each other, camera at 90°) show only hair. "Cheat" characters 30–45° toward the camera before hugs/dialogue, or use over-the-shoulder close-ups.
+  8. For sitting use put(..., {sit:true, seat:<seat height>}) (hip = seat), for lying {lie:true} (head goes toward -z when rotY=0); hide the contact shadow for both.
+  9. Interior moods need a neutral white hemi (~1.35) plus room point lights; warm-tinted lights make every skin tone look orange.
+  10. Draw popups/HUD positions after all characters are placed in the frame (frames render out of order in parallel workers, never rely on the previous frame).

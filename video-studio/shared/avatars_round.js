@@ -26,10 +26,10 @@ function drawFace(g, expr, blush) {
     case 'smile': eyeDot(70, 110); eyeDot(186, 110); eyeShine(70, 110); eyeShine(186, 110); g.lineWidth = 12; g.beginPath(); g.arc(128, 150, 44, Math.PI * 0.15, Math.PI * 0.85); g.stroke(); break;
     case 'happy': closedEyes(108, false); g.lineWidth = 13; g.beginPath(); g.moveTo(74, 168); g.quadraticCurveTo(128, 232, 182, 168); g.stroke(); break;
     case 'laugh': closedEyes(108, false); g.beginPath(); g.moveTo(72, 165); g.quadraticCurveTo(128, 240, 184, 165); g.closePath(); g.fill(); g.fillStyle = '#d2544f'; g.beginPath(); g.ellipse(128, 200, 26, 13, 0, 0, 7); g.fill(); break;
-    case 'sad': eyeDot(70, 118, 15); eyeDot(186, 118, 15); brow(108, 92); g.lineWidth = 12; g.beginPath(); g.arc(128, 205, 40, Math.PI * 1.2, Math.PI * 1.8); g.stroke(); break;
-    case 'cry': g.lineWidth = 12; closedEyes(120, true); brow(104, 88); g.beginPath(); g.arc(128, 208, 36, Math.PI * 1.2, Math.PI * 1.8); g.stroke();
+    case 'sad': eyeDot(70, 118, 15); eyeDot(186, 118, 15); brow(84, 100); g.lineWidth = 12; g.beginPath(); g.arc(128, 205, 40, Math.PI * 1.2, Math.PI * 1.8); g.stroke(); break;
+    case 'cry': g.lineWidth = 12; closedEyes(120, true); brow(80, 98); g.beginPath(); g.arc(128, 208, 36, Math.PI * 1.2, Math.PI * 1.8); g.stroke();
       g.fillStyle = '#6fc4ff'; for (const x of [62, 194]) { g.beginPath(); g.moveTo(x, 135); g.quadraticCurveTo(x - 7, 165, x, 185); g.quadraticCurveTo(x + 7, 165, x, 135); g.fill(); } break;
-    case 'worried': eyeDot(70, 115); eyeDot(186, 115); brow(96, 80); g.lineWidth = 11; g.beginPath(); g.moveTo(96, 195); g.quadraticCurveTo(118, 180, 140, 194); g.quadraticCurveTo(160, 206, 180, 190); g.stroke(); break;
+    case 'worried': eyeDot(70, 115); eyeDot(186, 115); brow(74, 90); g.lineWidth = 11; g.beginPath(); g.moveTo(96, 195); g.quadraticCurveTo(118, 180, 140, 194); g.quadraticCurveTo(160, 206, 180, 190); g.stroke(); break;
     case 'surprise': g.fillStyle = '#fff'; for (const x of [70, 186]) { g.beginPath(); g.arc(x, 108, 26, 0, 7); g.fill(); g.lineWidth = 5; g.stroke(); } g.fillStyle = '#1a1414'; eyeDot(70, 112, 11); eyeDot(186, 112, 11); brow(70, 58); g.beginPath(); g.ellipse(128, 195, 22, 28, 0, 0, 7); g.fill(); break;
     case 'angry': eyeDot(72, 116, 14); eyeDot(184, 116, 14); g.lineWidth = 13; g.beginPath(); g.moveTo(44, 88); g.lineTo(104, 108); g.moveTo(212, 88); g.lineTo(152, 108); g.stroke(); g.beginPath(); g.moveTo(94, 195); g.lineTo(162, 195); g.stroke(); break;
     case 'warm': closedEyes(112, false); g.lineWidth = 12; g.beginPath(); g.arc(128, 158, 36, Math.PI * 0.2, Math.PI * 0.8); g.stroke(); break;
@@ -37,7 +37,17 @@ function drawFace(g, expr, blush) {
     default: eyeDot(70, 110); eyeDot(186, 110); g.lineWidth = 11; g.beginPath(); g.moveTo(104, 180); g.lineTo(152, 180); g.stroke();
   }
 }
-function faceTexture(expr, blush) { const key = expr + (blush ? '_b' : ''); if (faceCache.has(key)) return faceCache.get(key); const t = canvasTex(256, 256, g => drawFace(g, expr, blush)); faceCache.set(key, t); return t; }
+// talking mouths: expr 'base~a' / 'base~o' / 'base~e' draws base eyes/brows with an open mouth
+function drawTalk(g, base, m, blush) {
+  drawFace(g, base, blush);
+  g.clearRect(80, 146, 96, 100);
+  g.fillStyle = '#1a1414';
+  if (m === 'o') { g.beginPath(); g.ellipse(128, 190, 18, 24, 0, 0, 7); g.fill(); }
+  else if (m === 'e') { g.beginPath(); g.ellipse(128, 182, 34, 12, 0, 0, 7); g.fill(); }
+  else { g.beginPath(); g.moveTo(88, 168); g.quadraticCurveTo(128, 236, 168, 168); g.closePath(); g.fill(); }
+  g.fillStyle = '#d2544f'; g.beginPath(); g.ellipse(128, m === 'e' ? 188 : 202, 14, 6, 0, 0, 7); g.fill();
+}
+function faceTexture(expr, blush) { const key = expr + (blush ? '_b' : ''); if (faceCache.has(key)) return faceCache.get(key); const t = canvasTex(256, 256, g => { if (expr.includes('~')) { const [b, m] = expr.split('~'); drawTalk(g, b, m, blush); } else drawFace(g, expr, blush); }); faceCache.set(key, t); return t; }
 
 const SKINS = [0xffe0bd, 0xf1c27d, 0xe0ac69, 0xc68642, 0x8d5524, 0xffcd94];
 const HAIRS = [0x2a1a10, 0x5a3a1e, 0xe8731c, 0x111111, 0x8e5a2a, 0xb0b0b0, 0x7a3a8a, 0xd94a6a, 0xf0c040];
@@ -99,7 +109,32 @@ export function setBlush(av, on) { const P = av.userData.P; P.blush = on; P.face
 export function setTears(av, on, t) { av.userData.P.tears.forEach(d => { d.visible = on; if (on) { const f = (t * 1.2 + (d.userData.x > 0 ? 0.5 : 0)) % 1; d.position.set(d.userData.x, 0.0 - f * 0.5, 0.45); d.material.opacity = 0.85 * (1 - f); } }); }
 export function pose(av, p = {}) { const P = av.userData.P; P.armL.rotation.set(p.armLx || 0, 0, p.armLz || 0); P.armR.rotation.set(p.armRx || 0, 0, p.armRz || 0); P.legL.rotation.x = p.legL || 0; P.legR.rotation.x = p.legR || 0; P.head.rotation.set(p.headX || 0, p.headY || 0, p.headZ || 0); P.body.rotation.set(p.bodyX || 0, p.bodyY || 0, p.bodyZ || 0); P.body.position.y = p.bob || 0; }
 // idle breathing + subtle sway; call every frame, then layer pose on top with mix
-export function idle(av, t) { const ph = av.userData.phase; pose(av, { bob: Math.sin(t * 1.6 + ph) * 0.015, bodyZ: Math.sin(t * 0.8 + ph) * 0.02, headY: Math.sin(t * 0.5 + ph) * 0.06, armLz: 0.08 + Math.sin(t * 1.6 + ph) * 0.02, armRz: -0.08 - Math.sin(t * 1.6 + ph) * 0.02 }); }
+export function idleP(av, t) { const ph = av.userData.phase; return { bob: Math.sin(t * 1.6 + ph) * 0.015, bodyZ: Math.sin(t * 0.8 + ph) * 0.02, headY: Math.sin(t * 0.5 + ph) * 0.06, armLz: 0.08 + Math.sin(t * 1.6 + ph) * 0.02, armRz: -0.08 - Math.sin(t * 1.6 + ph) * 0.02 }; }
+export function idle(av, t) { pose(av, idleP(av, t)); }
 export function blinkFace(av, t, baseExpr) { const open = (t + av.userData.phase) % 3.4 > 0.14; setFace(av, open ? baseExpr : 'blink'); if (!open && (baseExpr === 'smile' || baseExpr === 'happy')) setFace(av, 'blink'); }
 export const walkPose = (phase, amt = 0.6, ex = {}) => { const s = Math.sin(phase) * amt; return { legL: s, legR: -s, armLx: -s * 0.8, armRx: s * 0.8, bob: Math.abs(Math.cos(phase)) * 0.05 * amt / 0.6, ...ex }; };
 export const place = (av, x, z, rotY, y = 0) => { av.position.set(x, y, z); av.rotation.set(0, rotY, 0); av.visible = true; };
+
+// lip-flap while speaking: call every frame with whether this avatar is speaking right now
+export function talkFace(av, t, speaking, baseExpr) {
+  if (!speaking) { blinkFace(av, t, baseExpr); return; }
+  const k = Math.floor((t + av.userData.phase) * 9) % 5;
+  setFace(av, k === 4 ? baseExpr : baseExpr + '~' + ['a', 'o', 'e', 'a'][k]);
+}
+// gesture library (layered on top of idle via pose())
+export const G = {
+  wave: (t) => ({ armRz: 2.5, armLz: -0.1, headZ: 0.08, _wave: Math.sin(t * 9) * 0.35 }),
+  point: () => ({ armRx: -1.5, armRz: 0.1 }),
+  shrug: () => ({ armLz: -0.9, armRz: 0.9, armLx: -0.3, armRx: -0.3, headZ: 0.15 }),
+  cheer: (t) => ({ armLz: -2.6, armRz: 2.6, bob: Math.abs(Math.sin(t * 8)) * 0.12 }),
+  handsHead: () => ({ armLz: -2.3, armRz: 2.3, armLx: -0.7, armRx: -0.7 }),
+  crossArms: () => ({ armLx: -1.25, armRx: -1.25, armLz: 0.75, armRz: -0.75 }),
+  hug: (k = 1) => ({ armLx: -1.35 * k, armRx: -1.35 * k, armLz: -0.25 * k, armRz: 0.25 * k }),
+  explain: (t) => ({ armRx: -0.9 + Math.sin(t * 4) * 0.25, armRz: 0.3, armLx: -0.5 + Math.sin(t * 4 + 1.5) * 0.2, armLz: -0.3 }),
+  sad: () => ({ headX: 0.32, armLz: -0.05, armRz: 0.05, bodyX: 0.08 }),
+  give: () => ({ armRx: -1.25, armRz: -0.05 }),
+  handShoulder: () => ({ armRx: -1.45, armRz: -0.2 }),
+  laughBend: (t) => ({ bodyX: 0.22 + Math.sin(t * 12) * 0.05, armLx: -0.6, armRx: -0.6, armLz: 0.4, armRz: -0.4 }),
+  sit: (ex = {}) => ({ legL: -1.5, legR: -1.5, ...ex }),
+};
+export function poseG(av, t, ...parts) { const p = Object.assign(idleP(av, t), ...parts); pose(av, p); if (p._wave) av.userData.P.armR.rotation.x = p._wave; }
