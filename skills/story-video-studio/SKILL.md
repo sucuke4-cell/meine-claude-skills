@@ -75,3 +75,7 @@ Repo `sucuke4-cell/meine-claude-skills`, folder `video-studio/`:
   8. For sitting use put(..., {sit:true, seat:<seat height>}) (hip = seat), for lying {lie:true} (head goes toward -z when rotY=0); hide the contact shadow for both.
   9. Interior moods need a neutral white hemi (~1.35) plus room point lights; warm-tinted lights make every skin tone look orange.
   10. Draw popups/HUD positions after all characters are placed in the frame (frames render out of order in parallel workers, never rely on the previous frame).
+
+## Narrator voice (since 2026-11-28)
+- Measured the user's favourite reference narration (bright, expressive, fast): median pitch ~200 Hz, very wide pitch range, bright tone, ~7 syllables/s. The old narrator `am_onyx` (81 Hz, flat, dark) was the furthest of all voices from it.
+- Default narrator now: `af_jessica`, speed 1.08, plus a presence boost (2.5-6 kHz band added at 0.6) and gentle compression (see `out/voice_test` script in this session / battery1 make_vo pattern). Alternative: `bf_alice` (British). Write lines with punctuation (!, ?, …) so the voice stays lively.
