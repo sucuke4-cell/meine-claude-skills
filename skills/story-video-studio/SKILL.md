@@ -102,3 +102,18 @@ Own, original material for planning every video: `01-story-idea-library.md` (30 
 - Do NOT use librosa.pitch_shift or similar phase-vocoder shifting for big shifts: the user heard it as "talking into a microphone with water in it".
 - After resampling: high-pass 90 Hz, presence boost (2.5–6 kHz band added at 0.5), gentle compression (see `episodes/temple1/make_vo.py`).
 - This replaces the af_jessica narrator for new videos.
+
+## Camera language v4 (from a course-preview study, 2026-11-28 — use for ALL new videos)
+Every shot gets a JOB. Pick the camera move from what the beat should make the viewer feel, never at random. Helpers in `video-studio/shared/camera_kit.js` (`SHOT.*`, `shake`, `MOOD_COLOR`, `dip`).
+| Beat | Shot | How |
+|---|---|---|
+| Opening / new place | WIDE — establish the world | high + far, tiny slow drift |
+| "How big is it?" | AERIAL — reveal the scale | drone orbit, slowly descending, looking down |
+| Something is wrong | SLOW ZOOM — builds tension | push-in on a face over 3–5 s, almost static |
+| Walking / travelling | TRACKING — smooth side follow | camera parallel to the subject, same speed |
+| Chase / escape | ACTION CAMERA | low, close, in front of the runner, handheld `shake()` |
+| Sad / love / twist lands | STEADY SHOT — lets the emotion land | locked-off, NO movement ("not every scene needs dramatic movement") |
+- Rule of thumb: at most 1 moving shot in a row of emotional beats; the quiet locked shot after action is what makes the moment hit.
+- Colour per beat (`MOOD_COLOR`): neonNight (purple + emissive window strips + haze) for mystery cities, coldFog (blue-grey fog) for tension, danger (red/pink, bobbing lights) for action, goldenEmotion (sunset) for the emotional ending. Change fog + hemi + key light together.
+- Transitions: hard cuts inside a scene; a short crossfade or `dip()` to black only for time jumps / place changes.
+- Plan check before rendering: write the shot type next to every VO line in the shot list; if a line has no clear job, it gets a STEADY shot.

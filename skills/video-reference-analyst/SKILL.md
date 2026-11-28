@@ -32,7 +32,7 @@ Motion:    are shots real animation / moving footage, or still images with zoom?
 
 What makes it work: 2–3 concrete things (hook technique, cut rhythm, voice, visual symbol, twist)
 ```
-Mark an aspect **N/A** instead of skipping it. Then look at the keyframes yourself and add colour palette, caption style and transition patterns.
+Mark an aspect **N/A** instead of skipping it. For the Camera aspect, also name the *purpose* of each move (establish / scale / tension / follow / chase / let emotion land) — see "Camera language v4" in `story-video-studio`. Then look at the keyframes yourself and add colour palette, caption style and transition patterns.
 
 ## Step 3 — Honest capability check
 Say plainly which parts can be matched with the free pipeline (three.js rounded avatars, Kokoro voices, procedural music, ffmpeg) and which cannot (for example real Roblox Studio scenes or paid AI video clips). Never promise a 1:1 copy.
