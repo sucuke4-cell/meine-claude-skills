@@ -31,7 +31,8 @@ async function newPage() {
 const dur = await (await newPage()).evaluate(() => window.DURATION);
 const outDir = path.join(epDir, only ? 'stills' : 'frames'); fs.mkdirSync(outDir, { recursive: true });
 const jobs = only ? only.map((t, i) => ({ t, file: `still_${String(t).replace('.', '_')}.jpg` }))
-  : Array.from({ length: Math.ceil(dur * fps) }, (_, i) => ({ t: i / fps, file: `f${String(i).padStart(5, '0')}.jpg` }));
+  : Array.from({ length: Math.ceil(dur * fps) }, (_, i) => ({ t: i / fps, file: `f${String(i).padStart(5, '0')}.jpg` }))
+    .filter(j => !process.env.RANGE || process.env.RANGE.split(',').some(r => { const [a, b] = r.split('-').map(Number); return j.t >= a && j.t <= b; }));
 let next = 0, done = 0; const t0 = Date.now();
 await Promise.all(Array.from({ length: Math.min(WORKERS, jobs.length) }, async () => {
   const p = await newPage();

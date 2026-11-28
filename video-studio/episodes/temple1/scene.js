@@ -183,9 +183,9 @@ window.renderAt = function (t) {
     case 5: { mood = 'jungle'; fx = JX; fz = -12; const zx = JX - 0.6, zz = -10.4; put(zuri, zx, zz, 0.55); put(crane, JX + 1.0, -12.2, -0.5);
       act(zuri, 'surprise'); act(crane, 'smug', speaking(crane) ? { armRx: -0.7, armRz: -0.3, armLx: -0.3 } : {});
       if (t > vs('blinked') + 0.5) eye = [0xff2020, 1.6 * (Math.sin((t - vs('blinked')) * 8) > -0.3 ? 1 : 0.2)]; else eye = [0x403020, 0.3];
-      C = cuts(t, [CU(vs('help') - 0.05, crane, { ang: 0.3 }), [vs('blinked') - 0.05, v3(JX + 0.4, 2.4, -6.4), v3(JX + 0.3, 2.3, -6.9), v3(JX + 0.2, 1.4, -11.4), null, 52], [99, v3(JX + 1.0, 2.0, -9.6), v3(JX + 1.4, 1.8, -10.4), v3(JX + 2.6, 1.6, -12.5), null, 44]]); break; }
+      C = cuts(t, [CU(vs('help') - 0.05, crane, { ang: 0.3 }), [vs('blinked') - 0.05, v3(JX + 0.4, 2.4, -6.4), v3(JX + 0.3, 2.3, -6.9), v3(JX + 0.2, 1.4, -11.4), null, 52], [99, v3(JX + 4.4, 2.0, -9.2), v3(JX + 4.1, 1.9, -9.8), v3(JX + 2.6, 1.5, -12.5), null, 44]]); break; }
     case 6: { mood = 'jungle'; fx = JX; fz = TZ + 10; put(zuri, JX - 0.5, TZ + 17, Math.PI); put(crane, JX + 0.8, TZ + 17.6, Math.PI); act(zuri, 'surprise', { headX: -0.3 }); act(crane, 'smug', { headX: -0.3 }); eye = [0xffb040, 1.3];
-      C = cuts(t, [[vs('watching') - 0.05, v3(JX + 2.2, 3.6, TZ + 23), v3(JX + 2.0, 6.0, TZ + 25), v3(JX, 6, TZ + 10), v3(JX, 10, TZ), 56], [99, v3(JX, 13.8, TZ + 12), v3(JX, 14.2, TZ + 10.5), v3(JX, 14.6, TZ + 3.6), null, 44]]); break; }
+      C = cuts(t, [[vs('watching') - 0.05, v3(JX + 2.2, 3.6, TZ + 23), v3(JX + 2.0, 6.0, TZ + 25), v3(JX, 6, TZ + 10), v3(JX, 10, TZ), 56], [99, v3(JX, 14.2, TZ + 15), v3(JX, 14.4, TZ + 13.5), v3(JX, 14.9, TZ + 3.6), null, 44]]); break; }
     case 7: { mood = 'temple'; fx = TH; fz = 0; zuriLamp.forEach(l => l.intensity = 5); const path = [[3, 0], [2, 1], [2, 2], [3, 3]]; const k = clamp((t - sc.start - 0.5) / 4.0) * (path.length - 1); const i0 = Math.floor(k), f = k - i0; const p0 = tilePos(...path[Math.min(i0, path.length - 1)]), p1 = tilePos(...path[Math.min(i0 + 1, path.length - 1)]);
       const zp = p0.clone().lerp(p1, ease(f)); put(zuri, zp.x, zp.z, Math.PI, 0.3 + Math.abs(Math.sin(f * Math.PI)) * 0.25); act(zuri, speaking(zuri) ? 'surprise' : 'stern', speaking(zuri) ? { armRx: -1.3, armLz: -0.2 } : walkBlock(t * 4, 0.3));
       put(crane, TH + 0.0, 8.2, Math.PI); act(crane, 'surprise');
@@ -195,13 +195,13 @@ window.renderAt = function (t) {
       const red = t > vs('crane_lie') + 1.2 && t < vs('zuri_true'), green = t > vs('zuri_true') + 1.2;
       eye = red ? [0xff2020, 1.6] : green ? [0x30ff70, 1.6] : [0xffb040, 1.0]; ehLight.color.setHex(red ? 0xff3030 : green ? 0x40ff80 : 0xffb040); ehLight.intensity = red || green ? 22 : 8;
       act(crane, red ? 'surprise' : 'smug', speaking(crane) ? { armRx: -0.7 } : {}); act(zuri, green ? 'sad' : red ? 'surprise' : 'stern', {});
-      C = cuts(t, [[vs('crane_lie') - 0.05, v3(EH + 0.2, 2.4, 7), v3(EH + 0.2, 3.0, 6), v3(EH, 2.6, -4), null, 58], CU(vs('zuri_true') - 0.05, crane, { ang: -0.15 }), [vs('know') - 0.05, v3(EH - 3.5, 3.2, 4.5), v3(EH - 3.2, 3.0, 4.0), v3(EH, 2.2, -2), null, 56], CU(99, zuri, { ang: 0.15, d: 6.2 })]); break; }
+      C = cuts(t, [[vs('crane_lie') - 0.05, v3(EH + 0.2, 2.4, 7), v3(EH + 0.2, 3.0, 6), v3(EH, 2.6, -4), null, 58], CU(vs('zuri_true') - 0.05, crane, { ang: -0.15 }), [vs('know') - 0.05, v3(EH + 1.4, 3.0, 5.6), v3(EH + 1.2, 2.9, 5.2), v3(EH - 0.6, 2.0, 0.4), null, 56], CU(99, zuri, { ang: 0.15, d: 6.2 })]); break; }
     case 9: case 10: case 11: case 12: case 13: {
       mood = 'temple'; fx = TR; fz = 0; bloomS = 0.45;
       put(grandpa, TR, -1.5, 0); const gk = sc.id === 13 ? clamp((t - vs('melted') - 0.2) / 1.2) : 0; act(grandpa, sc.id === 13 && gk > 0.9 ? 'smile' : 'sad', sc.id === 13 && t > vs('hugged') ? { armLx: -1.3, armRx: -1.3, armLz: -0.3, armRz: 0.3 } : { headX: 0.1 });
       if (sc.id === 13) { crystal.scale.set(0.9 * (1 - gk), 1.5 * (1 - gk), 0.9 * (1 - gk)); crystalM.opacity = 0.45 * (1 - gk); crystalLight.intensity = 6 * (1 - gk) + 2; }
       // Zuri
-      if (sc.id === 9) { const k = clamp((t - vs('grandpa') + 0.2) / 0.9); put(zuri, TR - 0.5, lerp(5, 1.0, ease(k)), Math.PI + 0.1 + 0.6 * ease(k)); act(zuri, t > vs('grandpa') - 0.2 ? 'surprise' : 'surprise', k > 0 && k < 1 ? walkBlock(t * 9, 0.8) : {}); }
+      if (sc.id === 9) { const k = clamp((t - vs('crystal')) / 1.3); put(zuri, TR - 0.5, lerp(5, 1.0, ease(k)), Math.PI + 0.1 + 0.6 * ease(k)); act(zuri, t > vs('grandpa') - 0.2 ? 'surprise' : 'surprise', k > 0 && k < 1 ? walkBlock(t * 9, 0.8) : {}); }
       else if (sc.id === 13 && t > vs('hugged') - 0.1) { put(zuri, TR - 0.15, -0.75, Math.PI); act(zuri, 'smile', { armLx: -1.3, armRx: -1.3, armLz: -0.3, armRz: 0.3 }); }
       else { put(zuri, TR - 0.6, 0.6, Math.PI + 0.65); act(zuri, sc.id === 12 ? 'sad' : sc.id === 13 ? 'surprise' : sc.id === 11 ? 'surprise' : 'stern', sc.id === 12 && t > vs('hand') ? { armRx: -1.4, armRz: -0.1 } : {}); }
       // Crane
@@ -215,8 +215,7 @@ window.renderAt = function (t) {
         C = cuts(t, [[vs('kept') - 0.05, v3(TR, 4.2, -3.2), v3(TR, 4.2, -3.8), v3(TR, 4.2, -8), null, 50], [vs('toogold') - 0.05, v3(TR - 2.6, 3.0, 4.0), v3(TR - 2.3, 2.8, 3.6), v3(TR, 1.6, -1.5), null, 52], [99, v3(TR + 4.6, 2.6, -0.8), v3(TR + 4.4, 2.5, -0.6), v3(TR + 2.3, 2.0, 1.4), null, 48]]); }
       else if (sc.id === 11) C = cuts(t, [CU(vs('grabbed') + 1.0, crane, { ang: -0.5 }), [vs('stone') - 0.05, v3(TR, 6.5, 8), v3(TR, 6.0, 7.2), v3(TR, 2, -2), null, 60], [99, v3(TR + 6.0, 3.0, 3.4), v3(TR + 5.7, 2.9, 3.2), v3(TR + 1.9, 1.7, 1.5), null, 46]]);
       else if (sc.id === 12) C = cuts(t, [[vs('dontwant') - 0.05, v3(TR - 2.9, 2.6, -1.4), v3(TR - 2.7, 2.5, -1.3), v3(TR - 0.4, 1.9, 0.0), null, 48], [vs('green') - 0.05, v3(TR - 2.6, 2.2, -0.8), v3(TR - 2.45, 2.15, -0.7), v3(TR - 0.6, 1.95, 0.6), null, 42], [99, v3(TR, 6.0, 8), v3(TR, 5.5, 7.5), v3(TR, 2.6, -3), null, 62]]);
-      else C = cuts(t, [[vs('grown') - 0.05, v3(TR + 1.2, 3.2, 5), v3(TR + 1.0, 3.0, 4.5), v3(TR, 1.9, -1.2), null, 52], CU(vs('hugged') - 0.05, grandpa, { ang: -0.4, d: 6.0 }), [99, v3(TR - 2.8, 3.0, 3.0), v3(TR - 2.6, 2.9, 2.7), v3(TR - 0.1, 2.0, -1.0), null, 50]]);
-      if (flash) renderer.domElement.style.filter = 'sepia(0.6) contrast(1.05)';
+      else C = cuts(t, [[vs('grown') - 0.05, v3(TR + 1.2, 3.2, 5), v3(TR + 1.0, 3.0, 4.5), v3(TR, 1.9, -1.2), null, 52], [vs('hugged') - 0.05, v3(TR + 1.6, 3.3, 1.9), v3(TR + 1.5, 3.2, 1.7), v3(TR, 2.6, -1.5), null, 42], [99, v3(TR - 7.2, 3.2, 1.2), v3(TR - 6.8, 3.15, 1.0), v3(TR - 0.1, 2.0, -1.1), null, 40]]);
       break; }
     case 14: case 15: { mood = 'golden'; fx = JX; fz = TZ + 12; eye = [0x30ff70, 0.8];
       const k = clamp(lt / 6); put(zuri, JX - 0.5, lerp(TZ + 10, TZ + 17, k), 0); put(grandpa, JX + 0.6, lerp(TZ + 10, TZ + 17, k), 0); act(zuri, 'smile', sc.id === 14 ? walkBlock(t * 6, 0.4) : {}); act(grandpa, 'smile', sc.id === 14 ? walkBlock(t * 5, 0.4, { armLx: -0.4 }) : {});
@@ -224,13 +223,13 @@ window.renderAt = function (t) {
       else { C = cuts(t, [[99, v3(JX + 3.5, 8.0, TZ + 30), v3(JX + 3.0, 10, TZ + 34), v3(JX, 10, TZ), v3(JX, 12, TZ - 10), 56]]); if (lt > 0.3) { big = 'Would you take<br><span style="color:#ffd24a">the gold</span>…<br>or <span style="color:#7dffa8">the truth?</span>'; bop = clamp((lt - 0.3) / 0.35); } tint = 0.05; }
       break; }
   }
-  setMood(mood, fx, fz); setEyes(eye[0], eye[1]); if (flash) renderer.domElement.style.filter = 'sepia(0.6) contrast(1.05)';
+  setMood(mood, fx, fz); setEyes(eye[0], eye[1]);
   river.userData.update(t); clouds.position.x = (t * 0.3) % 20;
   fireflies.visible = mood === 'jungle' || mood === 'night' || mood === 'dawn'; fireflies.children.forEach(s => { const u = s.userData; s.position.set(JX + u.x + Math.sin(t * 0.7 + u.p) * 0.6, u.y + Math.sin(t * 1.3 + u.p) * 0.3, u.z); });
   frontFill.intensity = mood === 'temple' ? 0.8 : 1.0; frontFill.position.copy(C.cam).add(v3(0, 3, 0)); frontFill.target.position.copy(C.look);
   if (camera.fov !== C.fov) { camera.fov = C.fov; camera.updateProjectionMatrix(); }
   camera.position.copy(C.cam); camera.lookAt(C.look); bloom.strength = bloomS; composer.render();
-  $('tint').style.opacity = tint; mapCard.style.opacity = showMap;
+  const tn = $('tint'); if (flash) { tn.style.background = '#8a5a24'; tn.style.mixBlendMode = 'color'; tn.style.opacity = 0.75; } else { tn.style.background = '#000'; tn.style.mixBlendMode = 'normal'; tn.style.opacity = tint; } mapCard.style.opacity = showMap;
   const showMural = sc.id === 10 && t > vs('carving') + 0.4 && t < vs('toogold') - 0.05 ? 1 : 0; muralCard.style.opacity = showMural;
   let hook = '', hop = 0; if (sc.id === 1) { hook = '<span class="series">THE TEMPLE OF<br><span style="color:#ffb040">WHISPERING EYES</span></span>'; hop = clamp(lt / 0.25) * clamp((vs('gone') - 0.1 - t) / 0.3); }
   setText('hook', hook, hop);
