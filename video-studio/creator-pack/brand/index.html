@@ -1,0 +1,57 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}
+#t{position:absolute;inset:0;pointer-events:none;font-family:Inter,Arial,sans-serif}</style>
+<script type="importmap">{ "imports": { "three": "/node_modules/three/build/three.module.js", "three/addons/": "/node_modules/three/examples/jsm/" } }</script></head><body><div id="t"></div>
+<script type="module">
+import * as THREE from 'three';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { makeBlockAvatar, setBlockFace, poseBlock } from '../../shared/avatars_block.js';
+import { setupRenderer, setupComposer, canvasTex, mat, rng } from '../../shared/world_kit.js';
+const Q = new URLSearchParams(location.search); const MODE = Q.get('m') || 'profile';
+const W = MODE === 'banner' ? 2560 : 1600, H = MODE === 'banner' ? 1440 : 1600;
+const renderer = setupRenderer(W, H);
+const scene = new THREE.Scene(); scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture; scene.environmentIntensity = 0.22;
+const grad = (stops) => canvasTex(16, 512, (g, w, h) => { const gr = g.createLinearGradient(0, 0, 0, h); stops.forEach(([p, c]) => gr.addColorStop(p, c)); g.fillStyle = gr; g.fillRect(0, 0, w, h); });
+const EYE = new THREE.MeshBasicMaterial({ color: 0x30ff70, toneMapped: false });
+const stoneT = canvasTex(256, 256, (g) => { g.fillStyle = '#6a7a66'; g.fillRect(0, 0, 256, 256); g.strokeStyle = 'rgba(10,20,10,0.5)'; g.lineWidth = 3; for (let y = 0; y < 256; y += 42) { g.beginPath(); g.moveTo(0, y); g.lineTo(256, y); g.stroke(); for (let x = (y / 42) % 2 ? 30 : 0; x < 256; x += 60) { g.beginPath(); g.moveTo(x, y); g.lineTo(x, y + 42); g.stroke(); } } });
+function stoneFace(s) { const g = new THREE.Group(); const h = new THREE.Mesh(new THREE.BoxGeometry(1.6, 1.7, 1.2), mat(0xffffff, { map: stoneT })); g.add(h); for (const k of [-1, 1]) { const sock = new THREE.Mesh(new THREE.BoxGeometry(0.42, 0.26, 0.1), mat(0x1a201a)); sock.position.set(0.38 * k, 0.25, 0.6); g.add(sock); const e = new THREE.Mesh(new THREE.SphereGeometry(0.12, 12, 8), EYE); e.scale.set(1.4, 0.8, 0.5); e.position.set(0.38 * k, 0.25, 0.64); g.add(e); } const m = new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.12, 0.1), mat(0x1a201a)); m.position.set(0, -0.4, 0.6); g.add(m); g.scale.setScalar(s); return g; }
+const C = {
+  explorer: () => makeBlockAvatar({ seed: 1, scale: 0.6, skin: 0x8d5524, shirt: 'safari', color: 0xc8b48a, sleeve: 0xc8b48a, cuff: 0xb0a070, pants: 0x6a5a3a, shoes: 0x5a3a1e, boots: true, hair: { style: 'ponytail', color: 0x1a1010 }, hat: 'explorer', hatColor: 0xd8c49a, satchel: 0x7a4a2a, prop: 'lantern', face: { lashes: true } }),
+  heiress: () => makeBlockAvatar({ seed: 2, scale: 0.6, skin: 0xf2d2b4, shirt: 'coat', color: 0x6a3a8a, pants: 0x2a2240, shoes: 0xd8d8e8, hair: { style: 'bob', color: 0xe8d4a8 }, glasses: 'sunglasses', pearls: true, fur: 0xf4eee8, face: { lashes: true, blush: true } }),
+  rescuer: () => makeBlockAvatar({ seed: 3, scale: 0.6, skin: 0xffe0bd, shirt: 'hazmat', color: 0xf07a1a, sleeve: 0xf07a1a, cuff: 0xd8dde4, pants: 0xf07a1a, pantsStripe: 0xd8dde4, shoes: 0x2a2a2a, boots: true, gloves: 0x2a2a2a, hair: { style: 'pixie', color: 0x3a6ad8 }, hat: 'gasmask', face: { freckles: true } }),
+  balloon: () => makeBlockAvatar({ seed: 4, scale: 0.6, skin: 0xc68642, shirt: 'puffer', color: 0xd8322a, sleeve: 0xd8322a, cuff: 0xf4f4f4, pants: 0x2a3a6a, shoes: 0x8a5a3a, boots: true, gloves: 0x3a7ad8, hair: { style: 'swoop', color: 0x2a1a10 }, hat: 'earmuffs', hatColor: 0xf4f4f4, face: { blush: true } }),
+};
+let camera;
+if (MODE === 'profile') {
+  scene.background = grad([[0, '#06121a'], [0.55, '#0e2e2a'], [1, '#1a4a3a']]);
+  scene.add(new THREE.HemisphereLight(0xd8fff0, 0x102018, 0.9));
+  const key = new THREE.DirectionalLight(0xfff0d8, 2.0); key.position.set(3, 5, 6); scene.add(key);
+  const rim = new THREE.DirectionalLight(0x40ff90, 2.8); rim.position.set(-4, 4, -4); scene.add(rim);
+  const face = stoneFace(4.4); face.position.set(0, 3.4, -6); scene.add(face);
+  const glow = new THREE.PointLight(0x30ff70, 12, 10, 1.4); glow.position.set(0, 3.6, -3); scene.add(glow);
+  const z = C.explorer(); setBlockFace(z, 'surprise'); poseBlock(z, { armRx: -1.0, armRz: 0.1, headY: -0.1 }); scene.add(z);
+  const fill = new THREE.PointLight(0xffd8a0, 3, 6, 1.6); fill.position.set(0.6, 2.4, 2.4); scene.add(fill);
+  camera = new THREE.PerspectiveCamera(34, 1, 0.1, 100); camera.position.set(0.25, 2.75, 4.6); camera.lookAt(0, 2.55, 0);
+} else {
+  scene.background = grad([[0, '#0a0a24'], [0.45, '#3a1a5a'], [0.75, '#c8506a'], [1, '#ff9a5a']]); scene.fog = new THREE.Fog(0x3a1a4a, 20, 70);
+  scene.add(new THREE.HemisphereLight(0xffe0f0, 0x402050, 1.5));
+  const key = new THREE.DirectionalLight(0xfff0e0, 2.2); key.position.set(2, 6, 8); scene.add(key);
+  const rim = new THREE.DirectionalLight(0x8ac8ff, 1.6); rim.position.set(-5, 5, -5); scene.add(rim);
+  const r = rng(3); for (let i = 0; i < 200; i++) { const s = new THREE.Mesh(new THREE.SphereGeometry(0.04, 4, 3), new THREE.MeshBasicMaterial({ color: 0xffffff })); s.position.set((r() - 0.5) * 70, 6 + r() * 22, -30); scene.add(s); }
+  // left: jungle temple with green eyes
+  const temple = new THREE.Group(); [[14, 3, 10], [10, 3, 8], [7, 3, 6]].forEach(([w, h, d], i) => { const t = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat(0xffffff, { map: stoneT })); t.position.y = 1.5 + i * 3; temple.add(t); }); const f = stoneFace(2.2); f.position.set(0, 10.5, 1.5); temple.add(f); temple.position.set(-15, 0, -14); temple.rotation.y = 0.35; scene.add(temple);
+  const tg = new THREE.PointLight(0x30ff70, 30, 20, 1.4); tg.position.set(-13, 11, -9); scene.add(tg);
+  // right: skyline + balloons
+  for (let i = 0; i < 14; i++) { const h = 4 + r() * 12; const b = new THREE.Mesh(new THREE.BoxGeometry(1.8, h, 1.8), mat(0x1a1440)); b.position.set(9 + i * 1.9, h / 2, -20 - r() * 4); scene.add(b); for (let k = 0; k < 5; k++) { const w = new THREE.Mesh(new THREE.PlaneGeometry(0.25, 0.35), new THREE.MeshBasicMaterial({ color: r() > 0.4 ? 0xffd88a : 0x2a2050, toneMapped: false })); w.position.set(b.position.x + (r() - 0.5), r() * h, b.position.z + 0.92); scene.add(w); } }
+  const pal = [[0xff5a5a, 0xffd84a], [0x4a8aff, 0xffffff], [0x5ad87a, 0xffb84a], [0xb06aff, 0xff8ab0]]; [[14, 11, -16, 1.6], [20, 15, -22, 2.0], [9, 16, -26, 1.4], [24, 8, -18, 1.3]].forEach(([x, y, z, s], i) => { const g = new THREE.Group(); const t = canvasTex(256, 256, (c) => { for (let k = 0; k < 8; k++) { c.fillStyle = '#' + (k % 2 ? pal[i][0] : pal[i][1]).toString(16).padStart(6, '0'); c.fillRect(k * 32, 0, 32, 256); } }); const env = new THREE.Mesh(new THREE.SphereGeometry(1.6, 24, 18), mat(0xffffff, { map: t })); env.scale.set(1, 1.2, 1); env.position.y = 2.6; g.add(env); const bk = new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.5, 0.7), mat(0x8a5a2a)); bk.position.y = -0.1; g.add(bk); g.position.set(x, y, z); g.scale.setScalar(s); scene.add(g); });
+  // ground glow
+  const gnd = new THREE.Mesh(new THREE.PlaneGeometry(200, 60), mat(0x1a1030)); gnd.rotation.x = -Math.PI / 2; scene.add(gnd);
+  // characters (two left, two right of the centre text)
+  const set = [['explorer', -5.2, 0.35, 'surprise', { armRx: -1.0, armRz: 0.1 }, -1.6], ['heiress', -3.6, 0.25, 'smug', { armRx: -0.4, armRz: -0.5 }, 0], ['rescuer', 3.6, -0.25, 'stern', { armRx: -0.5, armRz: 0.35 }, 0], ['balloon', 5.2, -0.35, 'grin', { armLz: -2.4, armRz: 2.4 }, -1.6]];
+  set.forEach(([k, x, ry, face, p, z]) => { const a = C[k](); a.position.set(x, 0, z); a.rotation.y = ry; setBlockFace(a, face); poseBlock(a, p); scene.add(a); });
+  camera = new THREE.PerspectiveCamera(28, W / H, 0.1, 200); camera.position.set(0, 2.25, 21); camera.lookAt(0, 2.15, 0);
+}
+const { composer, bloom } = setupComposer(renderer, scene, camera, W, H); bloom.strength = 0.4; composer.render();
+const T = document.getElementById('t');
+if (MODE === 'banner') T.innerHTML = `<div style="position:absolute;left:0;right:0;top:575px;text-align:center;color:#fff;font-weight:900;font-size:92px;line-height:1.0;letter-spacing:-2px;-webkit-text-stroke:14px #000;paint-order:stroke fill">STORIES<br>WITH A <span style="color:#ffd24a">TWIST</span></div><div style="position:absolute;left:0;right:0;top:790px;text-align:center;color:#7dffa8;font-weight:900;font-size:40px;-webkit-text-stroke:9px #000;paint-order:stroke fill">new mystery &amp; what-if stories every week</div>`;
+window.READY = true;
+</script></body></html>
