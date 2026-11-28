@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#101426}canvas{display:block}</style>
+<script type="importmap">{ "imports": { "three": "/node_modules/three/build/three.module.js", "three/addons/": "/node_modules/three/examples/jsm/" } }</script></head><body>
+<script type="module">
+import * as THREE from 'three';
+import { makeAvatar, setFace, setBlush, poseG, G } from '../../shared/avatars_round.js';
+import { setupRenderer, contactShadow, mat } from '../../shared/world_kit.js';
+const W = 1600, H = 900;
+const renderer = setupRenderer(W, H); renderer.toneMappingExposure = 1.1;
+const scene = new THREE.Scene(); scene.background = new THREE.Color(0x1b2140);
+const cam = new THREE.PerspectiveCamera(30, W / H, 0.1, 100); cam.position.set(0, 1.45, 9.6); cam.lookAt(0, 1.15, 0);
+scene.add(new THREE.HemisphereLight(0xffffff, 0x404060, 1.4));
+const key = new THREE.DirectionalLight(0xfff2e0, 2.4); key.position.set(4, 8, 8); key.castShadow = true; key.shadow.mapSize.set(2048, 2048); Object.assign(key.shadow.camera, { left: -8, right: 8, top: 6, bottom: -2 }); scene.add(key);
+const rim = new THREE.DirectionalLight(0x9ab8ff, 1.2); rim.position.set(-6, 5, -6); scene.add(rim);
+const floor = new THREE.Mesh(new THREE.CircleGeometry(9, 48), mat(0x2a3260, { roughness: 0.9 })); floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; scene.add(floor);
+function beanie(av, c) { const b = new THREE.Mesh(new THREE.SphereGeometry(0.5, 20, 14, 0, 7, 0, 1.45), mat(c, { roughness: 0.95 })); b.position.y = 0.1; av.userData.P.head.add(b); }
+function scarf(av, c) { const s = new THREE.Mesh(new THREE.TorusGeometry(0.42, 0.11, 8, 18), mat(c, { roughness: 1 })); s.rotation.x = Math.PI / 2; s.position.y = 0.98; s.scale.set(1.05, 0.85, 1); av.userData.P.body.add(s); }
+function hood(av, c) { const h = new THREE.Mesh(new THREE.SphereGeometry(0.56, 20, 14, 0, 7, 0, 1.7), mat(c, { roughness: 0.9 })); h.position.set(0, 0.02, -0.06); av.userData.P.head.add(h); }
+function backpack(av, c) { const b = new THREE.Mesh(new THREE.BoxGeometry(0.62, 0.7, 0.3), mat(c)); b.position.set(0, 0.55, -0.45); av.userData.P.body.add(b); }
+export const CHARS = [
+  { id: 'quiet-hero', opt: { seed: 11, skin: 0xf1c27d, hair: 0x5a3a1e, hairStyle: 'swoop', top: 0x3a8a5a, legs: 0x2a3a5a, acc: 'none', scale: 0.85 }, add: a => backpack(a, 0xe0a030), face: 'smile' },
+  { id: 'popular-kid', opt: { seed: 12, skin: 0x8d5524, hair: 0x111111, hairStyle: 'spiky', top: 0xe0503c, legs: 0x2a2a2a, acc: 'headphones', scale: 0.9 }, face: 'laugh', pose: G.wave },
+  { id: 'wise-elder', opt: { seed: 13, skin: 0xe0ac69, hair: 0xdcd8d0, hairStyle: 'bun', top: 0x6a4a8a, legs: 0x3a3a3a, acc: 'glasses', scale: 0.98 }, add: a => scarf(a, 0xc04a3a), face: 'warm' },
+  { id: 'little-sibling', opt: { seed: 14, skin: 0xffe0bd, hair: 0xf0c040, hairStyle: 'bun', top: 0xff8ab0, legs: 0x6a4aa0, acc: 'bow', scale: 0.68 }, face: 'happy', pose: G.cheer },
+  { id: 'the-rival', opt: { seed: 15, skin: 0xc68642, hair: 0x7a3a1e, hairStyle: 'short', top: 0x2a2a3a, legs: 0x4a4a52, acc: 'cap', scale: 0.92 }, face: 'angry', pose: G.crossArms },
+  { id: 'mysterious-stranger', opt: { seed: 16, skin: 0xd9a06a, hair: 0x222222, hairStyle: 'short', top: 0x34405a, legs: 0x22242a, acc: 'none', scale: 1.05 }, add: a => hood(a, 0x34405a), face: 'worried' },
+];
+const VIEWS = [0, -0.75, -Math.PI / 2, Math.PI];
+window.show = (i) => {
+  for (let k = scene.children.length - 1; k >= 0; k--) if (scene.children[k].userData.av) scene.remove(scene.children[k]);
+  const c = CHARS[i];
+  VIEWS.forEach((ry, j) => { const a = makeAvatar(c.opt); a.userData.av = true; if (c.add) c.add(a); a.add(contactShadow(1.2)); a.position.set(-3.9 + j * 2.6, 0, 0); a.rotation.y = ry; a.traverse(o => { if (o.isMesh) o.castShadow = true; }); poseG(a, 0.4, c.pose ? c.pose(0.4) : {}); setFace(a, c.face); scene.add(a); });
+  renderer.render(scene, cam); return c.id;
+};
+window.READY = true;
+</script></body></html>

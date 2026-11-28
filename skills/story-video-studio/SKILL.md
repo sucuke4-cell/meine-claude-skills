@@ -93,3 +93,6 @@ Repo `sucuke4-cell/meine-claude-skills`, folder `video-studio/`:
 - Soundtrack: `sound-design`.
 - Graphics upgrades: `threejs-lighting`, `threejs-materials`, `threejs-textures`, `threejs-postprocessing` (keep per-frame cost low: rendering is CPU/SwiftShader).
 - Reference videos from the user: `video-reference-analyst` first.
+
+## Creator Pack (video-studio/creator-pack/)
+Own, original material for planning every video: `01-story-idea-library.md` (30 ideas in 5 genres + 8 hook formulas), `02-creator-checklist.md` (8 steps idea → posting), `03-master-prompt.md` (fill-in production prompt + quick fixes), `04-character-reference-pack.md` (6 archetypes with turnaround sheets, colours, voices, makeAvatar options), `05-environment-reference-pack.md` (6 environments with palettes, lighting cheat sheet). PDFs in `creator-pack/pdf/` (rebuild with `python3 creator-pack/build_pdfs.py`). Use the library for new story ideas, but always re-cast and re-name the town.
