@@ -96,3 +96,9 @@ Repo `sucuke4-cell/meine-claude-skills`, folder `video-studio/`:
 
 ## Creator Pack (video-studio/creator-pack/)
 Own, original material for planning every video: `01-story-idea-library.md` (30 ideas in 5 genres + 8 hook formulas), `02-creator-checklist.md` (8 steps idea → posting), `03-master-prompt.md` (fill-in production prompt + quick fixes), `04-character-reference-pack.md` (6 archetypes with turnaround sheets, colours, voices, makeAvatar options), `05-environment-reference-pack.md` (6 environments with palettes, lighting cheat sheet). PDFs in `creator-pack/pdf/` (rebuild with `python3 creator-pack/build_pdfs.py`). Use the library for new story ideas, but always re-cast and re-name the town.
+
+## Narrator voice v2 (chosen by the user on 2026-11-28 — use for ALL new videos)
+- Male, high-pitched "viral TikTok storyteller": Kokoro `am_adam`, generate at speed 0.82, then raise pitch by +6 semitones with plain resampling (`scipy.signal.resample_poly(s, 1000, 1414)`, played back at the same sample rate). This makes it higher and faster (net tempo ~1.16) with NO phase-vocoder artefacts.
+- Do NOT use librosa.pitch_shift or similar phase-vocoder shifting for big shifts: the user heard it as "talking into a microphone with water in it".
+- After resampling: high-pass 90 Hz, presence boost (2.5–6 kHz band added at 0.5), gentle compression (see `episodes/temple1/make_vo.py`).
+- This replaces the af_jessica narrator for new videos.
