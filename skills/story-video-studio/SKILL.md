@@ -117,3 +117,14 @@ Every shot gets a JOB. Pick the camera move from what the beat should make the v
 - Colour per beat (`MOOD_COLOR`): neonNight (purple + emissive window strips + haze) for mystery cities, coldFog (blue-grey fog) for tension, danger (red/pink, bobbing lights) for action, goldenEmotion (sunset) for the emotional ending. Change fog + hemi + key light together.
 - Transitions: hard cuts inside a scene; a short crossfade or `dip()` to black only for time jumps / place changes.
 - Plan check before rendering: write the shot type next to every VO line in the shot list; if a line has no clear job, it gets a STEADY shot.
+
+## Channel study: "In This Town" shorts (2026-11-28, 47 shorts, ~35.7k subs) — apply to ALL new videos
+Measured from titles, view counts and full-size thumbnails (the videos themselves are blocked by YouTube's bot check here; a screen recording upload from the user works for timing/voice).
+- **What wins:** one absurd RULE for a whole town/world, said in the title: "In This Town, <rule>… <2 emojis>". Top hits: a town living on a giant cute animal (4.9M), the rich living above the clouds (1.5M), a town that can never stop moving (1.4M), touching the ground costs money (964k), a monster that only moves in the dark (864k), paid for being unlucky (789k), golden ticket in one cereal box (597k), paid for being embarrassed (554k). Patterns: MONEY / RICH vs POOR rules, a GIANT ANIMAL, a MONSTER with ONE weakness/rule, "everyone has X except me".
+- **Part 2 usually loses 80–90 %** of the views (1.5M → 44k, 470k → 118k, 258k → 43k). Make every short a complete story; only make a Part 2 when Part 1 clearly blew up.
+- Titles that left the "In This Town" formula did much worse (1.6k–35k). Keep one recognisable series formula.
+- **Format:** native 9:16 full-frame (his older 16:9 videos with blurred side bars look cheap — never do that).
+- **Captions:** ONE word at a time, big rounded font (Lilita One via `@fontsource/lilita-one`, OFL), pale yellow fill + thick black stroke + drop shadow, pops in, around y≈1130–1200 (over the chest). Key words (numbers, money, rule words) in red/green. → `shared/hud_kit.js` `popWord()`; for this, call `chunks(text, 1)` in make_vo.
+- **Game HUD overlays** sell the rule visually: stat bubble over a head (`meter()`: "♥ 100%" → "2%"), red title stamp for twists (`stamp()`: "THE FIRST INFECTED"), game-show target card (`targetCard()`), anime speed lines for shock/anger (`speedLines()`), sparkles/particles for magic. Project heads with `toScreen()`.
+- **Look:** bright, saturated, toy-like toon worlds (cyan sky, green grass, pastel houses), flat soft light; horror scenes switch hard to dark blue/red with glowing monster eyes. Thumbnails/first frame = a big expressive face close-up or a monster, with the caption word visible.
+- **Shot mix:** very close face shots (often low angle, face fills 40 % of the frame), extreme aerial views of the whole town for scale, monster hero shots from below.

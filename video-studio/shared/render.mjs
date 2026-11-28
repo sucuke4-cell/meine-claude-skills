@@ -12,7 +12,7 @@ const epUrl = '/' + path.relative(root, epDir).split(path.sep).join('/');
 const fps = Number(process.argv[3] || 30);
 const only = process.argv[4] ? process.argv[4].split(',').map(Number) : null;
 const WORKERS = Number(process.env.WORKERS || 3);
-const types = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json' };
+const types = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.woff2': 'font/woff2' };
 const server = http.createServer((q, r) => {
   const f = path.join(root, decodeURIComponent(q.url.split('?')[0]));
   fs.readFile(f, (e, d) => { if (e) { r.writeHead(404); r.end(); return; } r.writeHead(200, { 'content-type': types[path.extname(f)] || 'application/octet-stream' }); r.end(d); });
