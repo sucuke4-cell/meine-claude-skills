@@ -79,3 +79,9 @@ Repo `sucuke4-cell/meine-claude-skills`, folder `video-studio/`:
 ## Narrator voice (since 2026-11-28)
 - Measured the user's favourite reference narration (bright, expressive, fast): median pitch ~200 Hz, very wide pitch range, bright tone, ~7 syllables/s. The old narrator `am_onyx` (81 Hz, flat, dark) was the furthest of all voices from it.
 - Default narrator now: `af_jessica`, speed 1.08, plus a presence boost (2.5-6 kHz band added at 0.6) and gentle compression (see `out/voice_test` script in this session / battery1 make_vo pattern). Alternative: `bf_alice` (British). Write lines with punctuation (!, ?, …) so the voice stays lively.
+  11. **Review the FINISHED video at 1 frame per second** (copy every 30th frame into stills/ and build contact sheets) before sending it. Stills every 1.5 s during development missed many bugs the user then saw.
+  12. Give every crowd member an explicit, different outfit (top colour, hair style, accessory, skin) — random seeds can produce identical-looking twins.
+  13. Add a camera-side "front fill" directional light every frame (from the camera toward the look target, ~0.85) so faces are never black when the sun is behind them.
+  14. Text the viewer must read (a note, a letter, a sign) goes in as a 2D HTML overlay card, not as a tiny 3D plane — and hide the caption while it shows.
+  15. Keep flying props (kites, birds, balloons) on the far side of the subject, away from crane/camera paths; check that strings/ropes never sag to the ground (sag ≤ 0.3 between hands).
+  16. Characters at a door must stand outside the porch roof (≥ 1.2 units out) or their head clips it; walk-ins should end at the door and then hide the character.

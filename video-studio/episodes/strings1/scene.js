@@ -19,6 +19,7 @@ const hemi = new THREE.HemisphereLight(0xd8ecff, 0x6a5a40, 1.15); scene.add(hemi
 const sun = new THREE.DirectionalLight(0xfff4e4, 2.8); sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048);
 Object.assign(sun.shadow.camera, { left: -30, right: 30, top: 30, bottom: -30, near: 1, far: 140 }); sun.shadow.bias = -0.0005; sun.shadow.normalBias = 0.02;
 scene.add(sun, sun.target);
+const frontFill = new THREE.DirectionalLight(0xfff2e4, 0.0); scene.add(frontFill, frontFill.target);
 
 // ================= KITEWOOD =================
 const sky = makeSky(0x6ab8ff, 0xe8f6ff, 380); scene.add(sky);
@@ -79,14 +80,18 @@ const june = makeAvatar({ seed: 801, skin: 0xffdbb5, hair: 0x9a3a1e, hairStyle: 
 const leo = makeAvatar({ seed: 802, skin: 0xc68642, hair: 0x111111, hairStyle: 'swoop', top: 0x2a7ad0, legs: 0x2a2a2a, acc: 'none', scale: KID * 1.05 });
 const hazel = makeAvatar({ seed: 803, skin: 0xe8c49a, hair: 0xdcd8d0, hairStyle: 'bun', top: 0x8a4a6a, legs: 0x4a3a4a, acc: 'glasses', scale: 0.98 }); shawl(hazel, 0x5a8a5a);
 const MAIN = [june, leo, hazel];
-const crowd = []; for (let i = 0; i < 16; i++) crowd.push(makeAvatar({ seed: 1400 + i * 29, scale: KID * (0.94 + (i % 3) * 0.04) }));
+const TOPS = [0xe0503c, 0x3a8ad8, 0x4ab06a, 0xf0b030, 0x9a5ac8, 0xff7ab0, 0x2ab0b0, 0xf08a3a, 0x5a6a9a, 0xc8d84a, 0xd8404a, 0x4a7aa8, 0x8ac8ff, 0xb06a3a, 0x70d0a0, 0xe8e8f0];
+const HAIRS_ = ['short', 'bun', 'spiky', 'curly', 'swoop', 'long', 'short', 'curly', 'bun', 'spiky', 'long', 'swoop', 'curly', 'short', 'bun', 'spiky'];
+const ACCS = ['none', 'cap', 'none', 'glasses', 'headphones', 'bow', 'beanie', 'none', 'glasses', 'none', 'cap', 'none', 'bow', 'headphones', 'none', 'beanie'];
+const SKINS_ = [0xffe0bd, 0x8d5524, 0xf1c27d, 0xc68642, 0xffcd94, 0xe0ac69];
+const crowd = []; for (let i = 0; i < 16; i++) crowd.push(makeAvatar({ seed: 1400 + i * 29, top: TOPS[i], hairStyle: HAIRS_[i], acc: ACCS[i], skin: SKINS_[(i * 5) % 6], scale: KID * (0.94 + (i % 3) * 0.04) }));
 const adults = []; for (let i = 0; i < 4; i++) adults.push(makeAvatar({ seed: 1700 + i * 31, scale: 1.05 }));
 const ALL = [...MAIN, ...crowd, ...adults];
 ALL.forEach(a => { scene.add(a); a.userData.cs = contactShadow(1.1); a.add(a.userData.cs); });
 // one kite per kid (crowd 0..15, leo = 16)
 const kites = []; for (let i = 0; i < 17; i++) { const k = makeKite(500 + i * 7); k.scale.setScalar(1.25); scene.add(k); kites.push(k); }
 const leoKite = kites[16];
-const brokenL = makeKite(516 + 0, [leoKite.userData.c1, leoKite.userData.c2]), brokenR = makeKite(516, [leoKite.userData.c1, leoKite.userData.c2]); [brokenL, brokenR].forEach(b => { b.scale.set(0.6, 1.0, 1); scene.add(b); });
+const brokenL = makeKite(516 + 0, [leoKite.userData.c1, leoKite.userData.c2]), brokenR = makeKite(516, [leoKite.userData.c1, leoKite.userData.c2]); [[brokenL, [0, 3, 2]], [brokenR, [0, 2, 1]]].forEach(([b, idx]) => { const g = b.userData.sail.geometry.clone(); g.setIndex(idx); b.userData.sail.geometry = g; b.children.forEach(c => { if (c !== b.userData.sail) c.visible = false; }); scene.add(b); });
 const note = sign(['Fly high, Leo.', 'Love, J.'], 0.7, 0.45, '#fffaf0', '#3a2a1a', 'italic bold 120px Georgia, serif', null); scene.add(note);
 const SPEAK = { J: june, L: leo, H: hazel, K: crowd[6] };
 let T = 0;
@@ -108,7 +113,7 @@ const CU = (until, av, o) => [until, ...closeUp(av, o)];
 const rampV = (t, t0, t1, a, b) => lerp(a, b, ease((t - t0) / Math.max(0.01, t1 - t0)));
 const prog = (t, t0, dur = 0.6) => easeOut((t - t0) / dur);
 // friendship string between two avatars' wrists
-function tie(a, b, o = {}) { strings.draw(hand(a, o.sa || 'R'), hand(b, o.sb || 'L'), { color: o.gold ? 0xffd24a : (o.color ?? 0xff7a9a), r: o.gold ? 0.03 : 0.02, sag: o.sag ?? 0.3, prog: o.prog ?? 1, glow: o.gold ? 1.6 : 1.15 }); }
+function tie(a, b, o = {}) { strings.draw(hand(a, o.sa || 'R'), hand(b, o.sb || 'L'), { color: o.gold ? 0xffd24a : (o.color ?? 0xff7a9a), r: o.gold ? 0.04 : 0.03, sag: o.sag ?? 0.3, prog: o.prog ?? 1, glow: o.gold ? 1.6 : 1.15 }); }
 // a kite flying above its owner
 function flyKite(k, owner, t, i, opt = {}) { k.visible = true; const h = hand(owner); const base = v3(owner.position.x + (opt.dx ?? Math.sin(i * 2.3) * 2.5), opt.y ?? 9 + (i % 4) * 1.3, owner.position.z + (opt.dz ?? -4 - (i % 3) * 1.5));
   base.x += Math.sin(t * 0.7 + i) * 0.5; base.y += Math.sin(t * 1.1 + i * 2) * 0.3; k.position.copy(base); k.lookAt(owner.position.x, base.y - 2, owner.position.z + 6); k.userData.sway(t, 1);
@@ -142,7 +147,7 @@ function streetWeb(t, skip = [], webOn = true) {
     act(A, i % 2 ? 'laugh' : 'happy', { armRx: -0.45, armRz: -0.25 }); act(B, 'smile', { armLx: -0.45, armLz: 0.25 }); talkFace(A, t, Math.sin(t * 1.7 + i) > 0.3, 'smile');
     if (webOn) tie(A, B, { gold, sa: 'R', sb: 'L', sag: 0.15 }); });
   // long strings across the street between pairs (friends of friends)
-  if (webOn) [[0, 3], [1, 4], [2, 7], [5, 9], [8, 11], [10, 13], [12, 14]].forEach(([a, b]) => { if (skip.includes(a) || skip.includes(b)) return; if (crowd[a].visible && crowd[b].visible) tie(crowd[a], crowd[b], { sa: 'L', sb: 'R', sag: 0.9, color: [0x7ac8ff, 0x9aff9a, 0xffb86a, 0xd8a0ff][(a + b) % 4] }); });
+  if (webOn) [[0, 3], [1, 4], [2, 7], [5, 9], [8, 11], [10, 13], [12, 14]].forEach(([a, b]) => { if (skip.includes(a) || skip.includes(b)) return; if (crowd[a].visible && crowd[b].visible) tie(crowd[a], crowd[b], { sa: 'L', sb: 'R', sag: 0.25, color: [0x7ac8ff, 0x9aff9a, 0xffb86a, 0xd8a0ff][(a + b) % 4] }); });
 }
 
 window.renderAt = function (t) {
@@ -168,7 +173,7 @@ window.renderAt = function (t) {
       // shot B: best friends hug, gold string
       const Cg = crowd[2], D = crowd[3]; put(Cg, -0.45, 2.0, faceTo(-0.45, 2, 0.6, 5)); put(D, 0.45, 2.0, faceTo(0.45, 2, -0.6, 5)); act(Cg, 'happy', G.hug(0.6)); act(D, 'laugh', G.hug(0.6)); setBlush(Cg, true); tie(Cg, D, { gold: 1, sa: 'R', sb: 'L', sag: 0.1 });
       // shot C: boy waves, girl doesn't see -> nothing; she waves back -> string appears
-      const E = crowd[4], F = crowd[5]; put(E, -0.9, -6, faceTo(-0.9, -6, 0.9, -3.5)); const turned = t > tRule - 0.4; put(F, 0.9, -6, turned ? faceTo(0.9, -6, -0.9, -3.5) : 2.4);
+      const E = crowd[4], F = crowd[5]; put(E, -0.9, -6, faceTo(-0.9, -6, 0.9, -3.5)); const turned = t > tRule - 0.4; put(F, 0.9, -6, turned ? faceTo(0.9, -6, -0.9, -3.5) : 1.3);
       act(E, turned ? 'laugh' : 'smile', G.wave(t)); act(F, turned ? 'happy' : 'smile', turned ? { armLz: -2.5, _wave: 0, headZ: -0.08 } : {});
       if (t > tRule) tie(E, F, { prog: prog(t, tRule, 0.6), sb: 'L', sag: 0.25, color: 0x7ac8ff });
       C = cuts(t, [
@@ -192,7 +197,7 @@ window.renderAt = function (t) {
         CU(99, june, { ang: -0.25 })]); break; }
     case 5: { const tIn = vs('built') - 0.05, tOut = vs('nobody') - 0.05;
       if (t < tIn) { mood = 'dawn'; fx = -6; fz = -12;
-        const k = clamp((t - sc.start) / (tIn - sc.start)); put(june, lerp(-1.5, SHOP_DOOR.x + 0.5, k), lerp(-8, SHOP_DOOR.z, k), faceTo(-1.5, -8, SHOP_DOOR.x, SHOP_DOOR.z)); act(june, 'smile', walkPose(t * 7, 0.45, { bodyX: 0.1 }));
+        const k = clamp((t - sc.start) / (tIn - sc.start - 0.4)); put(june, lerp(-1.5, SHOP_DOOR.x + 0.15, k), lerp(-9, SHOP_DOOR.z, k), faceTo(-1.5, -9, SHOP_DOOR.x, SHOP_DOOR.z)); june.visible = k < 1; act(june, 'smile', walkPose(t * 7, 0.45, { bodyX: 0.1 }));
         C = cuts(t, [[tIn, v3(1.8, 2.6, -6.6), v3(1.4, 2.5, -7.4), v3(-4.6, 1.6, -12.4), null, 50]]); }
       else if (t < tOut) { mood = 'int'; fx = KS; fz = 0; side = -1;
         put(june, KS + 0.2, -0.7, 0.05); act(june, 'happy', { armLx: -1.2, armRx: -1.2, armLz: 0.3, armRz: -0.3, headX: 0.25 });
@@ -201,7 +206,7 @@ window.renderAt = function (t) {
       else { mood = 'dawn'; fx = 4; fz = 8;
         const D2 = DOOR2; const k = clamp((t - tOut) / 1.0); put(june, D2.x + 0.9 + k * 0.3, D2.z + 0.2, k < 0.6 ? -Math.PI / 2 : Math.PI / 2, { kneel: k < 0.6 }); act(june, 'smile', k < 0.6 ? G.give() : walkPose(t * 7, 0.5));
         const kk = kites[0]; kk.visible = true; kk.position.set(D2.x + 0.35, 0.25, D2.z + 0.2); kk.rotation.set(-1.3, Math.PI / 2, 0); kk.userData.sway(0, 0);
-        C = cuts(t, [[99, v3(D2.x + 4.2, 1.8, D2.z + 2.6), v3(D2.x + 3.9, 1.7, D2.z + 2.3), v3(D2.x + 0.6, 0.8, D2.z + 0.1), null, 48]]); }
+        C = cuts(t, [[99, v3(D2.x + 2.8, 1.8, D2.z - 2.4), v3(D2.x + 2.6, 1.7, D2.z - 2.2), v3(D2.x + 0.6, 0.8, D2.z + 0.1), null, 50]]); }
       break; }
     case 6: { const tNext = vs('nextday') + 0.6;
       if (t < tNext) { mood = 'day'; fx = 3; fz = 3;
@@ -210,9 +215,9 @@ window.renderAt = function (t) {
         streetWeb(t, [2, 3, 4, 5, 6, 7, 8], false);
         C = cuts(t, [[vs('great') - 0.05, v3(3.6, 2.3, 5.2), v3(3.4, 2.2, 4.8), v3(2.2, 1.6, 2.2), null, 48], CU(tNext, leo, { ang: -0.2 })]); }
       else { mood = 'day'; fx = 6; fz = 4;
-        const D = LEO_DOOR; const k = clamp((t - tNext) / 0.8); put(leo, D.x - 0.4 * k, D.z, -Math.PI / 2 + 0.5); act(leo, t > tNext + 0.7 ? 'surprise' : 'smile', t > tNext + 1.2 ? G.handsHead() : {});
-        leoKite.visible = true; leoKite.position.set(D.x - 1.0, 0.25, D.z + 0.1); leoKite.rotation.set(-1.3, -Math.PI / 2, 0); leoKite.userData.sway(0, 0);
-        C = cuts(t, [[99, v3(D.x - 3.9, 1.9, D.z - 1.6), v3(D.x - 3.6, 1.8, D.z - 1.4), v3(D.x - 0.6, 1.3, D.z), null, 50]]); }
+        const D = LEO_DOOR; const k = clamp((t - tNext) / 0.8); put(leo, D.x - 0.9 - 0.4 * k, D.z, -Math.PI / 2 - 0.45); act(leo, t > tNext + 0.7 ? 'surprise' : 'smile', t > tNext + 1.2 ? G.handsHead() : {});
+        leoKite.visible = true; leoKite.position.set(D.x - 2.1, 0.25, D.z - 0.3); leoKite.rotation.set(-1.3, -Math.PI / 2, 0); leoKite.userData.sway(0, 0);
+        C = cuts(t, [[99, v3(D.x - 4.4, 2.0, D.z - 2.4), v3(D.x - 4.1, 1.9, D.z - 2.2), v3(D.x - 1.6, 1.2, D.z - 0.2), null, 52]]); }
       break; }
     case 7: case 8: { mood = 'day'; fx = 0; fz = -36;
       // kids across the field flying kites
@@ -248,9 +253,9 @@ window.renderAt = function (t) {
       if (sc.id === 9) { put(june, -3.4, -43.6, faceTo(-3.4, -43.6, 0, -36)); act(june, 'surprise', {});
         C = cuts(t, [[vs('storm') - 0.05, v3(3, 2.6, -24), v3(2.6, 3.2, -25), v3(0, 6, -40), v3(0, 7, -42), 56],
           [tRip + 0.8, v3(-5.2, 2.2, -27.2), v3(-5.0, 2.4, -27.6), v3(-4.0, 6.0, -36), null, 50],
-          [99, v3(1.0, 2.0, -24.5), v3(0.8, 2.0, -25), v3(0, 1.8, -31.5), null, 50]]); }
+          [99, v3(0.9, 2.3, -36.4), v3(0.8, 2.25, -36.0), v3(0, 1.8, -31.5), null, 52]]); }
       else { const k = clamp((t - vs('ran')) / 1.0); const jx = lerp(-3.4, 0, ease(k)), jz = lerp(-43.6, -45.0, ease(k)); put(june, jx, jz, k < 1 ? faceTo(-3.4, -43.6, 0, -45) : 0);
-        act(june, 'angry', k < 1 ? walkPose(t * 10, 0.9, { bodyX: 0.2 }) : { armRz: 2.4 + Math.sin(t * 9) * 0.2, armRx: -0.4, armLz: -1.4, headX: -0.3 });
+        act(june, k < 1 ? 'angry' : 'worried', k < 1 ? walkPose(t * 10, 0.9, { bodyX: 0.2 }) : { armRz: 2.4 + Math.sin(t * 9) * 0.2, armRx: -0.4, armLz: -1.4, headX: -0.3 });
         C = cuts(t, [CU(vs('ran') - 0.05, june, { ang: 0.4, d: 3.2 }),
           [vs('ran') + 2.4, v3(2.6, 2.0, -40.5), v3(2.2, 2.2, -40.8), v3(jx, 2.6, jz - 1), null, 54],
           [99, v3(0.4, 1.7, -39.6), v3(0.4, 1.9, -40.4), v3(0, 3.8, -45.5), null, 56]]); }
@@ -265,24 +270,24 @@ window.renderAt = function (t) {
         const x = Math.sin(a) * R, z = JZ + Math.cos(a) * R; const k = crowd[i]; put(k, x, z, faceTo(x, z, 0, JZ));
         if (!flying) { act(k, sc.id === 11 ? (T > vs('looked') + 0.6 ? 'surprise' : 'worried') : 'cry', { armLx: -1.0, armRx: -1.0, armLz: 0.3, armRz: -0.3, headX: sc.id === 11 ? 0.3 : 0 }); if (sc.id === 12) setTears(k, true, t + i);
           const kt = kites[i]; kt.visible = true; const hp = hand(k, 'R').lerp(hand(k, 'L'), 0.5); kt.position.copy(hp).add(v3(0, 0.25, 0)); kt.rotation.set(-0.9, faceTo(x, z, 0, JZ) + Math.PI, 0); kt.scale.setScalar(0.8); }
-        else { act(k, i % 2 ? 'laugh' : 'happy', { armRx: -1.4, headX: -0.3 }); kites[i].scale.setScalar(1.25); flyKite(kites[i], k, t, i, { dx: Math.sin(a) * 3, dz: 3 + (i % 3), y: 8 + (i % 5) * 1.3 }); }
+        else { act(k, i % 2 ? 'laugh' : 'happy', { armRx: -1.4, headX: -0.3 }); kites[i].scale.setScalar(1.25); flyKite(kites[i], k, t, i, { dx: Math.sin(a) * 3, dz: -4 - (i % 3) * 1.5 - (k.position.z - JZ), y: 8 + (i % 5) * 1.3 }); }
         // golden strings
         if (sc.id >= 12) { const t0 = vs('shot') + 0.2 + i * 0.09; if (t > t0) strings.draw(hand(k, 'R'), hand(june, i % 2 ? 'R' : 'L'), { color: 0xffd24a, r: 0.02, sag: 0.25, prog: prog(t, t0, 0.5), glow: 1.3 }); } });
       kites.forEach(k => { if (!flying) k.scale.setScalar(0.8); });
       // Leo in front with the note
       const lx = 1.7, lz = JZ + 2.0; put(leo, lx, lz, faceTo(lx, lz, 0, JZ) + (sc.id === 11 ? 0.9 : 0));
       if (sc.id === 11) { act(leo, t > vs('flyhigh') ? 'surprise' : 'worried', { armLx: -1.1, armRx: -1.1, armLz: 0.3, armRz: -0.3, headX: 0.3 });
-        leoKite.visible = true; leoKite.scale.setScalar(0.8); const hp = hand(leo, 'R').lerp(hand(leo, 'L'), 0.5); leoKite.position.copy(hp).add(v3(0, 0.3, 0.05)); leoKite.rotation.set(-0.7, leo.rotation.y, 0);
-        note.visible = true; note.position.copy(leoKite.position).add(v3(0, 0.12, 0)); note.rotation.set(-0.7, leo.rotation.y, 0); note.scale.setScalar(1); note.translateZ(0.03); }
+        leoKite.visible = true; leoKite.scale.setScalar(0.8); const hp = hand(leo, 'R').lerp(hand(leo, 'L'), 0.5); leoKite.position.copy(hp).add(v3(0, -0.15, 0.05)); leoKite.rotation.set(-1.15, leo.rotation.y, 0);
+        note.visible = !(t > vs('flyhigh') - 0.1 && t < vs('looked')); note.position.copy(leoKite.position).add(v3(0, 0.12, 0)); note.rotation.set(-1.15, leo.rotation.y, 0); note.scale.setScalar(1); note.translateZ(0.03); }
       else if (sc.id >= 12) { act(leo, sc.id === 13 ? 'happy' : 'cry', sc.id === 13 ? { armRx: -1.4, headX: -0.3 } : {}); if (sc.id === 12) setTears(leo, true, t); if (t > vs('shot') + 0.1) strings.draw(hand(leo, 'R'), hand(june, 'R'), { color: 0xffd24a, r: 0.032, sag: 0.15, prog: prog(t, vs('shot') + 0.1, 0.4), glow: 1.9 });
-        if (sc.id >= 13) { leoKite.scale.setScalar(1.25); flyKite(leoKite, leo, t, 16, { dx: 1, dz: 3, y: 12.5 }); } }
+        if (sc.id >= 13) { leoKite.scale.setScalar(1.25); flyKite(leoKite, leo, t, 16, { dx: 1, dz: -6 - (leo.position.z - JZ), y: 12.5 }); } }
       put(hazel, -2.4, JZ + 1.2, faceTo(-2.4, JZ + 1.2, 0, JZ)); act(hazel, sc.id >= 12 ? 'warm' : 'smile', sc.id >= 13 ? { armRx: -0.5 } : {}); if (sc.id >= 12) strings.draw(hand(hazel, 'R'), hand(june, 'L'), { color: 0xffd24a, r: 0.03, sag: 0.3, prog: sc.id === 12 ? prog(t, vs('allgold'), 0.5) : 1, glow: 1.8 });
       // June
       const jFace = sc.id === 11 ? 'worried' : sc.id === 12 ? (t > vs('allgold') ? 'cry' : 'surprise') : 'laugh';
       act(june, jFace, sc.id === 12 && t > vs('allgold') ? { armLz: -0.5, armRz: 0.5, armLx: -0.5, armRx: -0.5 } : sc.id >= 13 ? G.cheer(t) : {}); if (sc.id === 12 && t > vs('allgold')) { setTears(june, true, t); setBlush(june, true); } if (sc.id >= 13) setBlush(june, true);
       if (sc.id === 11) C = cuts(t, [
         CU(vs('flyhigh') - 0.05, leo, { ang: -0.6, d: 3.0 }),
-        [vs('looked') - 0.05, note.position.clone().add(note.getWorldDirection(new THREE.Vector3()).multiplyScalar(1.15)).add(v3(0, 0.15, 0)), note.position.clone().add(note.getWorldDirection(new THREE.Vector3()).multiplyScalar(1.0)).add(v3(0, 0.12, 0)), note.position.clone(), null, 38],
+        CU(vs('looked') - 0.05, leo, { ang: -0.3, d: 4.0, ly: -0.8, fov: 48 }),
         [99, v3(0.8, 4.4, JZ - 1.4), v3(0.8, 4.6, JZ - 1.8), v3(0, 1.3, JZ + 5), null, 60]]);
       else if (sc.id === 12) C = cuts(t, [
         CU(vs('shot') - 0.05, june, { ang: 0, d: 3.2 }),
@@ -298,6 +303,7 @@ window.renderAt = function (t) {
   setMood(mood, fx, fz, side);
   mill.userData.blades.rotation.z = t * (mood === 'storm' ? 2.5 : 0.6);
   clouds.position.x = (t * 0.4) % 30; stormClouds.position.x = (t * 2.0) % 30;
+  frontFill.intensity = mood === 'int' ? 0.3 : mood === 'storm' ? 0.9 : 0.85; frontFill.position.copy(C.cam).add(v3(0, 3, 0)); frontFill.target.position.copy(C.look);
   if (camera.fov !== C.fov) { camera.fov = C.fov; camera.updateProjectionMatrix(); }
   camera.position.copy(C.cam); camera.lookAt(C.look);
   bloom.strength = bloomS;
@@ -306,12 +312,14 @@ window.renderAt = function (t) {
   let hook = '', hop = 0;
   if (sc.id === 1) { hook = '<span class="series">WHAT IF EVERY<br>FRIENDSHIP WAS A<br><span style="color:#ff8aa8">STRING?</span></span>'; hop = clamp(lt / 0.25) * clamp((sc.end - t) / 0.3); }
   setText('hook', hook, hop);
-  const cap = (sc.id === 1 || (sc.id === 14 && lt > 0.3)) ? null : TL.captions.find(c => t >= c.start && t < c.end + 0.05);
+  const cap = (sc.id === 1 || (sc.id === 14 && lt > 0.3) || (sc.id === 11 && t > vs('flyhigh') - 0.1 && t < vs('looked') - 0.05)) ? null : TL.captions.find(c => t >= c.start && t < c.end + 0.05);
   const ce = $('cap');
   if (cap) { const k = clamp((t - cap.start) / 0.09); ce.style.transform = `scale(${1.18 - 0.18 * easeOut(k)})`; ce.style.color = SPK_COLOR[cap.spk];
     const txt = cap.text.replace(/(\d+|forty-seven|zero|golden|gold\.?|BOTH|June\.?|string\.?|strings\.?)/g, '<span style="color:#ffd94a">$1</span>'); setText('cap', txt, 1); }
   else setText('cap', '', 0);
   setText('big', big, bop);
+  let nc = document.getElementById('notecard'); if (!nc) { nc = document.createElement('div'); nc.id = 'notecard'; nc.style.cssText = 'position:absolute;left:170px;right:170px;top:330px;height:520px;background:#fffaf0;border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.55);transform:rotate(-4deg);display:flex;flex-direction:column;justify-content:center;align-items:center;font:italic 700 92px Georgia,serif;color:#3a2a1a;line-height:1.25;opacity:0'; nc.innerHTML = 'Fly high, Leo.<br><span style="font-size:80px">Love, J. 💛</span>'; document.body.appendChild(nc); }
+  const nk = sc.id === 11 && t > vs('flyhigh') - 0.1 && t < vs('looked') - 0.05; nc.style.opacity = nk ? clamp((t - vs('flyhigh') + 0.1) / 0.2) : 0; nc.style.transform = `rotate(-4deg) scale(${nk ? 0.9 + 0.1 * easeOut((t - vs('flyhigh') + 0.1) / 0.3) : 1})`;
   return true;
 };
 window.DURATION = TL.duration; window.READY = true;
