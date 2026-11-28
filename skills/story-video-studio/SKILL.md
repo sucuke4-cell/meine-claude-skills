@@ -86,3 +86,10 @@ Repo `sucuke4-cell/meine-claude-skills`, folder `video-studio/`:
   14. Text the viewer must read (a note, a letter, a sign) goes in as a 2D HTML overlay card, not as a tiny 3D plane — and hide the caption while it shows.
   15. Keep flying props (kites, birds, balloons) on the far side of the subject, away from crane/camera paths; check that strings/ropes never sag to the ground (sag ≤ 0.3 between hands).
   16. Characters at a door must stand outside the porch roof (≥ 1.2 units out) or their head clips it; walk-ins should end at the door and then hide the character.
+
+## Helper skills (added 2026-11-28, all free)
+- Before writing a script: `voice-performance-director` (pauses, emphasis, per-line speed for Kokoro).
+- Layout and pacing: `short-form` (TikTok covers the bottom ~320 px and right ~120 px: keep captions and titles inside x 90–990, y 120–1600).
+- Soundtrack: `sound-design`.
+- Graphics upgrades: `threejs-lighting`, `threejs-materials`, `threejs-textures`, `threejs-postprocessing` (keep per-frame cost low: rendering is CPU/SwiftShader).
+- Reference videos from the user: `video-reference-analyst` first.

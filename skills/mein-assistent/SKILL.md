@@ -27,7 +27,10 @@ Der Nutzer ist **Anfänger** (Ausbildung zur MFA), arbeitet **meist am Handy**, 
 | Webseite online stellen, Domain | `webseite-online` |
 | Video-Idee, Story, Hook, Skript, Untertitel, Posting-Plan | `social-video` |
 | Fertiges animiertes Video / neue Folge von „Never Open the Red Door“ | `story-video-studio` (braucht Claude Code mit dem Repo) |
-| Ein (virales) Video ansehen/analysieren | `watch` → Ergebnis an `social-video` geben |
+| Ein (virales) Video ansehen/analysieren, „mach so eins wie das“ | `watch` → `video-reference-analyst` (Analyse + 2–3 eigene Konzepte) → `social-video` / `story-video-studio` |
+| Video-Regeln für TikTok/Reels/Shorts (Safe Zones, Länge, Tempo) | `short-form` |
+| Erzählerstimme planen, Musik/Geräusche abmischen | `voice-performance-director`, `sound-design` |
+| 3D-Grafik der Story-Videos verbessern (Licht, Schatten, Materialien, Effekte) | `threejs-lighting`, `threejs-materials`, `threejs-textures`, `threejs-postprocessing` |
 | Präsentation | `slides` |
 | Ideen sammeln, Brainstorming (Story-Ideen, Geschäftsideen) | `bmad-brainstorming`, `bmad-forge-idea` |
 | Geschäftsseite: Geschäftsidee prüfen, Preise, Zielgruppe, Wachstum | `bmad-founder-agent-advisor` |
